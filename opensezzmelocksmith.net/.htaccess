@@ -1,0 +1,12 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^opensezzmelocksmith.net [NC]
+RewriteRule ^(.*)$ http://www.opensezzmelocksmith.net/$1 [L,R=301]
+
+RewriteCond %{THE_REQUEST} /index\.html? [NC]
+RewriteRule ^(.*/)?index\.html?$ /$1 [R=301,L]
+
+#RewriteCond %{REQUEST_URI} ^/index.html$
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteRule ^(.*) http://%{HTTP_HOST}/ [R=301]
+
+ErrorDocument 404 http://www.opensezzmelocksmith.net/404.html
