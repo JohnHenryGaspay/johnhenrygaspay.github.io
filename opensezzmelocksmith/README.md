@@ -1,2 +1,2 @@
 # project locksmith site
-client project can be view at http://www.opensezzmelocksmith.net/
+client project can be view at  https://johnhenrygaspay.github.io/opensezzmelocksmith
