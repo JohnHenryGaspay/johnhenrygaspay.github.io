@@ -47,3 +47,5 @@ section p {font-size:16px;color:#000;margin-bottom:10px;font-family:Sans-serif,T
 .imgbanner1.prod1{float:left;width:35%;text-align:left;}
 .imgbanner1:after{content: "";clear: both;display: table;}
 .imgbutton{display:block;padding:0px 0px 45px 15px;}
+.subh5{text-align:left;font-weight:600;}
+.imgbanner2{display:in-line-table;padding:20px;}
