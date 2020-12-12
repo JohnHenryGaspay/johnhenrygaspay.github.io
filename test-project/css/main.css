@@ -1,0 +1,13 @@
+html,body{height: 100%;background-color:#f0f0f0;font-family: "Times New Roman", Times, serif;}
+.bg-dark{background-color:#000 !important;}
+.container{max-width:1020px;}
+.container:first-child{background-color:#000;}
+.container{background-color:#fff;}
+.wrapper{margin: 10px 40px;}
+.imgheader{margin-bottom:20px;}
+.h1title{border-bottom:2px solid #ffc60e;border-top:2px solid #ffc60e;color:#fff;font-family:HelveticaNeue+BlackCond; padding:35px 0px; height:130px;font-size:35px;font-weight:800;text-align:center;margin-bottom:20px;}
+.active>.nav-link {color: #d2a30e !important;}
+.navbar-dark .navbar-nav .nav-link{color:#fff;}
+.subh2{color:#ebebeb;margin:100px 0px 35px 0px;}
+.subh3{color: #d2a30e;font-family:HelveticaNeue CondenseBold;font-weight:600;}
+section p {font-size:16px;color:#fff;margin-bottom:20px;font-family:Roboto,Sans-serif,Tahoma;padding:10px 0px;}
