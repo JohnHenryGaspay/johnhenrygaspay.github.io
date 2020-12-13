@@ -2,13 +2,15 @@
 @font-face {font-family: HelveticaNeue BlackCond;src: url(fonts/HelveticaNeue_BlackCond.ttf);font-weight: bold;font-display: swap;}
 @font-face {font-family: HelveticaNeue;src: url(fonts/HelveticaNeue.ttf);font-weight: normal;font-display: swap;}
 *{font-family: helveticaneue;}
-html,body{height: 100%;background-color:#f0f0f0;font-family: "HelveticaNeue," "Times New Roman", Times, serif;}
+
+html,body{height: 100%;background-color:#f0f0f0;font-family:"Verdana",sans-serif;}
+h1,h2,h3,h4,h5,h6 {font-family:"Segoe UI",sans-serif}
 .bg-dark{background-color:#000 !important;}
-.container,footer{max-width:1020px;}
+.container{max-width:1020px;}
 .container:first-child{background-color:#000;}
 .container{background-color:#fff;margin-bottom:-15px;}
 .wrapper{margin: 10px 40px;}
-.imgheader, nav > img,imgbanner{width:100%;}
+.imgheader, nav > img, .imgbanner, .imgbanner1, .imgbanner2, .imgbanner3{width:100%;}
 .imgbanner{margin:50px 0px 46px 0px;}
 .h1title{border-bottom:2px solid #ffc60e;border-top:2px solid #ffc60e;color:#fff;font-family:HelveticaNeue BlackCond; padding:35px 0px; height:130px;font-size:35px;font-weight:800;text-align:center;margin-bottom:20px;}
 .active > .nav-link {color: #d2a30e !important;}
@@ -34,5 +36,16 @@ section .p1{font-weight:600;}
 .imgbanner2{display:in-line-table;padding:20px;}
 .note{color: #999999;}
 .subh2new{font-size:38px;text-align:left;}
-.centerp{font-size:24px;text-align:center;}
-footer ul li{list-style-type:none;}
+.centerp{font-size:24px;text-align:center;} 
+.container.footer{max-width:1020px;background-color:#f0f0f0;height:250px;}
+//footer{background-color:#f0f0f0;height:250px;margin:0px;padding:0px;}
+ul.content1 li{list-style-type:none;display:block;float:left;}
+ul.content2 li {list-style-type:disc;margin:10px 0px 20px 70px;float:left;}
+ul.content2 li:first-child{list-style-type:none;}
+footer li a {display:block;margin:10px;}
+.scamh3{color:#d80606;text-align:left;}
+.faqh3{text-align:left;}
+//footer{max-width:1020px;margin-left:282px;}
+footer span{display:block !important;}
+
+//footer li{margin:40px 0px 30px 140px;font-size:18px;}
