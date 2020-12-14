@@ -1,8 +1,3 @@
-@font-face { font-family: Helvetica Neu Bold; src: url(fonts/Helvetica_Neu_Bold.ttf);font-weight: bold;font-display: swap;}
-@font-face {font-family: HelveticaNeue BlackCond;src: url(fonts/HelveticaNeue_BlackCond.ttf);font-weight: bold;font-display: swap;}
-@font-face {font-family: HelveticaNeue;src: url(fonts/HelveticaNeue.ttf);font-weight: normal;font-display: swap;}
-*{font-family: helveticaneue;}
-
 html,body{height: 100%;background-color:#f0f0f0;font-family:"Verdana",sans-serif;}
 h1,h2,h3,h4,h5,h6 {font-family:"Segoe UI",sans-serif}
 .bg-dark{background-color:#000 !important;}
@@ -37,7 +32,7 @@ section .p1{font-weight:600;}
 .note{color: #999999;}
 .subh2new{font-size:38px;text-align:left;}
 .centerp{font-size:24px;text-align:center;} 
-.container.footer{max-width:1020px;background-color:#f0f0f0;height:250px;}
+.container.footer{max-width:1020px;background-color:#f0f0f0;height:200px;}
 //footer{background-color:#f0f0f0;height:250px;margin:0px;padding:0px;}
 ul.content1 li{list-style-type:none;display:block;float:left;}
 ul.content2 li {list-style-type:disc;margin:10px 0px 20px 70px;float:left;}
