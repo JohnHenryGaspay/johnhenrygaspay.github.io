@@ -26,8 +26,9 @@ h1,h2,h3,h4,h5,h6 {font-family:'HelveticaNeue_BlackCond', 'Verdana',sans-serif}
 .container:first-child{background-color:#000;}
 .container{background-color:#fff;margin-bottom:-15px;}
 .wrapper{margin: 10px 40px;}
-.imgheader, nav > img, .imgbanner, .imgbanner1, .imgbanner2, .imgbanner3{width:100%;}
-.imgbanner{margin:50px 0px 46px 0px;}
+.bannerworlds{width:75%;}
+.imgheader, nav > img, .bannerspecial, .imgbanner1, .imgbanner2, .imgbanner3{width:100%;}
+.imgbanner,.bannerworlds{margin:50px 0px 46px 0px;}
 .h1title{border-bottom:2px solid #ffc60e;border-top:2px solid #ffc60e;color:#fff;padding:35px 0px; height:130px;font-size:32px;font-weight:800;text-align:center;margin-bottom:20px;}
 .active > .nav-link {color: #d2a30e !important;}
  nav a:hover {color: #d2a30e !important; text-decoration: underline;}
@@ -39,7 +40,7 @@ section p {font-size:16px;color:#000;margin-bottom:10px;font-family:Sans-serif,T
 section .p1{font-weight:600;padding:0px;}
 .container-white{background-color:#fff;}
 .scroll{ background-color:#ffc60e;color:#000;text-transform:uppercase;padding:10px;font-size:35px;}
-.subh4{text-transform:uppercase;font-size:25px;text-align:left;}
+.subh4{text-transform:uppercase;font-size:25px;text-align:left;margin:25px 0px;}
 .list-unstyled li {color:#da2828;text-align:left;font-size:16px;text-transform:uppercase;font-weight:600;list-style-type:disc;margin-left:40px;}
 .imgbanner1, .imgbanner3{display:block;}
 .subh4.colorbg{color:#ffc60e;font-weight:700;}
