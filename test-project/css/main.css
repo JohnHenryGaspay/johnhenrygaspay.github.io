@@ -29,6 +29,7 @@ h1,h2,h3,h4,h5,h6 {font-family:'HelveticaNeue_BlackCond', 'Verdana',sans-serif}
 .bannerworlds{width:75%;}
 .imgheader, nav > img, .bannerspecial, .imgbanner1, .imgbanner2, .imgbanner3{width:100%;}
 .imgbanner,.bannerworlds{margin:50px 0px 46px 0px;}
+.imgbanner1 .scam{height:350px;}
 .h1title{border-bottom:2px solid #ffc60e;border-top:2px solid #ffc60e;color:#fff;padding:35px 0px; height:130px;font-size:32px;font-weight:800;text-align:center;margin-bottom:20px;}
 .active > .nav-link {color: #d2a30e !important;}
  nav a:hover {color: #d2a30e !important; text-decoration: underline;}
@@ -59,9 +60,10 @@ section .p1{font-weight:600;padding:0px;}
 footer ul{float:left;}
 ul.content1{margin:20px 10px;}
 ul.content1 li{list-style-type:none;float:left;margin:40px 0px 0px 50px;font-size:16px;text-transform:uppercase;font-weight:600;}
-ul.content2 li {list-style-type:disc;margin:10px 0px 0px 120px;float:left;font-size:14px;}
+ul.content2 li {list-style-type:disc;margin:10px 0px 0px 60px;float:left;font-size:14px;}
 ul.content2 li:first-child{list-style-type:none;}
+ul.content2 li a{margin-left:70px;}
 footer li a {color:#000;}
 .scamh3{color:#d80606;text-align:left;font-size:26px;}
 .faqh3{text-align:left;font-size:24px;}
-footer span{float:left !important;font-size:14px;margin:10px 310px;font-family:HelveticaNeue;}
+footer span{float:left !important;font-size:14px;margin:10px 330px;font-family:HelveticaNeue;}
