@@ -61,8 +61,7 @@
 	<link rel="dns-prefetch" href="//form.jotform.com">	
   	<link rel="dns-prefetch" href="//www.googletagmanager.com">
   	<link rel="dns-prefetch" href="//apps.elfsight.com">
-  <script type="text/javascript" src="https://pixboost.com/libs/lozad.min.js"></script>
-  <script type="text/javascript" src="https://pixboost.com/libs/pixboost.js" id="pb-script" data-autoload data-api-key="MTg4MjMxMzM3MA__"></script>	
+
 </head>
 
 <body id="page-top">
@@ -366,16 +365,9 @@
   <script src="https://apps.elfsight.com/p/platform.js" defer></script>
  <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-50406796-37"></script>
-<script>
-var options = {
-  root: document.querySelector('#scrollArea'),
-  rootMargin: '0px',
-  threshold: 1.0
-}
-var observer = new IntersectionObserver(callback, options);
-var images = document.querySelector('img');
-observer.observe(images);
-</script>
+<script type="text/javascript" src="https://pixboost.com/libs/intersection-observer.min.js"></script>
+<script type="text/javascript" src="https://pixboost.com/libs/lozad.min.js"></script>
+<script type="text/javascript" src="https://pixboost.com/libs/pixboost.js" id="pb-script" data-autoload data-api-key="MTg4MjMxMzM3MA__"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
