@@ -1,0 +1,40 @@
+1.
+Problem: Joomla Installation found 
+         - Display error is on must be Off; 
+         - Output Buffering error is on must be Off 
+
+Solution: Modify php.ini on
+        on line: 552 change On to off > display_errors=Off
+        on line 264 change ON TO OFF > output_buffering=Off
+
+	cPanel Shared Servers: php.ini is sometimes located in the Joomla root directory. cPanel may have a special wizard for you in the Software services section.
+	Parallels Plesk Panel: /etc/php.ini
+	XAMPP: C:\xampp\php\php.ini
+	Ubuntu: /etc/php5/apache2
+	GoDaddy servers: You need to create your own and place it in the Joomla root director
+
+resource: https://www.ostraining.com/blog/joomla/installation-problems/
+===========================================================================================
+
+2. 
+Problem: Set 301 for site from non-www to www
+Solution: 
+
+===========================================================================================
+3. 
+Problem: Fix Duplicate Page Title as : Blog | Easy Cleaners Birmingham
+Solution: Components > Easy Blog > Workflow > General > Blog title:  
+
+4. Problem: Remove Meta Keywords 
+   Solutions: Components > SEO
+   Solutions:  Workflow > Meta Data > Disable Auto Fill Meta keywords
+
+===========================================================================================
+Editing Page Content or Article:
+Components > SP Page Builder
+Ex: bookkeepingcentral.com.au
+
+===========================================================================================
+
+
+===========================================================================================

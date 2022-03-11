@@ -1,0 +1,46 @@
+
+
+
+Problem: No Href lang 
+Solution: Working Script: 
+1. Ca
+
+.co.uk site
+<link rel="alternate" hreflang="en-GB" href="{{ canonical_url | replace: shop.domain, 'punkroyal.co.uk' }}"  />
+<link rel="alternate" hreflang="en-US" href="{{ canonical_url | replace: shop.domain, 'punkroyal.com' }}" />
+
+.com site
+<link rel="alternate" hreflang="en-US" href="{{ canonical_url | replace: shop.domain, 'punkroyal.com' }}" />
+<link rel="alternate" hreflang="en-GB" href="{{ canonical_url | replace: shop.domain, 'punkroyal.co.uk' }}"  />
+
+
+or 
+
+{{ '<link rel="alternate" hreflang="' | append: language_code | append: '" href="' | append:used_protocol | append: language_domain | append: current_url | append: '" />' }}
+
+Problem: Video need to auto play:
+Solution: 
+1. https://help.groupthought.com/article/111-video-adding-a-full-width-autoplay-and-looping-video
+2. Edit page and copy this code snippet <video autoplay="autoplay" width="100%" loop="loop" muted="muted" oncanplay="this.muted=true" playsinline="playsinline"> <source src="https://cdn.shopify.com/s/files/1/0019/7106/0847/files/Kyte_BABY_2019.mp4?rel=&amp;amp:autoplay=1" type="video/mp4" /> </video>
+
+
+Problem: www is not redirecting in non-www
+Solution: Log to your shopify > Online Store > Domains > Under you primary domain click Enable Redirection >
+
+Top Apps for Shopify:
+Must Have Apps
+1. Sales Pop by Beeketing - Free Apps Boosts Sales
+2. Oberlo = Install from AliExpress
+3. Personalized Recommendations = Upselling items
+4. 
+
+Must Have Page
+1. About Us
+2. Contact Us
+3. FAQ
+4. 
+
+Free Themes
+1. Simple Themes
+2. Brookly Themes
+3. Boundless Themes

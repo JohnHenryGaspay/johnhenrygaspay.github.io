@@ -1,0 +1,202 @@
+1. Problem: Fixing 404 Error with /index.php?route=product/category&path=59_77
+Solution: 
+Step1: Go Webmaster Tools
+Modify .htaccess
+	redirect 301 /index.php?route=product/category&path=59_77 http://www.uopcourseworkhelper.com/
+	RewriteCond %{QUERY_STRING} ^route=product/category&path=59_77$
+
+	RewriteRule ^index\.php$ https://www.uopcourseworkhelper.com/? [R=301,L]
+
+or: RewriteRule ^the-old-file.htm$ http://www.yourshop.com/your-new-product-url [R=301,L]
+or: RewriteRule ^fin-571-week-1-quiz-uop-work/?$ https://www.uopcourseworkhelper.com/ [L,NC,R=301]
+===========================================================================================
+
+2. Problem: /old-url/ should redirect to home page site.com
+Solution: 
+Modify .htaccess:
+
+RewriteRule ^the-old-file.htm$ http://www.yourshop.com/your-new-product-url [R=301,L]
+===========================================================================================
+3. Problem: Sometimes site is showing http instead of https to fix this
+ 1. Solution: modify .htaccess the add the code below: 
+    RewriteCond %{SERVER_PORT} 80
+    RewriteRule ^(.*)$ https://www.uopcourseworkhelper.com/$1 [R=301,L]
+ 2. Edit config.php on root folder and admin folder
+Result: if there is subdomain it will be affected.
+
+===========================================================================================
+4. Fatal error: Allowed memory size of 67108864 bytes exhausted (tried to allocate 21600 bytes) in /home/over/public_html/system/library/image.php on line 34
+Fixed by setting: open php.ini in the root folder 
+max_execution_time = 36000;
+max_execution_time = 30; ==>fixed the error
+change back to max_execution_time = 36000;
+you may also add max_input_time = 60; 
+
+max_execution_time = 36000
+===========================================================================================
+5. How to set canonical url:
+1) Edit your catalog/controller/product/category.php file
+2) Find this line:
+
+if ($category_info) {
+
+3) Immediately after it, add the following lines:
+
+$can_url=$this->url->link("product/category","path=".$this->request->get['path']);
+$this->document->addLink($can_url,"canonical");
+
+4) Now edit catalog/controllers/common/home.php
+5) Find this line:
+
+$this->document->setDescription($this->config->get('config_meta_description'));
+
+6) Immediately after it add:
+
+$can_url=$this->url->link('common/home');
+$can_url=str_replace('index.php?route=common/home', '', $can_url); 
+$this->document->addLink($can_url,'canonical');
+===========================================================================================
+Fixing 404 page example: /about_us
+
+RewriteEngine On
+RewriteBase /
+RewriteRule ^about_us/?$ https://www.uopcourseworkhelper.com/about-us [L,NC,R=301]
+
+===========================================================================================
+To redirect URL Problem like this:  /index.php?route=common/home
+Add code below to your 
+htaccess:
+RewriteRule ^([^?]*) index.php?_route_=$1 [L,QSA]
+RewriteCond %{QUERY_STRING} ^route=common/home$
+RewriteRule ^index\.php$ http://www.johnhenrygaspay.com/opencart? [R=301,L]
+
+===========================================================================================
+Unable to login in admin:
+Options +FollowSymlinks
+   RewriteCond %{THE_REQUEST} ^.*/index.php  //remove this line
+   RewriteRule ^(.*)index.php$ http://www.overstockshop.ph/$1 [R=301,L] //remove this line
+
+===========================================================================================
+Problem old http to https related issue:
+Before http://www.uopcourseworkhelper.com/productname
+New: https://www.uopcourseworkhelper.com/index.php?_route_=productnam
+Solutions: All redirect must be first to load after the routing in Opencart:
+Here is the complete htaccess settings:
+RewriteEngine On
+RewriteBase /
+
+#This setting force logo url to it's home page
+RewriteCond %{QUERY_STRING} ^route=common/home$
+RewriteRule ^index\.php$ https://www.uopcourseworkhelper.com/? [R=301,L,NE,NC]
+
+#This setting force http to https version
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://www.uopcourseworkhelper.com/$1 [R=301,L,NE]
+
+#RewriteRule ^sitemap.xml$ index.php?route=feed/google_sitemap [L]
+#RewriteRule ^googlebase.xml$ index.php?route=feed/google_base [L]
+RewriteRule ^download/(.*) /index.php?route=error/not_found [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} !.*\.(ico|gif|jpg|jpeg|png|js|css)
+RewriteRule ^([^?]*) index.php?_route_=$1 [L,QSA]
+===========================================================================================
+Problem: email notification for new affiliates not working on opencart 1.5.6.4
+source: http://forum.opencart.com/viewtopic.php?t=129417
+go to sytem\library\mail.php
+replace : /*$header .= 'From: ' . '=?UTF-8?B?' . base64_encode($this->sender) . '?=' . ' <' . $this->from . '>' . $this->newline;*/
+with:       $header = 'From: ' . $this->sender . ' <' . $this->from . '>' . $this->newline;
+
+===========================================================================================
+Problem: https is not showing in sitemap.xml
+Solution: Go to system/library/url.php and change this line.
+
+public function link($route, $args = '', $connection = 'NONSSL') {
+
+To this:
+
+public function link($route, $args = '', $connection = 'SSL') {
+
+===========================================================================================
+#Redirection 301 http https www to non www
+RewriteCond %{HTTP_HOST} ^thanxhampers.com.au$
+RewriteRule ^(.*)$ https://www.thanxhampers.com.au/$1 [QSA,L,R=301]
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://www.thanxhampers.com.au/$1 [QSA,L,R=301]
+apply on site: thanxhampers.com.au
+====================================================
+Improve Pagespeed
+add this code on your theme header.tpl
+/catalog>view>theme>default>template>template
+
+<meta name=viewport content="width=device-width, initial-scale=1">
+===========================================================================================
+Problem: Category Not Showing on Products Left Sidebar:
+Go go Admin > System > Design > Layout > Category
+Add route product/category under default and save
+Admin > System > Design > Layout > Manufacterer
+Add route product/manufacturer
+
+for route reference:
+Home => common/home
+Product => product/product
+Category => product/category
+Manufacturer => product/manufacturer
+Information => information/information
+Contact => information/contact
+Sitemap => information/sitemap
+Checkout => checkout/
+Account => account/
+Affiliate => affiliate/
+
+===========================================================================================
+
+Drive more Traffic:
+1. Ping your Store:
+  http://pingomatic.com/
+  https://pingler.com/
+  http://feedshark.brainbliss.com/
+  http://ping.in/
+  http://pingates.com/
+  http://autopinger.com/
+============================================
+Problem: How to update your opencart version:
+1. Download latest opencart here: http://docs.opencart.com/upgrading/
+2. There are two files that need to be excluded from the upload to the store's root directory: "upload/config.php", and the "upload/admin/config.php".
+3. Delete these two config file on the root and admin folder
+4. Upload those folder within upload folder
+
+===============================================
+resources:
+Opencart Check List
+http://forum.opencart.com/viewtopic.php?t=21479
+
+Setup Multi Store
+http://forum.opencart.com/viewtopic.php?f=20&t=37899
+
+===============================
+Deprecated: mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in C:\xampp\htdocs\opencart1-5\system\database\mysql.php on line 6
+old way: mysql_connect($hostname, $username, $password))
+new way: @mysql_connect($hostname, $username, $password))
+to fix that warning
+
+
+===============================
+Problem: Page Title not Applying on Live Site
+Solution: Change settings on mysql database and look for oc_setting
+Site: thanxhampers.com.au
+
+======================================
+apply seo on site wide
+1. Apply interlink on all pages to homepage.
+2. Remove, buy, on all page title > Product or Category Name | Domain Name
+3. 
+
+Problem: Warning: MySQL extension needs to be loaded for OpenCart to work!
+Solution: Open step2_php on install>controller and comment this line:
+  /*
+if (!extension_loaded('mysql')) {
+                        $this->error['warning'] = 'Warning: MySQL extension needs to be loaded for OpenCart to work!';
+                }*/
+

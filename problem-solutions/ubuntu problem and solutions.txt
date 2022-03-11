@@ -1,0 +1,2 @@
+Problem: Unable to boot : please use a kernel appropriate for your CPU solve the error in only one change.
+Solution:

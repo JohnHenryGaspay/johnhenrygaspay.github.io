@@ -1,0 +1,975 @@
+==================================================================
+Site folder object not found: add this code on functions.php after initial <?php
+update_option( 'siteurl', 'http://localhost/wordpress' );
+update_option( 'home', 'http://localhost/wordpress' );
+
+Problem: Difficulty to call javascript file, image file, and stylesheet file in wordpress 
+Solutions:
+  Stylesheet : 
+	<link href="<?php bloginfo ('stylesheet_url');?>" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/source/helpers/jquery.fancybox-buttons.css" />
+  Image File: 
+       
+	<img src="<?php echo bloginfo('template_directory') . '/images/phone.png' ; ?>" >
+	<a href="<?php echo bloginfo('template_directory') . '/images/r_suites_cafe_Hotel_Exterior.jpg' ; ?>
+Javascript:  <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/source/helpers/jquery.fancybox-buttons.js"></script>
+ 
+ URL code for Header <h1><a href="<?php bloginfo('url'); ?>" JW</a></h1>
+
+for navigation: <?php wp_list-pages('title_li=&include=2.9');?>
+
+for title: <title><?php bloginfo('name');?><?php wp_title(); ?></title>
+
+for Icon: <link rel="shortcut icon" href="<?php bloginfo('template_directory');?>/images/favicon.ico"/
+
+pingback : <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+
+
+searchform.php
+<form method="get" id="searchform" action="<?php bloginfo('url');?>">
+<input type="text" name="s" id="s" value="<?php the_search_query();?> "/>
+<input type="submit" value="Search" id="searchsubmit"/>
+</form>
+
+==================================================================
+Problem: Installing wordpress in localhost:
+Solution:
+1.Installed xammp and run Apache and MySQl
+2. Download wordpress or any cms
+3. under htdocs create name of your folder then paste wordpress files and folders
+4. Create database on this link http://localhost/phpmyadmin, add new user, under localhost, password, and check all to grant all previlleges for new add user
+    Database Name: johng | User: seomaster | Host: localhost | password: masterx22 | grant all previlleges for new add user
+5. http://localhost/johngaspay and create your configuration file, fill in desired input then run wordpress 
+6. if you failed above you can do it manually locate wp-sample-config.php on your wordpress file then filled in database name, user, passwords and save it as wp-config.php
+6. End here
+
+==================================================================
+Problem: Installing wordpress Server Host
+Solution: 1. Create your database on your webserver and get then database name, MySQL user and password
+	  2. For example mine is http://ueuo.freewebhostingarea.com/ username: 671268 and password: 671268
+	  3. go to http://rsuitecafe.freevar.com and you will be redirected to http://rsuitecafe.freevar.com/setup.php
+	  4. Fill up your database name, user, passwd
+          5. Upload your config.php to the server then you will be redirected to http://rsuitecafe.freevar.com/install.php after clicking run wordpress
+	  6. Then you will fill up your website title, wordpress access username, password and email and you will be redirected to http://rsuitecafe.freevar.com/wp-admin/install.php?step=2 after clicking install
+ 	  7. Done, you're good to go 
+
+
+coding searchform.php to call in your index: <?php include TEMPLATEPATH . '/searchform.php' ;?>
+==================================================================
+Problem:  Spry.Widget.Tooltip ERR: The element(s) "#sprytrigger1" do not exist in the page
+Solution: Locate for possible duplicate id be sure that id sprytrigger has number of each content
+==================================================================
+Problem: Template Directory Not Showing on the right side in Wordpress
+Solution: The reason is due to template not activated as a custom theme
+==================================================================
+Problem: Custom Page not showing when loading the side instead it is showing home page
+Solution: Settings for Reading is set to static change it to dynamic
+==================================================================
+Problem: Link is not showing the right path sample is <li id="home"><a href="<?php bloginfo('url'); ?>/home"</a></li>
+Solution: Close the hyperlink > on this code <li id="home"><a href="<?php bloginfo('url'); ?>/home"</a></li>
+==================================================================
+Problem: Custome home page is not loading
+Solution:Custom Home page should be set to home page template and homexx should be name to that php file
+==================================================================
+Problem: Another Solution for not loading the homepage:
+Solution: 
+1. First try to load first the post as index.php
+2. Copy the html file to home page and check if its loading leave home.php
+3. Your home page will no longer see posts instead it will load the home.php, click again blog and home
+4. Now change the home.php to homexx.php then update the home page in wordpress it will return to default template
+5. Now click on the blog then post will now show, 
+6. Go back to wordpress home page and change the default to home page template
+7. check again if about, gallery, blog is set to template as what they name as file.
+==================================================================
+Creating side bar code: 
+Step 1. create a filename is as sidebar.php enter code below
+
+	<ul id="sidebar">	
+	<?php if(!function_exists('dynamic_sidebar')|| !dynamic_sidebar()):?>
+	<p>You are not using a dynamic sidebar</p>
+	<?php endif;?>	
+	</ul>
+Step 2 create a functions.php and enter this code below:
+	<?php 
+	// 
+	if(function_exists('register_sidebar'))
+	{
+	register_sidebar();
+	}
+ 	?>
+Step 3. Go to widgets settings on your wordpress.
+Step 4. Now add widgets like recent posts and tags
+============
+
+Problem: W3 Total Cache cause Internal Error
+Solution: Rename .htaccess and delete all these files advanced-cache.php, db.php, object-cache.php, w3-total-cache-config.php /wp-content 
+ and delete W3 Total Cache folder on /public_html/wp-content/plugins
+now add this code on your .htaccess 
+
+
+Problem: Unable to Log-in and cannot generate confirmation link to email
+Solution: Delete Wordfence plugins via FTP access
+
+Inserting Search Button on Navigation
+Solution: 
+   - insert this code on navigation or menu bar <?php get_search_form(); ?>
+   - adjust 70% on the navigation on styleshett.css:
+
+Problem: Author Links on Post not clickable
+Solution: Edit content.php and locate author and use this code: <?php the_author_posts_link;?>
+
+==================================================================
+
+
+Improve Pagespeed
+add this code on your theme header.tpl
+<meta name=viewport content="width=device-width, initial-scale=1">
+
+GTMetrix Score from C79 to B85
+1.Enable or Check Prevent caching of objects after settings change
+
+==================================================================
+Redirect static html on .htaccess
+Redirect /Insured.html http://www.sblockandkey.com/
+
+==================================================================
+Error for inner pages like about, contact and all inner pages;
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+==================================================================
+Improving Page Speed Score: in Gmetrix 
+
+Enable Gzip for Apache Server: add this on .htaccess it score 99 using gmetrix.com
+AddOutputFilterByType DEFLATE text/plain
+AddOutputFilterByType DEFLATE text/html
+AddOutputFilterByType DEFLATE text/xml
+AddOutputFilterByType DEFLATE text/css
+AddOutputFilterByType DEFLATE application/xml
+AddOutputFilterByType DEFLATE application/xhtml+xml
+AddOutputFilterByType DEFLATE application/rss+xml
+AddOutputFilterByType DEFLATE application/javascript
+AddOutputFilterByType DEFLATE application/x-javascript
+
+or
+<IfModule mod_gzip.c>
+mod_gzip_on Yes
+mod_gzip_dechunk Yes
+mod_gzip_item_include file \.(html?|txt|css|js|php|pl)$
+mod_gzip_item_include handler ^cgi-script$
+mod_gzip_item_include mime ^text/.*
+mod_gzip_item_include mime ^application/x-javascript.*
+mod_gzip_item_exclude mime ^image/.*
+mod_gzip_item_exclude rspheader ^Content-Encoding:.*gzip.*
+</IfModule>
+
+Problem with : 
+1. Configure entity tags (ETags) from  0 > 99 score 
+2. Add expires header from 0 > 34 
+3. Leverage browser caching from 20 > 86 score
+<FilesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|js|css|swf)(\.gz)?$">
+Header set Expires "Sun, 23 Apr 2017 20:00:00 GMT"
+Header unset ETag
+FileETag None
+SetOutputFilter DEFLATE
+</FilesMatch>
+
+or 
+
+<IfModule mod_headers.c>
+    Header unset ETag
+</IfModule>
+FileETag None
+
+
+Make Fewer http request from 52 > 37
+1. Make Static for your pingback url:
+<link rel="pingback" href="http://www.sblockandkey.com/xmlrpc.php" /> 
+
+2. Remove WordPress Generator edit functions.php and add code below
+function wpbeginner_remove_version() {
+return '';
+}
+add_filter('the_generator', 'wpbeginner_remove_version');
+
+// WP Version by JohnG
+function wpbeginner_remove_version() {
+return '';
+}
+add_filter('the_generator', 'wpbeginner_remove_version');
+
+3. instead of this
+    <meta charset="<?php bloginfo( 'charset' ); ?>" />
+    to this: <meta charset="UTF-8" />
+
+   <meta http-equiv="Content-Type" content="text/html; charset=<?php bloginfo( 'charset' ); ?>" />
+   to this:  
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ 
+   instead of this:
+  <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+  use this:
+  <link rel="pingback" href="http://www.sblockandkey.com/xmlrpc.php" />
+  
+  instead of this:
+  <html <?php language_attributes(); ?>>
+  use this: 
+  <html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+4. Optimize CSS using apply method below:
+Long: .test {margin-top: 7px; margin-right: 1px; margin-bottom: 5px; margin-left: 3px;}
+Short: .test {margin: 2px 2px 5px 2px;} 
+
+href lang: 
+<link rel="alternate" href="http://www.locksmithcoralsprings.com/" hreflang="en-us" />
+
+rss feeds:
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://locksmithrivierabeachfl.com/ror.xml" />
+
+=======================
+
+/*function to add async to all scripts*/
+function js_async_attr($tag){
+ # Add async to all remaining scripts
+ return str_replace( ' src', ' async="async" src', $tag );
+}
+add_filter( 'script_loader_tag', 'js_async_attr', 10 );
+
+===============
+Problem: Remove query string from static resources
+   = Install Remove query string from static resources plugin By Your WP Expert 
+   = improve score from 64 to 98  
+
+or add code below on your function.php file:
+/** Remove Query strings from Static Resources. */
+function _remove_script_version( $src ){
+    $parts = explode( '?', $src );
+    return $parts[0];
+}
+add_filter( 'script_loader_src', '_remove_script_version', 15, 1 );
+add_filter( 'style_loader_src', '_remove_script_version', 15, 1 );
+
+or 
+/*** Remove Query String from Static Resources ***/
+function remove_cssjs_ver( $src ) {
+ if( strpos( $src, '?ver=' ) )
+ $src = remove_query_arg( 'ver', $src );
+ return $src;
+}
+add_filter( 'style_loader_src', 'remove_cssjs_ver', 10, 2 );
+add_filter( 'script_loader_src', 'remove_cssjs_ver', 10, 2 );
+=========================
+add Expires headers
+=========================
+<IfModule mod_expires.c>
+
+# Enable expirations
+ExpiresActive On
+
+# Default directive
+ExpiresDefault "access plus 1 month"
+
+# My favicon
+ExpiresByType image/x-icon "access plus 1 year”
+
+# Images
+ExpiresByType image/gif "access plus 1 month"
+ExpiresByType image/png "access plus 1 month"
+ExpiresByType image/jpg "access plus 1 month"
+ExpiresByType image/jpeg "access plus 1 month"
+
+# CSS
+ExpiresByType text/css "access 1 month”
+
+# Javascript
+ExpiresByType application/javascript "access plus 1 year"
+
+</IfModule>
+
+or:
+
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType image/jpg "access 1 year"
+ExpiresByType image/jpeg "access 1 year"
+ExpiresByType image/gif "access 1 year"
+ExpiresByType image/png "access 1 year"
+ExpiresByType text/css "access 1 month"
+ExpiresByType application/pdf "access 1 month"
+ExpiresByType application/javascript "access 1 week"
+ExpiresByType application/x-javascript "access 1 month"
+ExpiresByType application/x-shockwave-flash "access 1 month"
+ExpiresByType image/x-icon "access 1 year"
+ExpiresDefault "access 2 days"
+ExpiresByType application/x-font-ttf "access plus 1 month"
+ExpiresByType font/opentype "access plus 1 month"
+ExpiresByType application/x-font-woff "access plus 1 month"
+ExpiresByType image/svg+xml "access plus 1 month"
+ExpiresByType application/vnd.ms-fontobject "access plus 1 month"
+</IfModule>
+=============================
+Remove query string from static resources
+   = Install Remove query string from static resources plugin
+   = improve score from 64 to 98  
+==================================================================
+Turn of comments on Pages and Blogs
+edit page.php for static page or single.php for blog post
+<?php //comments_template( '', true ); ?>
+
+
+==================================================================
+Add a snippet to the web.config file (most commonly used option)
+Add the below snippet to the web.config file. The web.config file should be placed in the document root of your website.
+
+<system.webServer>
+<staticContent>
+<clientCache cacheControlMode="UseMaxAge" cacheControlMaxAge="30.00:00:00" />
+</staticContent>
+</system.webServer>
+
+===================================
+Improve pagespeed for windows server using web.config add this code below on your file:
+
+<httpCompression directory="%SystemDrive%\inetpub\
+temp\IIS Temporary Compressed Files">
+    <scheme name="gzip" dll="%Windir%\system32\inetsrv\gzip.dll"/>
+    <dynamicTypes>
+      <add mimeType="text/*" enabled="true"/>
+      <add mimeType="message/*" enabled="true"/>
+      <add mimeType="application/javascript" enabled="true"/>
+      <add mimeType="*/*" enabled="false"/>
+    </dynamicTypes>
+    <staticTypes>
+      <add mimeType="text/*" enabled="true"/>
+      <add mimeType="message/*" enabled="true"/>
+      <add mimeType="application/javascript" enabled="true"/>
+      <add mimeType="*/*" enabled="false"/>
+    </staticTypes>
+  </httpCompression>
+  <urlCompression doStaticCompression="true" doDynamicCompression="true"/>
+
+==================================================================
+Improve Leverage caching for web.config in IIS 7 Server:
+<staticContent>
+    <clientCache cacheControlMaxAge="14.00:00:00" cacheControlMode="UseMaxAge"></clientCache>
+</staticContent>
+
+==================================================================
+Problem To redirect 404 error in .htaccess 
+Solution: RewriteRule ^rekeys/?$ http://www.locksmith-fortlauderdale.com/rekey-locks/ [L,NC,R=301]
+
+==================================================================
+Problem: Spacing problem between the content and navigation in Chrome:
+Solution: go to header.php at the very end of it insecr code below:
+<?php 
+ echo "<br />";
+ echo "<br />";
+ ?>
+
+==================================================================
+remove coment page
+locat this code on comment.php file: and put comment
+
+<!--<?php comment_form(); ?>
+
+==================================================================
+Add js and stylesheet in functions.php
+
+<?php
+/**
+ * Clasen scripts and styles
+ */
+function clasentheme_scripts() {
+	wp_enqueue_style( 'nivo-slider', get_stylesheet_uri());
+	wp_enqueue_script( 'jquery.nivo.slider', get_template_directory_uri() . '/jquery.nivo.slider.js', array(), '1.0.0', true );
+}
+add_action( 'wp_enqueue_scripts', 'clasentheme_scripts' );
+=================================================================
+Add shortcodes in php files:
+<?php echo do_shortcode( '[contact-form-7 id="84" title="clasen form"]' ); ?> 
+
+=====================================
+Creating multiple sidebar in your functions.php add this code below:
+ <?php  
+if(function_exists('register_sidebar'))
+{ 
+  register_sidebars(3, array('before_title'=>'<h2>','after_title'=>'</h2>'));
+}
+ >
+
+===================
+<span class="comments"><a href="<?php the_permalink(); ?>#comments"><?php comments_number(__('Leave a Comment', 'studiopress'), __('1 Comment', 'studiopress'), __('% Comments', 'studiopress')); ?></a></span>
+
+============================================================
+Fixing www and non-www in Lighhttpd server:
+http://www.cyberciti.biz/tips/lighttpd-redirect-www-domaincom-to-domain-com.html
+
+
+==============================
+To install breadcrumb look for content.php or content-single.php and place it below h1.
+
+1. Install Yoast Plugins.
+2. Enable breadcrumb and copy code below:
+<?php if ( function_exists('yoast_breadcrumb') ) {
+yoast_breadcrumb('<p id="breadcrumbs">','</p>');
+} ?>		
+
+==============================
+Plugins for Video Sitemap
+Google XML Sitemap for Videos by By Amit Agarwal	
+
+======================
+hacked site: 
+http://wiki.dreamhost.com/My_Wordpress_site_was_hacked
+
+=============================
+Step by Step to Fix Malware or Hacked Site:
+
+1. Make you site offline:
+   1.1 Google what is my ip
+   1.2 Access your files via ftp and look for .htaccess and add code below
+
+order deny,allow
+deny from all
+allow from 112.207.163.232
+ErrorDocument 403 /downtime.php
+
+<Files downtime.php>
+allow from 12.210.52.65
+</Files>
+
+2. Change your WP Theme
+3. Change Your WordPress Password, Data base password and update your wp-config.php
+4. Lists of sites with infected code:
+   - bankruptcycourse/wp-content/index.php
+   - bankruptcycourse/wp-content/install.php
+   - bankruptcycourse/wp-content/plugins/index.php
+   - bankruptcycourse/wp-content/themes/index.php
+   - wp-content/index.php
+
+=========================
+Protect against WordPress Pingback Vulnerability
+1. Locate your .htaccess on your root folder of your site and add code below: 
+   resource: http://perishablepress.com/wordpress-xmlrpc-pingback-vulnerability/
+
+# protect xmlrpc
+<IfModule mod_alias.c>
+	RedirectMatch 403 /xmlrpc.php
+</IfModule>	
+
+Or 
+
+2. copy from a fresh wordpress new version and paste it on your webserver copy if malicious code is still there.
+or 
+
+3 Disable Pingback Reqests
+
+  You may also disable the pingback feature by adding the following to your functions.php file:	
+
+add_filter('xmlrpc_methods', function( $methods ){
+   unset( $methods['pingback.ping']);
+    return $methods;
+});
+
+4. Test for DDOS attack on your webserver file system;
+http://labs.sucuri.net/?is-my-wordpress-ddosing
+
+5. XML Checker: 
+   http://xmlrpc.eritreo.it/
+   
+=========================
+Delete spam comments all at once:
+Go to your phpMyAdmin > SQL > add code below > click Go
+
+DELETE FROM wp_comments WHERE comment_approved = 0
+
+==============
+
+Fix 404	
+RewriteRule ^corporate-services?$ http://www.sblockandkey.com/ [L,NC,R=301]
+or 
+RewriteRule ^Bankruptcy_Pittsburgh/Home.html?$ http://professionalbankruptcyhelp.com/ [L,NC,R=301]
+==================================================
+
+Authentication Unique Keys and Salts
+https://api.wordpress.org/secret-key/1.1/salt/
+
+======================================================
+Server Error for Windows: 
+The page cannot be displayed because an internal server error has occurred.
+
+============
+Fix the Error Establishing a Database Connection in WordPress
+http://www.wpbeginner.com/wp-tutorials/how-to-fix-the-error-establishing-a-database-connection-in-wordpress/
+
+==========================
+disable comment:
+
+1. locate file content-page.php 
+2. Search for <?php //comment_form(); ?> and put double backslash before comment_form
+
+=======================================
+Disable all plugins via SQL:
+1. wp_options
+2. go to SQL
+3. insert this code: UPDATE wp_options SET option_value = '' WHERE option_name = 'active_plugins';
+4. click go
+
+=======================================
+Add New User in phpmyadmin:
+
+INSERT INTO `wp_users` (`user_login`, `user_pass`, `user_nicename`, `user_email`, `user_status`)
+VALUES ('newadmin', MD5('pass123'), 'firstname lastname', 'email@example.com', '0');
+
+INSERT INTO `wp_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) 
+VALUES (NULL, (Select max(id) FROM wp_users), 'wp_capabilities', 'a:1:{s:13:"administrator";s:1:"1";}');
+
+INSERT INTO `wp_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) 
+VALUES (NULL, (Select max(id) FROM wp_users), 'wp_user_level', '10');
+
+or
+
+1. wp_user > insert
+2. user_login: admin > user_pass: MD5 > value: password > display_name: admin > click go
+3. wp_usermeta > insert
+4. user_id > meta_key: wp_capabilities > meta value: a:1:{s:13:"administrator";b:1;} >  meta_key: wp_user_level
+
+====================================================
+fixing missing entry-title, missing author and missing update
+files usually edited are: page.php, functions.php, single.php, template-blog.php,template-tags.php
+
+missing entry-title
+
+
+missing author and missing update
+<p class="post-meta">
+    <span class="post-date"><span class="small"><?php _e('Posted on', 'woothemes') ?></span> <span class="date updated"><?php the_time( get_option( 'date_format' ) ); ?></span></span>
+    <span class="post-author"><span class="small"><?php _e('by', 'woothemes') ?></span> <span class="vcard author"><span class="fn"><?php the_author_posts_link(); ?></span></span></span>
+    <span class="post-category"><span class="small"><?php _e('in', 'woothemes') ?></span> <?php the_category(', ') ?></span>
+    <?php edit_post_link( __('{ Edit }', 'woothemes'), '<span class="small">', '</span>' ); ?>
+</p>
+
+for functions.php
+if (!function_exists('post_meta')) {
+	function post_meta( ) {
+?>
+<p class="post-meta">
+    <span class="post-date"><span class="small"><?php _e('Posted on', 'woothemes') ?></span> <span class="date updated"><?php the_time( get_option( 'date_format' ) ); ?></span></span>
+    <span class="post-author"><span class="small"><?php _e('by', 'woothemes') ?></span> <span class="vcard author"><span class="fn"><?php the_author_posts_link(); ?></span></span></span>
+    <span class="post-category"><span class="small"><?php _e('in', 'woothemes') ?></span> <?php the_category(', ') ?></span>
+    <?php edit_post_link( __('{ Edit }', 'woothemes'), '<span class="small">', '</span>' ); ?>
+</p>
+<?php
+	}
+}
+
+====================================================
+href lang problem:
+1.Use this plugin Language Selector Related By Rubén Vasallo
+2. Edit all pages, post for the related pages from other subfolder
+
+====================================================
+add missing alt text on php code:
+alt="<? $alt_text; ?>"
+
+
+====================================================
+Remove editor in wordpress
+
+function remove_edit_menu(){
+  remove_action('admin_menu', '_add_themes_utility_last', 101);
+}
+add_action('_admin_menu', 'remove_edit_menu',1);
+
+=========================================
+force http to https
+<script language="JavaScript"><!-- begin hide
+function goElseWhere()
+{var oldURL=window.location.hostname+window.location.pathname;var newURL="https://"+oldURL;window.location=newURL}
+goElseWhere();</script>
+
+
+============
+hide editor in wordpress but not tested
+
+// get the the role object
+$role_object = get_role( 'editor' );
+
+// add $cap capability to this role object
+$role_object->add_cap( 'edit_theme_options' );
+
+================================================== 
+// Disable schema json by JohnG
+function bybe_remove_yoast_json($data){
+    $data = array();
+    return $data;
+}
+add_filter('wpseo_json_ld_output', 'bybe_remove_yoast_json', 10, 1);
+
+================================================ 
+Working on Nginx Server
+Disable emoji on functions.php
+// REMOVE WP EMOJI Javascript
+remove_action('wp_head', 'print_emoji_detection_script', 7);
+remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
+
+// REMOVE WP EMOJI Stylesheet
+remove_action('wp_print_styles', 'print_emoji_styles');
+remove_action( 'admin_print_styles', 'print_emoji_styles' );
+
+=================================================
+/**
+ * Remove Contact Form 7 scripts + styles unless we're on the contact page
+ * 
+ */
+add_action( 'wp_enqueue_scripts', 'ac_remove_cf7_scripts' );
+
+function ac_remove_cf7_scripts() {
+	if ( !is_page('contact') ) {
+		wp_deregister_style( 'contact-form-7' );
+		wp_deregister_script( 'contact-form-7' );
+	}
+}
+
+================================================ 
+Schema from Yoast
+<script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"WebSite","@id":"#website","url":"https:\/\/www.proxyrack.com\/","name":"ProxyRack","potentialAction":{"@type":"SearchAction","target":"https:\/\/www.proxyrack.com\/?s={search_term_string}","query-input":"required name=search_term_string"}}</script> <script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"Organization","url":"https:\/\/www.proxyrack.com\/","sameAs":["https:\/\/www.facebook.com\/proxyrack\/","https:\/\/twitter.com\/proxyrack"],"@id":"#organization","name":"ProxyRack","logo":"https:\/\/www.proxyrack.com\/wp-content\/uploads\/2017\/03\/Server-Cube-Logo-500.png"}</script>
+
+
+================================================ 
+moving wp installation to root directory
+1. Go to Settings > General 
+   Change WP URL:  http://dev.bcrbookkeeping.com.au/wp >> http://dev.bcrbookkeeping.com.au/
+   Site Address:   http://dev.bcrbookkeeping.com.au/wp >> http://dev.bcrbookkeeping.com.au/
+2. 
+
+cloning wp site to a developer subdomain
+1. Login to your WP Dashboard(Main) and install WP Clone by WP Academy plugins
+2. Login to your WP Dashboard(Dev) site
+
+
+2018 Local Wordpress
+
+wordpress
+db_admin
+masterX22
+
+http://localhost/wordpress/wp-login.php
+k3ym4ster
+g34T!0Ck5
+
+================================================ 
+Change user access level from subscriber to Admin:
+1. Login to your phpMyAdmin
+2. Select your database name
+3. Click on wp_users table and remember the ID number on your target user
+4. Select wp_usermeta table
+5  Edit or double click on the column with wp_capabilities (be sure your are on your target user_id)
+6. Only change text with subscriber to administrator
+7. For example a:1:{s:10:"subscriber";b:1;} > a:1:{s:10:"administrator";b:1;}
+
+================================================ 
+Change password via phpmyadmin
+1. Locate wp_users table
+2. Edit table and assign password colum be sure to set it to MD5 
+
+================================================ 
+Problem: Sitemap Error not Working on Front-end Using Yoast Plugin
+Update Plugins and view it on /sitemap_index.xml
+
+
+Problem: Home Page title not showing
+Solutions: edit header.php and replace title line with
+http://woodmarbleandwhite.com.au
+ a. bad title: <title><?php bloginfo('name'); ?> » <?php is_front_page() ? bloginfo('description') : wp_title(''); ?></title>
+ b. working title: <title><?php wp_title('—', true, 'right'); ?></title>
+ c. Kitchen Designs Gold Coast & Brisbane, Luxury Kitchen Renovations
+
+onlinehomeloans.com.au
+1. bad title: <title><?php wp_title(' '); if(wp_title(' ', false)) { echo ' | '; } bloginfo('name'); ?></title>
+2. 
+
+============================================
+Problem:
+1. WP Super Cache caching was broken but has been fixed! 
+2. The script advanced-cache.php could not load wp-cache-phase1.php
+3. Warning! Could not update /home/accoxcws/public_html/wp-config.php! WPCACHEHOME must be set in config file.
+Solution: set wp-config.php from 644 to 666 
+
+==================================================================
+Improve pagespeed:
+Plugins:
+ 1. Better WordPress Minify By Khang Minh
+ 2. WP Super Cache By Automattic 
+Sample: https://gtmetrix.com/compare/sT3pT51q/D31XtgUD
+
+==================================================================
+Clone site to Localhost:
+1. Download Plugin: All-in-One WP Migration By ServMask
+2. Install WordPress on Localhost
+3. Modify config.php on root folder and add this line:
+	/* Multisite */
+	define('WP_ALLOW_MULTISITE', true);
+4. Go to WP Backed at Tools > Network Setup and click Install button
+
+For clone to multi-sites: 
+1. Locksmith-fortlauderdale.com
+2. coralspringslocksmiths.com
+3. locksmithhollywoodflorida.com
+
+
+==================================================================
+Problem: Some Layer on Revolution Slider went missing when viewing on other device
+Solution: Double Check layer Vertical or Horizontal Position
+
+=======================================
+List of Theme I've worked
+1. Bridge
+
+
+==================================================================
+Creating Child Theme
+Edit your function.php
+add this line: 
+
+Function wp_schools_enqueue_scripts() {
+wp_register_style( 'childstyle', get_stylesheet_directory_uri() . '/style.css'  );
+wp_enqueue_style( 'childstyle' );
+}
+add_action( 'wp_enqueue_scripts', 'wp_schools_enqueue_scripts', 11);
+
+
+==================================================================
+1. Problem Button is not triggering Live Chat Plugin
+2. If using button use this link: <button onclick="zE.activate();">Contact Us</button>
+3. If using revolution slider use button > simple link then add this to link: javascript:zE.activate();
+4. Head over to footer.php and add this line
+<script>
+  if(loggedIn) {
+    zE(function() {
+      zE.show();
+    });
+  }
+</script>
+5. Then be sure that this widget is install also:
+ <!-- Start of  Zendesk Widget script -->
+<script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=YOUR KEY"> </script>
+<!-- End of  Zendesk Widget script -->
+
+
+===========================================
+add_action('wp_head', 'ad_hreflang_link');
+function ad_hreflang_link(){
+ global $post;
+ if(!empty($post)){
+    $alternate = get_post_meta($post->ID, 'alternate', true);
+    $hreflang = get_post_meta($post->ID, 'hreflang', true);
+    if(!empty($alternate) && !empty($hreflang)){?>
+       <link rel="alternate" href="<?php echo $alternate; ?>" hreflang="<?php echo $hreflang; ?>" /><?php
+    }
+  }
+ }
+
+===============================
+List of Plugins:
+1. WPBakery Page Builder 
+ 
+===============================
+Problem: How to get news/post/ on blog post
+Solution: Go to Settings > Permalinks > and select custom links: /%category%/%postname%/
+
+===============================================
+Reset Permalink for Images
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+# END WordPress
+
+===============================================
+Problem: Remove image on Meta Data under Twitter
+Solution: Go to yoast for page and select social button under Facebook Upload
+
+=================================================
+Problem: Limit WP All in one Migration from 512 to 4GB
+Solution: open up /wp-content/plugins/all-in-one-wp-migration/constants.php
+ and add this line 
+// =================
+// = Max File Size =
+// =================
+define( 'AI1WM_MAX_FILE_SIZE', 4294967296 ); // THIS LINE MAKES NEW LIMIT 4GB
+
+
+Nofollow Plugin:
+https://wordpress.org/plugins/wp-external-links/
+
+=================================================
+Updating New Version of WordPress Via FTP
+https://www.godaddy.com/help/update-wordpress-with-ftp-26913
+
+
+==================================================================
+Problem: How to add alt text for images on wordpress
+Solution: https://stackoverflow.com/a/54830415/3902714
+Working Scripts
+<?php $thumb_id = get_post_thumbnail_id(get_the_ID()); 
+										  
+$alt = get_post_meta($thumb_id, '_wp_attachment_image_alt', true); 
+<img class="product_image" src="<?php echo $feat_image; ?>" alt="<?php echo $alt; ?>" >
+
+alt="<?php the_title_attribute( 'post=' . $post_id ); ?>" />
+
+<img src="<?php echo esc_url( $img_url ); ?>" alt="<?php echo esc_attr( $img['alt'] ); ?>" />
+alt="<?php echo get_post_meta( get_post_thumbnail_id(), '_wp_attachment_image_alt', true ); ?>"
+
+alt="<?php echo get_post_meta($attachment->ID, '_wp_attachment_image_alt', true); ?>"
+
+===============================================
+Problem: How to add some lines of codes on header section via functions.php
+Solutions: 
+add_action('wp_head','add_meta_on_home');
+
+
+function add_meta_on_home() {
+ ?>
+
+<link rel="alternate" href="https://www.exaktglass.com/" hreflang="en-us" />
+
+<link rel="alternate" href="https://www.exaktglass.com.au/" hreflang="en-au" />
+
+<link rel=”alternate” href="https://www.exaktglass.com/" hreflang="x-default" />
+
+<?php
+}
+
+===============================================
+Problem:Load html file when domain is loaded in root folder and at the same time load html via htaccess
+Solution:
+# BEGIN WordPress
+
+<IfModule mod_rewrite.c>
+
+RewriteEngine On
+
+RewriteBase /wordpress/
+
+#RewriteRule ^index\.php$ - [L]
+
+RewriteRule ^(.*)\.php$ $1.html%{QUERY_STRING} [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule . /wordpress/index.php [L]
+
+</IfModule>
+
+
+# END WordPress
+ 
+===============================================
+Problem: How to print shortcode on Wordpress php
+Solution: <?php echo do_shortcode('[testimonial_view category="great reviews" order="random" count="5" id="1"]'); ?>
+
+===============================================
+Improve Page Speed: Leverage browser caching
+Add this on your footer.php file before end tag of </body>
+<?php if (!isset($_SERVER['HTTP_USER_AGENT']) || stripos($_SERVER['HTTP_USER_AGENT'], 'Speed Insights') === false): ?>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  
+  ga('create', 'UA-xxxxxxx-x', 'auto'); // Deinen UA-Code hier noch einfügen
+  ga('send', 'pageview');
+</script>
+
+<?php endif; ?>
+
+Fixing DNS Records:
+1. Your A and AAAA records need to be set lower, but CNAME, MX, and TXT records can typically be set to higher values such as 12, or 24 hours.
+
+==========================================
+Code Snippets for Images in Wordpress
+Image: 
+<img src="<?php echo get_bloginfo( 'url' ); ?>/wp-content/uploads/2020/01/shipment-rate.jpg" width="90%"/>
+or
+<img src="<?php bloginfo('template_url'); ?>/images/shipment-rate.jpg" width="90%"/>
+
+==========================================
+Solution for Hiding other Option when Free Delivery Coupon is Applied
+function my_hide_shipping_when_free_is_available( $rates ) {
+	$free = array();
+
+	foreach ( $rates as $rate_id => $rate ) {
+		if ( 'free_shipping' === $rate->method_id ) {
+			$free[ $rate_id ] = $rate;
+			break;
+		}
+	}
+
+	return ! empty( $free ) ? $free : $rates;
+}
+
+add_filter( 'woocommerce_package_rates', 'my_hide_shipping_when_free_is_available', 100 );
+==========================================
+How to add Apple Payment Gateway in Woocomerce
+Sample of video: https://www.youtube.com/watch?v=zIv2Ymme_Mg
+
+Uploading Certificate here:
+https://developer.apple.com/account/resources/
+
+==========================================
+activate plugins from database mysql
+SELECT * FROM wp_options WHERE option_name = 'active_plugins'
+
+==========================================
+Problem: Slider sometimes gone in front-end:
+Site: https://www.ranatex.nl/
+Solution: Disable mem cache in SG Plugin
+
+
+==========================================
+Problem: How to Add GA Code in Functions.php in WordPress
+Solution: 
+/**
+ * Google Analytics Tracking Code
+ */
+add_action('wp_footer','my_analytics', 20);
+function my_analytics() {
+	?>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-185020944-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-185020944-1');
+</script>
+	<?php
+}
+
+======================================
+How to Add Cache-Control Headers in Apache
+<filesMatch ".(ico|pdf|flv|jpg|jpeg|png|gif|svg|js|css|swf|woff2|woff)$">
+        Header set Cache-Control "max-age=84600, public"
+</filesMatch>
+
+======================================
+Problem: Extra script error here: https://prnt.sc/100z9kz
+Solution: Change WP Debug from true to false sample: https://prnt.sc/100zcih

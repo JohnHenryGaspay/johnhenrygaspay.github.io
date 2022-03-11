@@ -1,0 +1,157 @@
+div as link:
+<div class="linkbg">
+     <a href="index2.html"><div>Learn More »»</div></a>
+</div>
+
+=====================
+How to center multiple divs inside a container in CSS
+.container {
+    height: 300px;
+    width: 70%;
+    background: #EEE;
+    margin: 10px auto;
+    position: relative;
+}
+.block {
+    background: green;
+    height: 100px;
+    width: 100px;
+    float: left;
+    margin: 10px;
+}
+
+<div class="container">
+  <div class="block">1. name of the company</div>
+  <div class="block">2. name of the company</div>
+  <div class="block">3. name of the company</div>
+  <div class="block">4. name of the company</div>
+  <div class="block">5. name of the company</div>
+  <div class="block">6. name of the company</div>
+  <div class="block">7. name of the company</div>
+  <div class="block">8. name of the company</div>
+</div>
+====================================
+create fixed-width cross-browser compatible layouts
+
+body { min-width: 980px; text-align: center; }
+#wrapper { width: 980px; margin: 0 auto; text-align: left; }
+
+====================================
+Style your list type
+ul {
+    list-style: none;
+    padding:0;
+    margin:0;
+}
+
+li { 
+    padding-left: 1em; 
+    text-indent: -.7em;
+}
+
+li:before {
+    content: "• ";
+    color: red; /* or whatever color you prefer */
+}
+============================
+Create a Searchable link;
+<a href="/?s=dentist&submit=Search">dentist</a>
+
+=============================
+Customizing button
+
+input[type=text] {
+your style goes here.....
+}
+input[type=submit] {
+your style goes here.....
+}
+textarea{
+your style goes here.....
+}
+=======================================
+Turn of style within nested div class
+.row-fluid .span6, .vc_custom_1408038537926 {  
+  border-bottom-style: none !important; 
+  border-left-style: none !important;  
+  border-right-style: none !important;  
+  border-top-style: none !important; 
+}
+=======================================
+To exclude the first element on css like border:
+.site-header nav ul li+li{
+  border-left: 1px solid #bebebe;
+}
+
+=======================================
+@media all and (max-width: 900px)
+@media screen and (max-width: 800px) and (orientation: landscape),screen and (max-height: 300px)
+@media screen and (max-width: 860px){}
+
+===================
+For slider: 
+@media (max-width: 767px) {
+  
+  .swiper-slide {
+
+     box-sizing: border-box;
+    
+	-moz-box-sizing: border-box;
+    
+	-webkit-box-sizing: border-box;
+  }
+
+}
+===================
+To apply formating within nested divs
+
+div div div h3 {
+ color: red;
+}
+/* This will color h3 found after 3 divs  */
+===========================
+Pseudo-class from 1st to 5th element
+
+p:first-child{ /* apply only the first p tag */
+    font-family: cursive;
+}
+p:nth-child(2){ /* apply only the 2nd p tag */
+   font-family: Tahoma; 
+}
+p:nth-child(3){ /* apply only the 3rd p tag */
+    color:#CC0000 ;
+}
+p:nth-child(4){ /* apply only the 4th p tag */
+    background-color: #00ff00;
+}
+p:nth-child(5){ /* apply only the 5th p tag */
+    font-size: 22px;
+}
+
+it also apply to links:
+
+a:hover{ 
+    text-decoration: none;
+}
+a:first-child{ /* apply only the 1st link */
+    color: #CDBE70;
+}
+a:nth-child(3){ /* apply only the 3rd link */
+    color:#FFC125;
+}
+===========================
+To add perfect circle in css 
+div {
+	display: inline-block;
+	margin-left: 5px;
+	width: 100px;
+	height: 100px;
+	border-radius: 100%;
+	border:2px solid black;
+}
+===================================
+hide elements on certain screen size:
+
+@media only screen and (max-width: 350px){
+.social-link{display: none;}
+}

@@ -1,0 +1,19 @@
+
+Problem: No Twitter Card on Site-wide:
+Solution:
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@ETPonline" />
+<meta name="twitter:image" content="[%if [@config:current_page_type@] eq 'product'%][@config:homeurl@][%asset_url type:'product' id:'[@SKU@]' thumb:'full'/%][%ELSEIF [@config:current_page_type@] eq 'content'%][@config:homeurl@][%ASSET_url type:'content' id:'[@content_id@]' default:'/assets/website_logo.png'%][%/ASSET_url%][%ELSE%][@config:homeurl@]/assets/website_logo.png[%/if%]" />
+<meta name="twitter:title" "content="[%url_info name:'page_title'/%]">
+<meta name="twitter:description" content="[%url_info name:'meta_description'/%]">
+<meta name="twitter:domain" content="[@config:canonical_url@]">
+<meta name="twitter:image:width" content="320">
+<meta name="twitter:image:height" content="103">
+<meta name="twitter:app:country" content="AU">
+
+
+[@content_name@]
+[%url_info name:'page_heading'/%]
+Problem: Missing Alt Text for Product Thumbnails:
+Add this 
+<img src="[@thumb_image@]" border="0" class="img-responsive product-image-small" alt="[@name@]" title="Large View">

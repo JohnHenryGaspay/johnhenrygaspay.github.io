@@ -1,0 +1,2217 @@
+﻿Free Proxy IP: 
+Last Used July 5, 2015: 
+1. Proxy: 64.213.148.50 Port:8080
+2. Proxy: 190.121.232.75 Port: 8080
+3. Proxy: 67.195.42.72 Port 80
+4. Proxy: 205.185.125.223 Port: 6666
+5. Proxy: 185.28.193.95 Port: 8080
+6. Proxy: 200.54.110.196 Port: 3128
+7. Proxy: 222.222.169.68 Port: 80
+8. Proxy: 218.76.136.22 Port: 55336
+9. 
+=============================================
+duplicate content:
+Duplicate Content can be found:
+resource: http://www.goinflow.com/duplicate-content-ecommerce-seo/
+1. Internal Search query:
+2. WWW vs. Non-WWW URLs & Uppercase vs. Lowercase URLs
+3. Duplicate URL Paths 
+   ex: categoryA/product1
+       categoryB/product1    
+4. Product Review Pages
+5. Shoping Cart Pages
+6. Non-canonical URLs
+7. SessionIDs
+
+Finding Duplicate Content:
+ site:domain.com -inurl:www
+ site:www.domain.com intitle:Maglite LED XL200
+ site:www.domain.com
+
+Tools:
+Copyscape.com
+screamingfrog.co.uk
+siteliner.com
+=============================================
+meta data: optimize http://blogs.bing.com/webmaster/2009/07/17/heads-up-on-head-tag-optimization-sem-101/
+
+1. Doctype: ex: <!DOCTYPE html PUBLIC “-//W3C//DTD XHTML 1.0 Transitional//EN” “http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd”>
+2. Title tag 
+3. Meta description tag
+4. Meta Keywords: Don’t repeat a keyword more than 4 times among the keywords and phrases in the list
+5. Meta content-language tag: <meta http-equiv=”content-language” content=”en-us” />
+6. Meta content-type tag  (seen in rugknots.com)
+7. Meta robots tag
+8. Link tags <link rel=”canonical” href=”http://www.mysite.com/product.htm” />
+
+Social Meta
+https://plus.google.com/+LocksmithsPlusLocksmith/about
+
+<link href="https://plus.google.com/+LocksmithsPlusLocksmith/about" rel="publisher"/>
+<!-- Schema.org markup for Google+ -->
+<meta itemprop="name" content="Rugknots">
+<meta itemprop="description" content="RugKnots.com - The Finest in Handcrafted Oriental Rugs in the US. Browse our selection today! Wool area rugs of the highest quality and designs.">
+<meta itemprop="image" content="https://www.rugknots.com/v/vspfiles/images/rugknots-factory-direct.jpg">
+
+<!-- Open Graph data -->
+<meta property="og:title" content="Rugknots Home Decor Carpet & Flooring Store Interior Designer"/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="http://www.rugknots.com/"/>
+<meta property="og:image" content="https://www.rugknots.com/v/vspfiles/images/rugknots-factory-direct.jpg"/>
+<meta property="og:site_name" content="Rugknots">
+<meta property="og:description" content="RugKnots.com - The Finest in Handcrafted Oriental Rugs in the US. Browse our selection today! Wool area rugs of the highest quality and designs." /> 
+
+<!-- Twitter Card data -->
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:site" content="@rugknots"/>
+<meta name="twitter:title" content="Rugknots">
+<meta name="twitter:description" content="RugKnots.com - The Finest in Handcrafted Oriental Rugs in the US. Browse our selection today! Wool area rugs of the highest quality and designs.">
+<meta name="twitter:domain" content="Rugknots.com"> 
+<meta name="twitter:image:src" content="https://www.rugknots.com/v/vspfiles/images/rugknots-factory-direct.jpg"/>
+
+
+
+Tools for testing and approval
+resource: http://moz.com/blog/meta-data-templates-123
+
+A. Twitter Validation Tool
+https://dev.twitter.com/docs/cards/validation/validator
+
+B. Facebook Debugger
+https://developers.facebook.com/tools/debug
+
+C. Google Structured Data Testing Tool
+http://www.google.com/webmasters/tools/richsnippets
+
+Pinterest Rich Pins Validator
+http://developers.pinterest.com/rich_pins/validator/
+
+=============================================
+install analytics dashboard:
+MObile: Ecommerce https://www.google.com/analytics/web/permalink?type=dashboard&uid=OkDp4QzHTwWSrKY6Vj-vuw
+Ecommerce: https://www.google.com/analytics/web/permalink?type=dashboard&uid=g46yL3bbSk-lK6IIQ5Uh7w
+Performance: https://www.google.com/analytics/web/permalink?type=dashboard&uid=0pLYNL9eTO6EbusjAm12kQ
+Realtime: http://bit.ly/rtoverview
+SEO : http://bit.ly/rtoverview
+Visitors Facts: http://www.dashboardjunkie.com/getdashboard/70
+Content Marketing: https://www.google.com/analytics/web/template?uid=BUbw98ffTXS6aN20jICrYg
+PPC : https://www.google.com/analytics/web/permalink?uid=sBjjBL7mSxmphPje-vTRIg
+Social Media: https://www.google.com/analytics/web/permalink?type=dashboard&uid=8R3_P2m-QwmlUv_SVulUJA
+SEO Keyword: https://www.google.com/analytics/web/template?uid=l0cnQjNOQAO5c2sa__-BTw
+SEO Dashboards: https://www.google.com/analytics/web/template?uid=YQGIZ6sYRL6b_ruDDhJc-g
+
+Custom Report:
+Top Organic Landing: http://bit.ly/15g530d
+404 Report: https://www.google.com/analytics/web/template?uid=qlLWd8g-TnqFyNi8azzvjg
+SEO Referring Pages: https://www.google.com/analytics/web/template?uid=UCsEU-IURxO5oal0HVwVWg
+Top Organic  landing pages with Page Load Time: https://www.google.com/analytics/web/template?uid=XQU_Zi1_S3qm-SsUjQaPgA
+SEO Reporting https://www.google.com/analytics/web/template?uid=OeQz1xGCRRu4XiJHLqJoIA
+Traffic Summary: https://www.google.com/analytics/web/template?uid=BRgSWiisSRmQNUgt4fg_ag
+SEO Non-Branded : https://www.google.com/analytics/web/template?uid=FnORhUguR52pLaPt3UXW6g
+SEO Keywords: https://www.google.com/analytics/web/template?uid=fkInnhjgSF6eT7CuJReu3w
+SEO Not Provided : https://www.google.com/analytics/web/template?uid=fmPkEbunT_23W52SnbIuBg
+SEO Overview: https://www.google.com/analytics/web/template?uid=XO0b6BGDRvOE9PrpY2NlUw
+SEO Not Provided Analysis: https://www.google.com/analytics/web/template?uid=Srernot1Qm2T0A0mawgd1A
+Keyword Analysis: https://www.google.com/analytics/web/template?uid=qNKOSxeLQdSgwxm23D6xTw
+
+Custom Report Link Analysis: https://www.google.com/analytics/web/template?uid=zuSjXUnWQdapdeI9PuBqzA
+Custom Report Link Analysis: https://www.google.com/analytics/web/permalink?uid=4vUdrzyqSAuwFZWdGcqzKg
+Social Sharing Report: https://www.google.com/analytics/web/template?uid=UP1mqa0-SCaxy85obUw9VA
+Content: https://www.google.com/analytics/web/template?uid=wTUrKNmuTbqp6J0xCpG2xg
+Day and Hour: https://www.google.com/analytics/web/template?uid=Emt5NbxDSnW7QOnXcgbf3A
+
+
+Should go Mobile: https://www.google.com/analytics/web/template?uid=vT5RRDhZQJalGJn9RhRHkQ
+Browser report: https://www.google.com/analytics/web/template?uid=rr8dLKl-QpiZBwFBxp-UXQ
+Google httpS Change Impact: https://www.google.com/analytics/web/template?uid=vI84FKUfTjKGtcUx9qukMg
+Ecommerce Traffic Report: https://www.google.com/analytics/web/template?uid=zn9UGZHlQuasW6hvkA55Sg
+Time & Ecommerce: https://www.google.com/analytics/web/template?uid=LzaYpZbgSuC8o3a3rgyLhA
+
+
+Custom Dashboards:
+Content Marketing: https://www.google.com/analytics/web/template?uid=BSX3lq9zS0iHxC0AW-rqmA
+Facts about Visitors: https://www.google.com/analytics/web/template?uid=xcge5fZiTMGht3szrSJlHw
+Real Time: https://www.google.com/analytics/web/template?uid=gPcE480PTgGrXRp76-WYoA
+SEO Dashboards: https://www.google.com/analytics/web/template?uid=YQGIZ6sYRL6b_ruDDhJc-g
+SEO Keywords:https://www.google.com/analytics/web/template?uid=EIUiArviQuyk0MVSGpcbyA
+SEO Monitoring: https://www.google.com/analytics/web/template?uid=maJh-BA0Q7edeUjt4mQeAQ
+Site Performance: https://www.google.com/analytics/web/template?uid=RZ8-NOorRSqtyaPi-lDCOQ
+Social Media Dashboard: https://www.google.com/analytics/web/template?uid=erNMqvwYQIWKDiA7dkHbJQ
+
+
+
+
+Segments: 
+Mobile Traffic: https://www.google.com/analytics/web/template?uid=_-r9BGCkQfWYq9zyZQGlBQ
+Google+ Share: https://www.google.com/analytics/web/template?uid=SQDCcKJFQqKZVGwOwfjN5A
+Organic Converting Traffic: https://www.google.com/analytics/web/template?uid=3IbNWTJVTg-oibscSskXyw
+Organic Searches minus not Provided: https://www.google.com/analytics/web/template?uid=rjDOhinvRgagyO_AVuX75g
+Position Top 1: https://www.google.com/analytics/web/template?uid=gd9orEbuS0C_lEfuFjVHmQ
+Position Top 5: https://www.google.com/analytics/web/template?uid=-WWKWCm5R2q7_kpjB8CHfQ
+Position Top 10: https://www.google.com/analytics/web/template?uid=8Awqb-UvRqq4Gg68AMV4_g
+Position Top 20: https://www.google.com/analytics/web/template?uid=zusmYyNeSCaXQcq2qWN--A
+Image Traffic: https://www.google.com/analytics/web/template?uid=h4aG_LYDSUir5bPDXFQqhw
+
+Other Segments
+
+Keyword Length Segment Series: http://bit.ly/GASS-KWlength
+Conversion Rates: Business Hours vs. Off Hours: http://bit.ly/GASS-Hours
+Detect Content Piracy: http://bit.ly/GASS-Piracy
+
+Filters:
+Exclude Traffic from All Contributors: Filter > Custom > Exclude > Filter Field: IP Address > Filter Pattern: 112\.207\.153\.252.*
+Display Full URL: Filter > Custom > Advance > Field A: Hostname: (.*) > Field B: Request URI (.*) > Output to: Request URI: $A1$B1 > Field A: Yes > Overide Output: Yes
+Separating mobile and non-mobile traffic
+Search Ranking:
+ Filter 1: Extract Data; Filter > Custom > Advance > Field A > Referral: (\?|&)(cd)=([^&]*) > Field B leave black > Output To > Custom Field: $A3
+ Filter 2: Displaying the data; Filter > Custom > Field A > Campaign Field 1: (.*) > Field B > Campaign Term: (.*) > Output To > Campaign Term: $B1 ($A1) > Field A: Yes > Field B: Yes > Output to: Yes  
+
+
+=============================================
+Add as Manager in Youtube:
+https://www.youtube.com/account
+
+Edit Your Name: Double click you Image
+https://plus.google.com/u/0/105804548091443308407/posts
+
+=============================================
+SEO Tips
+http://moz.com/blog/seo-tips-https-ssl
+
+=============================================
+For Crosh Browser on Blog for site like blog.stormid.com
+gaq.push(['_setDomainName','stormid.com'],['_trackPageview'])
+=============================================
+Essential View Report
+http://www.optimizesmart.com/9-google-analytics-views-that-you-must-always-use/
+
+=============================================
+Link Building using social media
+http://builtvisible.com/use-your-twitter-profile-for-link-building/
+
+=============================================
+Disallow: /catalogs
+Allow: /catalogs/about
+
+Diallow: /catalogs
+Allow: /catalogs/$
+
+Disallow: /accessories
+Allow:    /accessories*
+=============================================
+Checklist collection:
+For New Account  h
+http://moz.com/blog/google-analytics-checklist-for-new-projects
+
+Resume Checklist 
+http://www.recruit2network.com/apps/blog/show/41631513-cv-resume-checklist
+
+Web Developer Checklist	
+http://webdevchecklist.com/
+
+The Ultimate SEO Checklist: 57 Tips To Make Your Internet Marketing More Effective	
+http://www.thinktraffic.co.uk/ultimate-seo-checklist
+
+SEO Checklist For Startup Websites
+http://searchengineland.com/seo-checklist-for-startup-websites-170965
+
+Link Building: 
+http://moz.com/blog/category/link-building
+
+=============================================
+SEO Problem:
+#1: Default Document
+  http://scottgu.com/
+  http://scottgu.com/default.aspx
+Solution: using web.config
+<configuration> 
+    <system.webServer> 
+        <rewrite> 
+            <rules> 
+                <rule name="Default Document" stopProcessing="true"> 
+                    <match url="(.*?)/?Default\.aspx$" /> 
+                    <action type="Redirect" url="{R:1}/" /> 
+                </rule> 
+            </rules> 
+        </rewrite> 
+    </system.webServer> 
+</configuration>
+
+#2: Different URL Casings
+   http://scottgu.com/Albums.aspx
+   http://scottgu.com/albums.aspx
+
+Solution: using web.config
+
+<configuration> 
+    <system.webServer> 
+        <rewrite> 
+            <rules>
+
+                <rule name="Default Document" stopProcessing="true"> 
+                    <match url="(.*?)/?Default\.aspx$" /> 
+                    <action type="Redirect" url="{R:1}/" /> 
+                </rule>
+
+                <rule name="Lower Case URLs" stopProcessing="true"> 
+                    <match url="[A-Z]" ignoreCase="false" /> 
+                    <conditions logicalGrouping="MatchAll" trackAllCaptures="false"> 
+                        <add input="{URL}" pattern="WebResource.axd" negate="true" /> 
+                    </conditions> 
+                    <action type="Redirect" url="{ToLower:{URL}}" /> 
+                </rule>
+
+            </rules> 
+        </rewrite> 
+    </system.webServer> 
+</configuration>
+
+#3: Trailing Slashes
+    http://scottgu.com
+    http://scottgu.com/
+
+Solution: using web.config
+
+<configuration> 
+    <system.webServer> 
+        <rewrite> 
+            <rules>
+
+                <rule name="Default Document" stopProcessing="true"> 
+                    <match url="(.*?)/?Default\.aspx$" /> 
+                    <action type="Redirect" url="{R:1}/" /> 
+                </rule>
+
+                <rule name="Lower Case URLs" stopProcessing="true"> 
+                    <match url="[A-Z]" ignoreCase="false" /> 
+                    <conditions logicalGrouping="MatchAll" trackAllCaptures="false"> 
+                        <add input="{URL}" pattern="WebResource.axd" negate="true" /> 
+                    </conditions> 
+                    <action type="Redirect" url="{ToLower:{URL}}" /> 
+                </rule>
+
+                <rule name="Trailing Slash" stopProcessing="true"> 
+                    <match url="(.*[^/])$" /> 
+                    <conditions logicalGrouping="MatchAll" trackAllCaptures="false"> 
+                        <add input="{REQUEST_FILENAME}" matchType="IsDirectory" negate="true" /> 
+                        <add input="{REQUEST_FILENAME}" matchType="IsFile" negate="true" /> 
+                        <add input="{URL}" pattern="WebResource.axd" negate="true" /> 
+                    </conditions> 
+                    <action type="Redirect" url="{R:1}/" /> 
+                </rule>
+
+            </rules> 
+        </rewrite> 
+    </system.webServer> 
+</configuration>
+
+
+#4: Canonical Host Names
+   http://scottgu.com/albums.aspx/
+   http://www.scottgu.com/albums.aspx/
+
+Solution: using web.config
+
+<configuration> 
+    <system.webServer> 
+        <rewrite> 
+            <rules>
+
+                <rule name="Cannonical Hostname"> 
+                    <match url="(.*)" /> 
+                    <conditions logicalGrouping="MatchAll" trackAllCaptures="false"> 
+                        <add input="{HTTP_HOST}" pattern="^scottgu\.com$" negate="true" /> 
+                    </conditions> 
+                    <action type="Redirect" url="http://scottgu.com/{R:1}" /> 
+                </rule>
+
+                <rule name="Default Document" stopProcessing="true"> 
+                    <match url="(.*?)/?Default\.aspx$" /> 
+                    <action type="Redirect" url="{R:1}/" /> 
+                </rule>
+
+                <rule name="Lower Case URLs" stopProcessing="true"> 
+                    <match url="[A-Z]" ignoreCase="false" /> 
+                    <conditions logicalGrouping="MatchAll" trackAllCaptures="false"> 
+                        <add input="{URL}" pattern="WebResource.axd" negate="true" /> 
+                    </conditions> 
+                    <action type="Redirect" url="{ToLower:{URL}}" /> 
+                </rule>
+
+                <rule name="Trailing Slash" stopProcessing="true"> 
+                    <match url="(.*[^/])$" /> 
+                    <conditions logicalGrouping="MatchAll" trackAllCaptures="false"> 
+                        <add input="{REQUEST_FILENAME}" matchType="IsDirectory" negate="true" /> 
+                        <add input="{REQUEST_FILENAME}" matchType="IsFile" negate="true" /> 
+                        <add input="{URL}" pattern="WebResource.axd" negate="true" /> 
+                    </conditions> 
+                    <action type="Redirect" url="{R:1}/" /> 
+                </rule>
+
+            </rules> 
+        </rewrite> 
+    </system.webServer> 
+</configuration>
+=============================================
+Blog.domain.com vs domain.com/blog
+
+Reasons why you should use Sub directory instead of sub-domain
+http://moz.com/community/q/blog-on-subdomain-vs-subdirectory-best-practices
+http://inbound.org/post/view/the-sub-domain-vs-sub-directory-seo-debate-explained-in-one-flow-chart?
+1. Search engine still counts sub domain as another website so if the blog is in sub directory it will be considered as the part of the website
+2. Your over all SEO efforts will impact on sub directory which is not the case in terms of sub domain.
+3. Its way easier to rank for long tail keywords with sub directory instead of sub domain. If SEO is not a problem for you are you are more interested in branding then i think subdomain goes well as its easier to remember and write directly in the URL bar.
+
+http://www.seomoz.org/q/blog-vs-blog
+http://www.seomoz.org/q/best-place-for-a-blog-blog-mydomain-com-or-mydomain-com-blog
+http://www.seomoz.org/q/subdomains-vs-subfolders
+
+============
+Grader:
+http://www.searchenginejournal.com/7-indispensable-free-website-graders-content-scores/121935/
+
+Backlinks Opportunities:
+1. Backlink tip #1: Respond to questions on Quora
+2. Backlink tip #2: Help a reporter out http://www.helpareporter.com/
+3. Backlink tip #3: Find broken links going to resources or products
+4. Backlink tip #4: Industry forums
+5. Backlink tip #5: Link to relevant sites
+6. Backlink tip #6: Round-up posts
+7. Backlink tip #7: Track your competitors’ links
+
+
+============================
+Resources: 
+http://linkarati.com/2013-link-building-success/
+http://www.kaushik.net/avinash/difference-web-reporting-web-analysis/
+http://www.stuntdubl.com/2013/07/16/seo-site-audit/
+
+============================
+SeO Audit Keypoints:
+Duplicate content
+Redirect issues
+Indexing issues
+Crawl issues
+Improper categorization
+Crappy title tags
+Crappy meta descriptions
+Usability problems
+Conversion problems
+Keyword research
+Keyword density (we don’t have some 3.14% keyword density formula, but more often than not, our clients don’t have the keywords they want to rank on the pages that should be getting targeted!)
+Internal linking strategies and anchor text
+External linking strategies and anchor text
+Site architecture and URLs
+Nofollow, disallow, noindex
+HTML and XML sitemaps
+Social media indicators
+===================================
+Applying Schema:
+
+<nav class="clearfix" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+ <!-- Navigation Menu -->
+  <ul class="clearfix">
+  <li itemprop="url"><a href='http://www.domain.com/' title="Home" itemprop="name" >Home</a></li>
+  <li itemprop="url"><a href='http://www.domain.com/residential-locksmith.html' title="Residential" itemprop="name">Residential</a></li>
+  <li itemprop="url"><a href='http://www.domain.com/commercial-locksmith.html' title="Commercial" itemprop="name">Commercial</a></li>
+  <li itemprop="url"><a href='http://www.domain.com/automotive-locksmith.html' title="Automotive" itemprop="name">Automotive</a></li>
+  <li itemprop="url"><a href='http://www.domain.com/doors.html' title="Doors" itemprop="name">Doors</a></li>
+  <li itemprop="url"><a href='http://www.domain.com/coupons.html' title="Coupons" itemprop="name">Coupons</a></li> 
+  <li itemprop="url"><a href='http://www.domain.com/emergency-locksmith.html' title="Emergency" itemprop="name">Emergency</a></li> 
+  <li itemprop="url"><a href='http://www.domain.com/areas-of-service.html' title="Area of Service" itemprop="name">Area of Service</a></li>
+  <li itemprop="url"><a href='http://www.domain.com/contact-us.html' title="Contact Us" itemprop="name">Contact Us</a></li> 
+					</ul>
+    <a href="#" id="pull">Menu</a>
+				   
+		</nav> 
+
+<div itemprop="headline" > for headline
+<div itemprop="articleBody"> body content here
+
+<script type="application/ld+json">
+{ "@context" : "http://schema.org",
+  "@type" : "LocalBusiness",
+  "name" : "Peach Cleaning Services",
+  "url" : "http://peachcleaningservices.com/",
+  "sameAs" : [ "https://www.facebook.com/peachcleaningservices/",
+    "https://instagram.com/peach_cleaning/",
+    "https://www.pinterest.com/peachcleaningse/",
+    "https://twitter.com/cleaningpeach",
+    "https://plus.google.com/110818858709699518617/"], 
+  "makesOffer" : "Professional cleaning company Lawrenceville, GA providing cost effective cleaning and maid services Alpharetta, Buford, Cumming, Sugar Hill, Suwannee and Lawrenceville GA Areas.",
+  "contactPoint" : [
+    { "@type" : "ContactPoint",
+      "telephone" : "+1-770-310-2967", 
+      "contactType" : "customer service",
+	  "areaServed" : "Auburn, Braselton,Buford,Dacula,Duluth,Grayson, Lawrenceville,Johns Creek,Lilburn,Loganville,Norcross,Peachtree Corners,Snellville,Sugar Hill,Suwanee"
+    } ] } 
+</script>
+
+=====================
+For tags:
+<?php if (has_tag()): ?>
+ <p class="tag-container"><?php the_tags(); ?></p>
+ <?php endif ?>
+For category
+<span class="posted-in"><?php the_category(',&nbsp;') ?></span> 
+
+To display comments:
+<?php // Display Comments 
+
+			if(comments_open() && !post_password_required()) {
+				echo ' / ';
+				comments_popup_link('0', '1 Comment', '% Comments', 'post-comments-count');
+			}
+
+		 ?>
+========================
+Useful .htaccess Snippets Collection. 15 Tricks to Take Better Control of Your Site
+http://blog.templatemonster.com/2015/03/05/useful-htaccess-snippets-collection/
+
+=====================
+Plugins: 
+https://wordpress.org/plugins/cross-linker/
+
+google operator: 
+ 1. Finding https pages that have been indexed
+ 2. inurl: https site:crazyegee.com
+
+
+
+=============
+SEO Tools: 
+http://www.ubersuggest.com
+http://soovle.com/
+http://tools.seobook.com/general/keyword-http://www.zuula.com/
+http://www.keywordbuzz.net/
+http://www.browseo.net/
+http://tools.seotraffichacks.com/penalty-checker.php
+
+Backlink:
+http://www.bulkdachecker.com/unique/
+http://www.ranksignals.com/tools/backlinks
+https://www.linkody.com/
+https://monitorbacklinks.com
+http://webmeup.com/
+http://www.backlinkwatch.com/
+http://moonsearch.com/backlinks/
+http://siteexplorer.info/
+
+http://www.urladviser.com/
+
+other seo tools
+http://www.semcompete.com/
+http://www.dailychanges.com/
+http://www.followsites.com/
+http://www.mustat.com/
+
+Non-seo tools for seo
+http://www.inspyder.com/products/InSite
+https://www.canva.com/
+https://www.titletester.com/
+
+
+other tools:
+http://www.sitevaluation.org/
+http://dailyrank.net/
+
+
+Social Bookmark:
+aneasylink.info
+http://www.bookmarking-sites.com/
+http://www.bookmarktou.com/
+
+For Disavow: 
+https://www.google.com/webmasters/tools/disavow-links
+
+
+http://stuffgate.com/
+
+Site Performance Test Check
+http://www.webpagetest.org/
+
+2015 seo tools
+http://keywordtool.io/
+http://www.inmotionhosting.com/support/tools/blacklist-check
+https://linkpatrolwp.com/
+
+Blacklist checker
+http://multirbl.valli.org/lookup/AAABANKRUPTCYEDUCATION.COM.html
+http://mxtoolbox.com/blacklists.aspx
+http://www.blacklistmaster.com/check
+https://www.robtex.com/ip/
+http://www.dnsbl-check.info/
+http://www.blacklistalert.org./
+http://whatismyipaddress.com/blacklist-check
+http://www.websitepulse.com/help/testtools.dbl-test.html
+
+
+http://suite.searchmetrics.com/en/research
+https://ph.godaddy.com/search-engine/seo-tool
+http://www.seoreporters.info/
+http://seositecheckup.com/
+http://www.eyeflow.com/seozio/report
+http://www.hitmeseo.com/
+
+domain checker:
+http://domain.analyzer.cc/
+
+tools that rock:
+http://www.sharedcount.com/
+https://moz.com/tools/fresh-web-explorer
+
+IP tools:
+http://myiphide.com/free.html
+
+===================================
+For ecommerce site:
+http://www.debtdirectory.org/signup
+
+
+Web directory site:
+nomoz.org
+joeant.com
+
+====================================================
+solution: 
+1. fixing cross domain tracking: http://www.blastam.com/blog/index.php/2014/11/2-steps-cross-domain-tracking-universal-analytics
+2. 
+==================================
+check backlink
+"credability.org" -site:credability.org
+====================================================
+guides:
+
+link building http://backlinko.com/link-building
+ranking factors: http://backlinko.com/google-ranking-factors
+
+
+====================================================
+http://safebrowsing.clients.google.com/safebrowsing/diagnostic?site=chapter7bankruptcyinfo.com
+http://safeweb.norton.com/report/show?url=chapter7bankruptcyinfo.com
+http://www.phishtank.com/
+http://opera.com/
+http://www.siteadvisor.com/sites/chapter7bankruptcyinfo.com
+http://labs.sucuri.net/?blacklist=chapter7bankruptcyinfo.com
+http://www.spamhaus.org/query/domain/chapter7bankruptcyinfo.com
+=====================
+Robots:
+
+
+User-agent: Mediapartners-Google*
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /wp-content/uploads/
+
+User-agent: Adsbot-Google
+Allow: /
+ 
+User-agent: Googlebot-Mobile 
+Allow: / 
+User-agent: * 
+Disallow: /*?
+Disallow: /wp-admin/
+Disallow: /wp-content/
+Disallow: /category/
+Disallow: /author/
+Disallow: *?wptheme
+Disallow: ?comments=*
+Disallow: /search?
+Disallow: /*/?replytocom
+Disallow: /*/feed
+Disallow: /*/trackback
+Disallow: /trackback/
+Disallow: /index.php
+Disallow: /recommended/
+Disallow: /comments/feed/
+Disallow: /*.inc$ 
+Disallow: /*.gz$
+Disallow: /*.wmv$
+Disallow: /*.cgi$
+Disallow: /*.xhtml$
+Disallow: /search/
+Disallow: /readme.html
+Disallow: /license.txt
+Sitemap: 
+
+================
+analytics: exlclude IP
+
+Filter > Custom > Exclude > Filter Field: IP Address Filter Pattern: 112\.207\.153\.252.*
+
+==================
+Ecommerce Software:
+http://www.interspire.com/
+
+==============
+Find Backlinks for a domain or site for disavow process: "domain.com" +domain.com
+Verify how many links you have from a certain site: yourdomain.com site:thisdomain.com
+
+=========================
+Block fake hostname in Google analytics:
+1. Add this code to you .htaccess
+<IfModule>
+RewriteEngine On
+RewriteCond %{HTTP_REFERER} 12masterov\.com [NC]
+RewriteCond %{HTTP_REFERER} best-seo-offer\.com [NC]
+RewriteCond %{HTTP_REFERER} buttons-for-your-website\.com [NC]
+RewriteCond %{HTTP_REFERER} 4webmasters\.org [NC]
+RewriteCond %{HTTP_REFERER} 7makemoneyonline\.com [NC]
+RewriteCond %{HTTP_REFERER} bard-real\.com\.ua [NC]
+RewriteCond %{HTTP_REFERER} bestwebsitesawards\.com [NC]
+RewriteCond %{HTTP_REFERER} billiard-classic\.com\.ua [NC]
+RewriteCond %{HTTP_REFERER} blackhatworth\.com [NC]
+RewriteCond %{HTTP_REFERER} buttons-for-website\.com [NC]
+RewriteCond %{HTTP_REFERER} cardiosport\.com\.ua [NC]
+RewriteCond %{HTTP_REFERER} cenoval\.ru [NC]
+RewriteCond %{HTTP_REFERER} ci\.ua [NC]
+RewriteCond %{HTTP_REFERER} customsua\.com\.ua [NC]
+RewriteCond %{HTTP_REFERER} darodar\.com [NC]
+RewriteCond %{HTTP_REFERER} delfin-aqua\.com\.ua [NC]
+RewriteCond %{HTTP_REFERER} dipstar\.org [NC]
+RewriteCond %{HTTP_REFERER} dvr\.biz\.ua [NC]
+RewriteCond %{HTTP_REFERER} econom\.co [NC]
+RewriteCond %{HTTP_REFERER} e-kwiaciarz\.pl [NC]
+RewriteCond %{HTTP_REFERER} este-line\.com\.ua [NC]
+RewriteCond %{HTTP_REFERER} ghazel\.ru [NC]
+RewriteCond %{HTTP_REFERER} hulfingtonpost\.com [NC]
+RewriteCond %{HTTP_REFERER} humanorightswatch\.org [NC]
+RewriteCond %{HTTP_REFERER} ilovevitaly\.co [NC]
+RewriteCond %{HTTP_REFERER} it-max\.com\.ua [NC]
+RewriteCond %{HTTP_REFERER} kambasoft\.com [NC]
+RewriteCond %{HTTP_REFERER} Lombia\.co [NC]
+RewriteCond %{HTTP_REFERER} lumb\.co [NC]
+RewriteCond %{HTTP_REFERER} maridan\.com\.ua [NC]
+RewriteCond %{HTTP_REFERER} mebeldekor\.com\.ua [NC]
+RewriteCond %{HTTP_REFERER} med-zdorovie\.com\.ua [NC]
+RewriteCond %{HTTP_REFERER} mirobuvi\.com\.ua [NC]
+RewriteCond %{HTTP_REFERER} onlywoman\.org [NC]
+RewriteCond %{HTTP_REFERER} o-o-6-o-o\.com [NC]
+RewriteCond %{HTTP_REFERER} palvira\.com\.ua [NC]
+RewriteCond %{HTTP_REFERER} priceg\.com [NC]
+RewriteCond %{HTTP_REFERER} ranksonic\.info [NC]
+RewriteCond %{HTTP_REFERER} savetubevideo\.info [NC]
+RewriteCond %{HTTP_REFERER} see-your-website-here\.com [NC]
+RewriteCond %{HTTP_REFERER} semalt\.com [NC]
+RewriteCond %{HTTP_REFERER} Simple-share-buttons\.com [NC]
+RewriteCond %{HTTP_REFERER} SoakSoak\.ru [NC]
+RewriteCond %{HTTP_REFERER} social-buttons\.com [NC]
+RewriteCond %{HTTP_REFERER} trion\.od\.ua [NC]
+RewriteCond %{HTTP_REFERER} kabbalah-red-bracelets\.com [NC]
+RewriteCond %{HTTP_REFERER} theguardlan\.com [NC]
+RewriteCond %{HTTP_REFERER} Get-Free-Traffic-Now\.com [NC]
+RewriteCond %{HTTP_REFERER} pornhub-forum\.uni\.me [NC]
+RewriteCond %{HTTP_REFERER} torture\.ml [NC]
+RewriteCond %{HTTP_REFERER} pornhub-forum\.ga [NC] 
+RewriteCond %{HTTP_REFERER} buy-cheap-online\.info [NC]
+RewriteCond %{HTTP_REFERER} generalporn\.org [NC]
+RewriteCond %{HTTP_REFERER} googlsucks\.com [NC]
+RewriteCond %{HTTP_REFERER} pornhubforum\.tk [NC]
+RewriteCond %{HTTP_REFERER} youporn-forum\.ga [NC] 
+RewriteRule .* – [F] 
+</IfModule>
+RewriteEngine On
+RewriteCond %{HTTP_REFERER} 12masterov\.com [NC]
+RewriteCond %{HTTP_REFERER} best-seo-offer\.com [NC]
+RewriteCond %{HTTP_REFERER} buttons-for-your-website\.com [NC]
+RewriteCond %{HTTP_REFERER} 4webmasters\.org [NC]
+RewriteCond %{HTTP_REFERER} 7makemoneyonline\.com [NC]
+RewriteCond %{HTTP_REFERER} bard-real\.com\.ua [NC]
+RewriteCond %{HTTP_REFERER} bestwebsitesawards\.com [NC]
+RewriteCond %{HTTP_REFERER} billiard-classic\.com\.ua [NC]
+RewriteCond %{HTTP_REFERER} blackhatworth\.com [NC]
+RewriteCond %{HTTP_REFERER} buttons-for-website\.com [NC]
+RewriteCond %{HTTP_REFERER} buy-cheap-online\.info [NC]
+RewriteCond %{HTTP_REFERER} cardiosport\.com\.ua [NC]
+RewriteCond %{HTTP_REFERER} cenoval\.ru [NC]
+RewriteCond %{HTTP_REFERER} ci\.ua [NC]
+RewriteCond %{HTTP_REFERER} customsua\.com\.ua [NC]
+RewriteCond %{HTTP_REFERER} darodar\.com [NC]
+RewriteCond %{HTTP_REFERER} delfin-aqua\.com\.ua [NC]
+RewriteCond %{HTTP_REFERER} dipstar\.org [NC]
+RewriteCond %{HTTP_REFERER} dvr\.biz\.ua [NC]
+RewriteCond %{HTTP_REFERER} econom\.co [NC]
+RewriteCond %{HTTP_REFERER} e-kwiaciarz\.pl [NC]
+RewriteCond %{HTTP_REFERER} este-line\.com\.ua [NC]
+RewriteCond %{HTTP_REFERER} event-tracking\.com [NC]
+RewriteCond %{HTTP_REFERER} free-share-buttons\.com\.ua [NC]
+RewriteCond %{HTTP_REFERER} Get-Free-Traffic-Now\.com [NC]
+RewriteCond %{HTTP_REFERER} ghazel\.ru [NC]
+RewriteCond %{HTTP_REFERER} guardlink\.org [NC]
+RewriteCond %{HTTP_REFERER} hulfingtonpost\.com [NC]
+RewriteCond %{HTTP_REFERER} humanorightswatch\.org [NC]
+RewriteCond %{HTTP_REFERER} ilovevitaly\.co [NC]
+RewriteCond %{HTTP_REFERER} it-max\.com\.ua [NC]
+RewriteCond %{HTTP_REFERER} kambasoft\.com [NC]
+RewriteCond %{HTTP_REFERER} Lombia\.co [NC]
+RewriteCond %{HTTP_REFERER} lumb\.co [NC]
+RewriteCond %{HTTP_REFERER} maridan\.com\.ua [NC]
+RewriteCond %{HTTP_REFERER} mebeldekor\.com\.ua [NC]
+RewriteCond %{HTTP_REFERER} med-zdorovie\.com\.ua [NC]
+RewriteCond %{HTTP_REFERER} mirobuvi\.com\.ua [NC]
+RewriteCond %{HTTP_REFERER} onlywoman\.org [NC]
+RewriteCond %{HTTP_REFERER} o-o-6-o-o\.com [NC]
+RewriteCond %{HTTP_REFERER} palvira\.com\.ua [NC]
+RewriteCond %{HTTP_REFERER} priceg\.com [NC]
+RewriteCond %{HTTP_REFERER} ranksonic\.info [NC]
+RewriteCond %{HTTP_REFERER} savetubevideo\.info [NC]
+RewriteCond %{HTTP_REFERER} see-your-website-here\.com [NC]
+RewriteCond %{HTTP_REFERER} semalt\.com [NC]
+RewriteCond %{HTTP_REFERER} Simple-share-buttons\.com [NC]
+RewriteCond %{HTTP_REFERER} site2.free-share-buttons\.com [NC]
+RewriteCond %{HTTP_REFERER} site3.free-share-buttons\.com [NC]
+RewriteCond %{HTTP_REFERER} site4.free-share-buttons\.com [NC]
+RewriteCond %{HTTP_REFERER} SoakSoak\.ru [NC]
+RewriteCond %{HTTP_REFERER} social-buttons\.com [NC]
+RewriteCond %{HTTP_REFERER} trion\.od\.ua [NC]
+RewriteCond %{HTTP_REFERER} kabbalah-red-bracelets\.com [NC]
+RewriteCond %{HTTP_REFERER} theguardlan\.com [NC] 
+RewriteRule .* – [F]
+
+===============
+Track your keyword ranking in Google Analytics:
+Copy code below to your GA Tracking code on your site
+<script type="text/javascript">
+if (document.referrer.match(/google\./gi) && document.referrer.match(/cd/gi)) {
+  var myString = document.referrer;
+  var r        = myString.match(/cd=(.*?)&/);
+  var rank     = parseInt(r[1]);
+  var kw       = myString.match(/q=(.*?)&/);
+  
+  if (kw[1].length > 0) {
+    var keyWord  = decodeURI(kw[1]);
+  } else {
+    keyWord = "(not provided)";
+  }
+ 
+  var p        = document.location.pathname;
+  _gaq.push(['_trackEvent', 'RankTracker', keyWord, p, rank, true]);
+}
+</script>
+
+===========================
+filter fake traffic host:
+After : create anotation notes with the date
+uopcourseworkhelper filter fake traffic1
+Exclude > Filter Field: Campaign Source
+dqreqlcg.eu|darodar.com|frthw.fr|gaklugvvhwd.it|gcfbkwruibn.ru|gyeirfogz.com|hmluw.com|iescm.eu|inpstrzhh.ru|jxiumami.org|mmflm.co.uk|stecgznssm.us|tyxkia.org|xxnmmyhqntfz.com|ygywhtghu.cn|yhyjus.fr|free-share-buttons.com|site3.free-share-buttons.com
+
+uopcourseworkhelper filter fake traffic2
+Exclude > Filter Field: Campaign Source
+site4.free-share-buttons.com|best-seo-offer.com|buy-cheap-online.info|Get-Free-Traffic-Now.com|buttons-for-your-website.com|event-tracking.com|theguardlan.com
+
+
+================================
+Google Analytics not working:
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-50406796-14', 'auto');
+  ga('send', 'pageview');
+
+if (document.referrer.match(/google\./gi) && document.referrer.match(/cd/gi)) {
+  var myString = document.referrer;
+  var r        = myString.match(/cd=(.*?)&/);
+  var rank     = parseInt(r[1]);
+  var kw       = myString.match(/q=(.*?)&/);
+  
+  if (kw[1].length > 0) {
+    var keyWord  = decodeURI(kw[1]);
+  } else {
+    keyWord = "(not provided)";
+  }
+ 
+  var p        = document.location.pathname;
+  _gaq.push(['_trackEvent', 'RankTracker', keyWord, p, rank, true]);
+}
+</script> 
+========================
+Create 4 colum footer widgets here:
+$footer_widget_regions = apply_filters( 'storefront_footer_widget_regions', 4 );
+
+	
+for ( $i = 1; $i <= intval( $footer_widget_regions ); $i++ ) {
+		
+register_sidebar( array(
+ 'name' 	=> sprintf( __( 'Footer %d', 'storefront' ), $i ),
+			
+                          'id' 		=> sprintf( 'footer-%d', $i ),
+			
+                          'description' => sprintf( __( 'Widgetized Footer Region %d.', 'storefront' ), $i ),
+			
+                          'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+			
+                          'after_widget'  => '</aside>',
+			
+                           'before_title'  => '<h3 class="widget-title">',
+			
+                            'after_title'  => '</h3>',
+			
+		)
+		
+	);
+	
+}
+
+=======================================
+Fixing 301 version of www and non-www using web.config file:
+source: http://knowledge.freshpromo.ca/seo-tools/301-redirect.php
+
+<configuration>
+  <system.webServer>
+    <rewrite>
+      <rules>
+        <rule name="Redirect to WWW" stopProcessing="true">
+          <match url=".*" />
+          <conditions>
+            <add input="{HTTP_HOST}" pattern="^domain.com$" />
+          </conditions>
+          <action type="Redirect" url="http://www.domain.com/{R:0}"
+               redirectType="Permanent" />
+        </rule>
+      </rules>
+    </rewrite>
+  </system.webServer>
+</configuration>
+=======================================
+redirect 404 page to custom 404:
+
+
+
+===========================
+Good Meta Description:
+Title 24 report energy compliance services including title 24 report, title 24 energy calculation,title 24 energy analysis for buildings in California
+
+
+=================
+Meta data for SEO
+
+Search for Twitter id:
+
+1. domain.com site:twitter.com
+2. Open site profile page
+3. view source and search for profile_id
+4. for facebook search for page_id
+
+      <meta charset="utf-8" />
+      <meta name="referrer" content="origin" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <meta name="twitter:site" content="@Moz" />
+      <meta property="twitter:account_id" content="15651700" />
+      <meta property="fb:page_id" content="8489236245" />
+
+==============================
+301 redirect from www to non-www in .htaccess
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+)/$ /$1 [L,R=301]
+RewriteCond %{HTTP_HOST} ^www\.alphagreen-energy\.com [NC] 
+RewriteRule (.*) http://alphagreen-energy.com/$1 [R=301,L]
+</IfModule>
+
+301 redirect from non-www to  www in .htaccess
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+)/$ /$1 [L,R=301]
+RewriteCond %{HTTP_HOST} ^.alphagreen-energy\.com [NC] 
+RewriteRule (.*) http://www.alphagreen-energy.com/$1 [R=301,L]
+</IfModule>
+
+installing breadcrumb in WordPress just add code below to header.php
+<?php if ( function_exists( 'yoast_breadcrumb' ) ) {
+	yoast_breadcrumb();
+}?>
+
+========================================
+block fake hosts via filter using regex containing buttons|links|sex|seo|
+========================================
+optimizing tags and categories:
+1. input all tags on googke keyword tool
+2. go to google.com type: "keyword" site:domain.com
+3. open each site and be sure to add that tags
+
+==================================
+nrg compliance | schema.org
+<script type="application/ld+json">
+{ "@context" : "http://schema.org",
+  "@type" : "Organization",
+  "name" : "NRG Compliance, Inc ", 
+  "url" : "http://www.nrgcompliance.com/",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Sta Rosa",
+    "addressRegion": "CA",
+	"postalCode": "95402",
+    "streetAddress": "730 2nd St,"
+  },
+  "sameAs" : ["https://plus.google.com/113958228452876069664/about", "https://twitter.com/nrgcompliance", 
+  "https://www.linkedin.com/company/nrg-compliance-ltd", "https://www.facebook.com/NRGComplianceLtd", 
+  "http://feeds.feedburner.com/nrgcompliance"],
+  "makesOffer" : "Offers Residential Title 24 Energy Calculation Services to homeowners, architects, designers, and builders throughout the state of California.",
+  "contactPoint" : [
+    { "@type" : "ContactPoint",
+      "telephone" : "+1 707-237-6957",
+	  "hoursAvailable" : "Mon - Fri 8:00 am - 12:00 pm | 1:00 pm - 4:30 pm",
+      "contactType" : "customer service",
+	  "areaServed" : ["CA", "US"]
+	   } ]} 
+
+</script>
+
+=================================================
+security scan sites:
+http://safebrowsing.clients.google.com/safebrowsing/diagnostic?site=chapter7bankruptcyinfo.com
+http://safeweb.norton.com/report/show?url=chapter7bankruptcyinfo.com
+http://www.phishtank.com/
+http://opera.com/
+http://www.siteadvisor.com/sites/chapter7bankruptcyinfo.com
+http://labs.sucuri.net/?blacklist=chapter7bankruptcyinfo.com
+http://www.spamhaus.org/query/domain/chapter7bankruptcyinfo.com
+http://trafficlight.bitdefender.com/info?url=chapter7bankruptcyinfo.com
+http://www.yandex.com/infected?url=chapter7bankruptcyinfo.com&l10n=en
+http://labs.sucuri.net/?eset
+
+============================================
+rank the site:
+1. Be sure your target keywords can be found in UrL, page title, meta title and description
+2. 
+
+==========================================
+uopcourseworkhelper.com .htaccess
+RewriteEngine On
+RewriteCond %{HTTP_REFERER} 12masterov\.com [NC]
+RewriteCond %{HTTP_REFERER} 100dollars-seo\.com [NC]
+RewriteCond %{HTTP_REFERER} 4webmasters\.org [NC]
+RewriteCond %{HTTP_REFERER} 7makemoneyonline\.com [NC]
+RewriteCond %{HTTP_REFERER} best-seo-offer\.com [NC]
+RewriteCond %{HTTP_REFERER} buttons-for-your-website\.com [NC]
+RewriteCond %{HTTP_REFERER} bard-real\.com\.ua [NC]
+RewriteCond %{HTTP_REFERER} bestwebsitesawards\.com [NC]
+RewriteCond %{HTTP_REFERER} billiard-classic\.com\.ua [NC]
+RewriteCond %{HTTP_REFERER} blackhatworth\.com [NC]
+RewriteCond %{HTTP_REFERER} buttons-for-website\.com [NC]
+RewriteCond %{HTTP_REFERER} buy-cheap-online\.info [NC]
+RewriteCond %{HTTP_REFERER} cardiosport\.com\.ua [NC]
+RewriteCond %{HTTP_REFERER} cenoval\.ru [NC]
+RewriteCond %{HTTP_REFERER} ci\.ua [NC]
+RewriteCond %{HTTP_REFERER} customsua\.com\.ua [NC]
+RewriteCond %{HTTP_REFERER} darodar\.com [NC]
+RewriteCond %{HTTP_REFERER} delfin-aqua\.com\.ua [NC] 
+RewriteCond %{HTTP_REFERER} dipstar\.org [NC]
+RewriteCond %{HTTP_REFERER} dvr\.biz\.ua [NC]
+RewriteCond %{HTTP_REFERER} dqreqlcg\.eu [NC]
+RewriteCond %{HTTP_REFERER} econom\.co [NC]
+RewriteCond %{HTTP_REFERER} e-kwiaciarz\.pl [NC]
+RewriteCond %{HTTP_REFERER} este-line\.com\.ua [NC] 
+RewriteCond %{HTTP_REFERER} event-tracking\.com [NC]
+RewriteCond %{HTTP_REFERER} free-share-buttons\.com\.ua [NC]
+RewriteCond %{HTTP_REFERER} free-social-buttons\.com [NC]
+RewriteCond %{HTTP_REFERER} floating-share-buttons\.com [NC]
+RewriteCond %{HTTP_REFERER} frthw\.fr [NC]
+RewriteCond %{HTTP_REFERER} gaklugvvhwd\.it [NC]
+RewriteCond %{HTTP_REFERER} gcfbkwruibn\.ru [NC]
+RewriteCond %{HTTP_REFERER} Get-Free-Traffic-Now\.com [NC]
+RewriteCond %{HTTP_REFERER} ghazel\.ru [NC]
+RewriteCond %{HTTP_REFERER} guardlink\.org [NC]
+RewriteCond %{HTTP_REFERER} gyeirfogz\.com [NC]
+RewriteCond %{HTTP_REFERER} hulfingtonpost\.com [NC]
+RewriteCond %{HTTP_REFERER} humanorightswatch\.org [NC]
+RewriteCond %{HTTP_REFERER} hmluw\.com [NC]
+RewriteCond %{HTTP_REFERER} iescm\.eu [NC]
+RewriteCond %{HTTP_REFERER} ilovevitaly\.co [NC]
+RewriteCond %{HTTP_REFERER} inpstrzhh\.ru [NC]
+RewriteCond %{HTTP_REFERER} it-max\.com\.ua [NC]
+RewriteCond %{HTTP_REFERER} jxiumami\.org [NC]
+RewriteCond %{HTTP_REFERER} kambasoft\.com [NC]
+RewriteCond %{HTTP_REFERER} kabbalah-red-bracelets\.com [NC]
+RewriteCond %{HTTP_REFERER} Lombia\.co [NC]
+RewriteCond %{HTTP_REFERER} lumb\.co [NC]
+RewriteCond %{HTTP_REFERER} maridan\.com\.ua [NC]
+RewriteCond %{HTTP_REFERER} mmflm\.co\.uk [NC]
+RewriteCond %{HTTP_REFERER} mebeldekor\.com\.ua [NC]
+RewriteCond %{HTTP_REFERER} med-zdorovie\.com\.ua [NC]
+RewriteCond %{HTTP_REFERER} mirobuvi\.com\.ua [NC]
+RewriteCond %{HTTP_REFERER} onlywoman\.org [NC]
+RewriteCond %{HTTP_REFERER} o-o-6-o-o\.com [NC]
+RewriteCond %{HTTP_REFERER} palvira\.com\.ua [NC]
+RewriteCond %{HTTP_REFERER} priceg\.com [NC]
+RewriteCond %{HTTP_REFERER} ranksonic\.info [NC]
+RewriteCond %{HTTP_REFERER} savetubevideo\.info [NC]
+RewriteCond %{HTTP_REFERER} see-your-website-here\.com [NC]
+RewriteCond %{HTTP_REFERER} semalt\.com [NC]
+RewriteCond %{HTTP_REFERER} Simple-share-buttons\.com [NC]
+RewriteCond %{HTTP_REFERER} free-share-buttons\.com [NC] 
+RewriteCond %{HTTP_REFERER} stecgznssm\.us [NC]
+RewriteCond %{HTTP_REFERER} SoakSoak\.ru [NC]
+RewriteCond %{HTTP_REFERER} social-buttons\.com [NC]
+RewriteCond %{HTTP_REFERER} trion\.od\.ua [NC]
+RewriteCond %{HTTP_REFERER} tyxkia\.org [NC]
+RewriteCond %{HTTP_REFERER} videos-for-your-business\.com [NC]
+RewriteCond %{HTTP_REFERER} theguardlan\.com [NC] 
+RewriteCond %{HTTP_REFERER} xxnmmyhqntfz\.com [NC]
+RewriteCond %{HTTP_REFERER} ygywhtghu\.cn [NC]
+RewriteCond %{HTTP_REFERER} yhyjus\.fr [NC]
+RewriteRule .* – [F]
+
+
+===================
+Benefit of www
+Ability to restrict cookies when using multiple subdomains. Cookies of a main domain (i.e. example.com) are sent to all subdomains: If you are going to have subdomains for other purposes (blog for instance), you may want to differentiate the sites and have a www prefix for the regular site.
+WWW actually MEANS something. As mentioned above, WWW is a hostname, and the hostname names the specific service being used a computer network; WWW names the web service for a domain.
+Using the WWW hostname allows for easy segregation in the file structure of your website. Everything in the “www” folder (and at the www.example.com domain) is directly related to serving the site to the public. This allows for simple root-level site organization, eg you could also have a dev folder and have a subdomain dev.example.com for your development site, etc.
+More flexibility with DNS. Your domain’s “Zone” file controls where traffic to your domain is directed and using the non-WWW version of your domain can complicate things.
+===================================================
+redirect non-www to www & http to https for lightspeed server:
+RewriteEngine on
+
+RewriteCond %{http_host} ^staabdecor\.com\.au [NC]
+
+RewriteRule ^(.*)$ http://www.staabdecor.com.au/$1 [R=301,NC]
+
+
+
+RewriteEngine on
+
+RewriteCond %{SERVER_PORT} 80
+
+RewriteRule ^(.*)$ https://www.staabdecor.com.au/$1 [R=301,L,NE]
+
+redirect non-www to www & http to https for apache server:
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
+*If you using https you need to update the above line from http to https
+
+=============================================================
+you may still want to use the WWW simply because it’s conventional to do so. On a business card, the WWW clearly conveys, This is our address on the World Wide Web. People are used to looking for, and seeing, the WWW and that’s sufficient reason for many to stick to the convention :)
+=====================
+
+Specs for Link Building Effort:
+All Sites are:
+1.Index in Google
+2.Unique IP-C class
+3.
+
+=================
+Resources:
+http://websbookmarks.info/bookmarking-sites/
+http://www.socialcliff.com/sites/free-high-pr-dofollow-social-bookmarking-sites-list.php
+http://www.adsboard.com/Thread-List-of-500-dofollow-social-bookmarking-sites-with-Page-Rank
+
+
+lists:
+http://www.folkd.com/
+http://www.reddit.com/
+http://www.mysitevote.com/
+http://www.jodohkita.info/
+http://www.colivia.de/
+http://www.linkroll.com/
+http://1look4.com/
+http://mx1.webmastershowcase.com.au/
+http://registertovotetoday.com/
+http://liquidosx.info/
+http://summerkitchencottage.com/
+http://online-masters-degrees.org/links/
+http://www.emr-review.com/links/
+http://carinsurancemissoula.com/links/
+http://thelc140.com/links/
+http://180go.org/
+http://ipsosmpg.com/
+http://yourhealth321.com/links/
+http://stevemalzberg.com/
+http://learnforex-trading.com/links/
+http://atlhtml5.net/
+http://www.augmentedviews.com/
+http://www.jlegalecon.com/
+http://www.klicknews.com/
+http://taggingkit.com/
+http://www.bookmark-favoriten.de/
+http://www.votetags.info/
+  
+===============
+proxy ip
+165.225.166.107 = 3128
+
+====================================================
+1. Exclude Internal Traffic
+  - IP address form other contributors
+
+2. Lower Case
+   - Case sensitivity in the referral source report
+   - Campaign Sources & Medium report
+There are four filters that force everything to lower case.
+  a.lower case source
+  b.lower case medium
+  c.lower case campaign
+  d. lower case referrals
+
+3. Goal Setup
+  A. Setup for Ecommerce Placing Payment
+     - An example of an important e-commerce goal.
+     - receipt page: http://buyschtuff.com/checkout/orders/show
+     a. begins with /checkout/orders/show
+     b. Valaue = > off
+     c. Funnel = > On
+     d. Step Name                       Screen Page: 
+     /checkout/orders/show		
+     /checkout/orders/pay
+     /checkout/orders/processing
+  B. 8 Common Goals
+     - Making a Booking or Sale
+     - Capturing a Lead
+     - Social Bookmarking/Sharing
+     - Newsletter Sign-ups
+     - New User Signup
+     - File Downloaded
+     - Customer Review
+     - Blog Comments 
+
+4. Site Search
+5. Include Subdomains: if your blog is blog.domain.com
+   a. Filter type: Custom 
+   b. Advanced
+   c. Hostname: (.*)
+   d. Request URI: (.*)
+   e. Request URI: ($A1$B1)
+   f. Field A Required: Yes
+   g. Override Output Field
+6. Link Google Analytics and Google Webmaster Tools
+7. 
+   
+===============================
+a sample configuration of ecommerce tracking on a receipt page using all three methods. The use of _trackPageview() associates the transaction with the page entitled Receipt for your clothing purchase from Acme Clothing.
+Asynchronous Syntax (recommended)
+
+<html>
+<head>
+<title>Receipt for your clothing purchase from Acme Clothing</title>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-XXXXX-X']);
+  _gaq.push(['_trackPageview']);
+  _gaq.push(['_addTrans',
+    '1234',           // transaction ID - required
+    'Acme Clothing',  // affiliation or store name
+    '11.99',          // total - required
+    '1.29',           // tax
+    '5',              // shipping
+    'San Jose',       // city
+    'California',     // state or province
+    'USA'             // country
+  ]);
+
+   // add item might be called for every item in the shopping cart
+   // where your ecommerce engine loops through each item in the cart and
+   // prints out _addItem for each
+  _gaq.push(['_addItem',
+    '1234',           // transaction ID - required
+    'DD44',           // SKU/code - required
+    'T-Shirt',        // product name
+    'Green Medium',   // category or variation
+    '11.99',          // unit price - required
+    '1'               // quantity - required
+  ]);
+  _gaq.push(['_trackTrans']); //submits transaction to the Analytics servers
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body>
+
+  Thank you for your order.  You will receive an email containing all your order details.
+
+</body>
+</html>
+=====================
+Traditional Syntax
+<html>
+<head>
+<title>Receipt for your clothing purchase from Acme Clothing</title>
+</head>
+
+<body>
+
+  Thank you for your order.  You will receive an email containing all your order details.
+
+
+<script type="text/javascript">
+  var gaJsHost = (("https:" == document.location.protocol ) ? "https://ssl." : "http://www.");
+  document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try{
+  var pageTracker = _gat._getTracker("UA-xxxxx-x");
+  pageTracker._trackPageview();
+  pageTracker._addTrans(
+      "1234",            // transaction ID - required
+      "Womens Apparel",  // affiliation or store name
+      "11.99",           // total - required
+      "1.29",            // tax
+      "15.00",           // shipping
+      "San Jose",        // city
+      "California",      // state or province
+      "USA"              // country
+    );
+
+
+   // add item might be called for every item in the shopping cart
+   // where your ecommerce engine loops through each item in the cart and
+   // prints out _addItem for each 
+   pageTracker._addItem(
+      "1234",           // transaction ID - necessary to associate item with transaction
+      "DD44",           // SKU/code - required
+      "T-Shirt",        // product name
+      "Olive Medium",   // category or variation
+      "11.99",          // unit price - required
+      "1"               // quantity - required
+   );
+
+   pageTracker._trackTrans(); //submits transaction to the Analytics servers
+} catch(err) {}
+</script>
+</body>
+</html>
+
+=============
+Use Product Search in Place of Default Search
+Are you using the WooCommerce Product Search extension and want to override your site's default search? In many cases this may be as easy as a quick edit of your theme's search-form.php file.
+
+The recommended way to go about editing your theme in an upgrade safe way is by creating a child theme. You can read more about that here: How to setup and use a child theme
+
+With that done, your parent theme should have a search-form.php template file. Copy that from the parent theme directory to your child theme directory and edit it to conditionally output the WooCommerce Product Search (if it exists). The following snippet demonstrates one way that this might be accomplished, in this case this is at the very beginning of the search-form.php file:
+
+<?php 
+
+if ( function_exists( 'woocommerce_product_search' ) ) { 
+  echo woocommerce_product_search(); 
+  
+} else {
+
+//the original contents of search.php should follow
+//make sure to close the php tag as appropriate
+
+
+================
+branding format
+http://www.twitter.com/brand-name
+http://www.facebook.com/brand-name
+http://www.yelp.com/biz/brand-name
+http://www.youtube.com/user/brand-name
+http://www.linkedin.com/in/brand-name
+http://brand-name.wordpress.com/
+http://brand-name.tumblr.com/
+http://pinterest.com/brand-name/
+http://www.hulu.com/profiles/brand-name
+http://technorati.com/people/brand-name
+http://about.me/brand-name
+http://brand-name.posterous.com/
+http://profile.typepad.com/brand-name
+http://www.squidoo.com/lensmasters/brand-name
+http://www.stumbleupon.com/stumbler/brand-name
+http://www.etsy.com/people/brand-name
+http://en.gravatar.com/brand-name
+http://www.scribd.com/brand-name
+http://brand-name.livejournal.com/
+http://brand-name.hubpages.com/
+http://www.flickr.com/photos/brand-name/
+http://photobucket.com/user/brand-name/profile/
+
+=====================================
+To find broken links use one or all the following:
+
+Screaming Frog SEO Spider
+Siteliner
+Google Search Console
+Ahrefs
+
+============================
+htaccess resolved: luxuriouslathers.com
+
+# BEGIN All In One WP Security
+#AIOWPS_BASIC_HTACCESS_RULES_START
+<Files .htaccess>
+order allow,deny
+deny from all
+</Files>
+ServerSignature Off
+LimitRequestBody 10240000
+<Files wp-config.php>
+order allow,deny
+deny from all
+</Files>
+#AIOWPS_BASIC_HTACCESS_RULES_END
+# END All In One WP Security
+
+# BEGIN W3TC Browser Cache
+<IfModule mod_mime.c>
+    AddType text/css .css
+    AddType text/x-component .htc
+    AddType application/x-javascript .js
+    AddType application/javascript .js2
+    AddType text/javascript .js3
+    AddType text/x-js .js4
+    AddType text/html .html .htm
+    AddType text/richtext .rtf .rtx
+    AddType image/svg+xml .svg .svgz
+    AddType text/plain .txt
+    AddType text/xsd .xsd
+    AddType text/xsl .xsl
+    AddType text/xml .xml
+    AddType video/asf .asf .asx .wax .wmv .wmx
+    AddType video/avi .avi
+    AddType image/bmp .bmp
+    AddType application/java .class
+    AddType video/divx .divx
+    AddType application/msword .doc .docx
+    AddType application/vnd.ms-fontobject .eot
+    AddType application/x-msdownload .exe
+    AddType image/gif .gif
+    AddType application/x-gzip .gz .gzip
+    AddType image/x-icon .ico
+    AddType image/jpeg .jpg .jpeg .jpe
+    AddType application/json .json
+    AddType application/vnd.ms-access .mdb
+    AddType audio/midi .mid .midi
+    AddType video/quicktime .mov .qt
+    AddType audio/mpeg .mp3 .m4a
+    AddType video/mp4 .mp4 .m4v
+    AddType video/mpeg .mpeg .mpg .mpe
+    AddType application/vnd.ms-project .mpp
+    AddType application/x-font-otf .otf
+    AddType application/vnd.ms-opentype .otf
+    AddType application/vnd.oasis.opendocument.database .odb
+    AddType application/vnd.oasis.opendocument.chart .odc
+    AddType application/vnd.oasis.opendocument.formula .odf
+    AddType application/vnd.oasis.opendocument.graphics .odg
+    AddType application/vnd.oasis.opendocument.presentation .odp
+    AddType application/vnd.oasis.opendocument.spreadsheet .ods
+    AddType application/vnd.oasis.opendocument.text .odt
+    AddType audio/ogg .ogg
+    AddType application/pdf .pdf
+    AddType image/png .png
+    AddType application/vnd.ms-powerpoint .pot .pps .ppt .pptx
+    AddType audio/x-realaudio .ra .ram
+    AddType application/x-shockwave-flash .swf
+    AddType application/x-tar .tar
+    AddType image/tiff .tif .tiff
+    AddType application/x-font-ttf .ttf .ttc
+    AddType application/vnd.ms-opentype .ttf .ttc
+    AddType audio/wav .wav
+    AddType audio/wma .wma
+    AddType application/vnd.ms-write .wri
+    AddType application/font-woff .woff
+    AddType application/vnd.ms-excel .xla .xls .xlsx .xlt .xlw
+    AddType application/zip .zip
+</IfModule>
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType text/css A31536000
+    ExpiresByType text/x-component A31536000
+    ExpiresByType application/x-javascript A31536000
+    ExpiresByType application/javascript A31536000
+    ExpiresByType text/javascript A31536000
+    ExpiresByType text/x-js A31536000
+    ExpiresByType text/html A3600
+    ExpiresByType text/richtext A3600
+    ExpiresByType image/svg+xml A3600
+    ExpiresByType text/plain A3600
+    ExpiresByType text/xsd A3600
+    ExpiresByType text/xsl A3600
+    ExpiresByType text/xml A3600
+    ExpiresByType video/asf A31536000
+    ExpiresByType video/avi A31536000
+    ExpiresByType image/bmp A31536000
+    ExpiresByType application/java A31536000
+    ExpiresByType video/divx A31536000
+    ExpiresByType application/msword A31536000
+    ExpiresByType application/vnd.ms-fontobject A31536000
+    ExpiresByType application/x-msdownload A31536000
+    ExpiresByType image/gif A31536000
+    ExpiresByType application/x-gzip A31536000
+    ExpiresByType image/x-icon A31536000
+    ExpiresByType image/jpeg A31536000
+    ExpiresByType application/json A31536000
+    ExpiresByType application/vnd.ms-access A31536000
+    ExpiresByType audio/midi A31536000
+    ExpiresByType video/quicktime A31536000
+    ExpiresByType audio/mpeg A31536000
+    ExpiresByType video/mp4 A31536000
+    ExpiresByType video/mpeg A31536000
+    ExpiresByType application/vnd.ms-project A31536000
+    ExpiresByType application/x-font-otf A31536000
+    ExpiresByType application/vnd.ms-opentype A31536000
+    ExpiresByType application/vnd.oasis.opendocument.database A31536000
+    ExpiresByType application/vnd.oasis.opendocument.chart A31536000
+    ExpiresByType application/vnd.oasis.opendocument.formula A31536000
+    ExpiresByType application/vnd.oasis.opendocument.graphics A31536000
+    ExpiresByType application/vnd.oasis.opendocument.presentation A31536000
+    ExpiresByType application/vnd.oasis.opendocument.spreadsheet A31536000
+    ExpiresByType application/vnd.oasis.opendocument.text A31536000
+    ExpiresByType audio/ogg A31536000
+    ExpiresByType application/pdf A31536000
+    ExpiresByType image/png A31536000
+    ExpiresByType application/vnd.ms-powerpoint A31536000
+    ExpiresByType audio/x-realaudio A31536000
+    ExpiresByType image/svg+xml A31536000
+    ExpiresByType application/x-shockwave-flash A31536000
+    ExpiresByType application/x-tar A31536000
+    ExpiresByType image/tiff A31536000
+    ExpiresByType application/x-font-ttf A31536000
+    ExpiresByType application/vnd.ms-opentype A31536000
+    ExpiresByType audio/wav A31536000
+    ExpiresByType audio/wma A31536000
+    ExpiresByType application/vnd.ms-write A31536000
+    ExpiresByType application/font-woff A31536000
+    ExpiresByType application/vnd.ms-excel A31536000
+    ExpiresByType application/zip A31536000
+</IfModule>
+<IfModule mod_deflate.c>
+    <IfModule mod_headers.c>
+        Header append Vary User-Agent env=!dont-vary
+    </IfModule>
+    <IfModule mod_filter.c>
+        AddOutputFilterByType DEFLATE text/css text/x-component application/x-javascript application/javascript text/javascript text/x-js text/html text/richtext image/svg+xml text/plain text/xsd text/xsl text/xml image/x-icon application/json
+    <IfModule mod_mime.c>
+        # DEFLATE by extension
+        AddOutputFilter DEFLATE js css htm html xml
+    </IfModule>
+    </IfModule>
+</IfModule>
+<FilesMatch "\.(css|htc|less|js|js2|js3|js4|CSS|HTC|LESS|JS|JS2|JS3|JS4)$">
+    FileETag MTime Size
+    <IfModule mod_headers.c>
+        Header set Pragma "public"
+        Header append Cache-Control "public"
+    </IfModule>
+</FilesMatch>
+<FilesMatch "\.(html|htm|rtf|rtx|svg|svgz|txt|xsd|xsl|xml|HTML|HTM|RTF|RTX|SVG|SVGZ|TXT|XSD|XSL|XML)$">
+    FileETag MTime Size
+    <IfModule mod_headers.c>
+        Header set Pragma "public"
+        Header append Cache-Control "public"
+    </IfModule>
+</FilesMatch>
+<FilesMatch "\.(asf|asx|wax|wmv|wmx|avi|bmp|class|divx|doc|docx|eot|exe|gif|gz|gzip|ico|jpg|jpeg|jpe|json|mdb|mid|midi|mov|qt|mp3|m4a|mp4|m4v|mpeg|mpg|mpe|mpp|otf|odb|odc|odf|odg|odp|ods|odt|ogg|pdf|png|pot|pps|ppt|pptx|ra|ram|svg|svgz|swf|tar|tif|tiff|ttf|ttc|wav|wma|wri|woff|xla|xls|xlsx|xlt|xlw|zip|ASF|ASX|WAX|WMV|WMX|AVI|BMP|CLASS|DIVX|DOC|DOCX|EOT|EXE|GIF|GZ|GZIP|ICO|JPG|JPEG|JPE|JSON|MDB|MID|MIDI|MOV|QT|MP3|M4A|MP4|M4V|MPEG|MPG|MPE|MPP|OTF|ODB|ODC|ODF|ODG|ODP|ODS|ODT|OGG|PDF|PNG|POT|PPS|PPT|PPTX|RA|RAM|SVG|SVGZ|SWF|TAR|TIF|TIFF|TTF|TTC|WAV|WMA|WRI|WOFF|XLA|XLS|XLSX|XLT|XLW|ZIP)$">
+    FileETag MTime Size
+    <IfModule mod_headers.c>
+        Header set Pragma "public"
+        Header append Cache-Control "public"
+    </IfModule>
+</FilesMatch>
+# END W3TC Browser Cache
+# BEGIN W3TC Page Cache core
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+    RewriteCond %{HTTP:Accept-Encoding} gzip
+    RewriteRule .* - [E=W3TC_ENC:_gzip]
+    RewriteCond %{HTTP_COOKIE} w3tc_preview [NC]
+    RewriteRule .* - [E=W3TC_PREVIEW:_preview]
+    RewriteCond %{REQUEST_METHOD} !=POST
+    RewriteCond %{QUERY_STRING} =""
+    RewriteCond %{REQUEST_URI} \/$
+    RewriteCond %{HTTP_COOKIE} !(comment_author|wp\-postpass|w3tc_logged_out|wordpress_logged_in|wptouch_switch_toggle) [NC]
+    RewriteCond "%{DOCUMENT_ROOT}/wp-content/cache/page_enhanced/%{HTTP_HOST}/%{REQUEST_URI}/_index%{ENV:W3TC_PREVIEW}.html%{ENV:W3TC_ENC}" -f
+    RewriteRule .* "/wp-content/cache/page_enhanced/%{HTTP_HOST}/%{REQUEST_URI}/_index%{ENV:W3TC_PREVIEW}.html%{ENV:W3TC_ENC}" [L]
+</IfModule>
+# END W3TC Page Cache core
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
+
+# BEGIN rlrssslReallySimpleSSL rsssl_version[2.1.18]
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteCond %{HTTPS} !=on [NC]
+RewriteRule ^(.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+</IfModule>
+# END rlrssslReallySimpleSSL
+
+<IfModule mod_gzip.c>
+mod_gzip_on Yes
+mod_gzip_dechunk Yes
+mod_gzip_item_include file \.(html?|txt|css|js|php|pl)$
+mod_gzip_item_include handler ^cgi-script$
+mod_gzip_item_include mime ^text/.*
+mod_gzip_item_include mime ^application/x-javascript.*
+mod_gzip_item_exclude mime ^image/.*
+mod_gzip_item_exclude rspheader ^Content-Encoding:.*gzip.*
+</IfModule>
+
+<FilesMatch "\\.(js|css|html|htm|php|xml)$">  
+SetOutputFilter DEFLATE
+</FilesMatch>
+#AddOutputFilterByType DEFLATE text/plain
+#AddOutputFilterByType DEFLATE text/html
+#AddOutputFilterByType DEFLATE text/xml
+#AddOutputFilterByType DEFLATE text/css
+#AddOutputFilterByType DEFLATE application/xml
+#AddOutputFilterByType DEFLATE application/xhtml+xml
+#AddOutputFilterByType DEFLATE application/rss+xml
+#AddOutputFilterByType DEFLATE application/javascript
+#AddOutputFilterByType DEFLATE application/x-javascript
+#AddType x-font/otf .otf
+#AddType x-font/ttf .ttf
+#AddType x-font/eot .eot
+#AddType x-font/woff .woff
+#AddType image/x-icon .ico
+#AddType image/png .png
+
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType image/jpg "access 1 year"
+ExpiresByType image/jpeg "access 1 year"
+ExpiresByType image/gif "access 1 year"
+ExpiresByType image/png "access 1 year"
+ExpiresByType text/css "access 1 month"
+ExpiresByType application/pdf "access 1 month"
+ExpiresByType application/javascript "access 1 week"
+ExpiresByType application/x-javascript "access 1 month"
+ExpiresByType application/x-shockwave-flash "access 1 month"
+ExpiresByType image/x-icon "access 1 year"
+ExpiresDefault "access 2 days"
+ExpiresByType application/x-font-ttf "access plus 1 month"
+ExpiresByType font/opentype "access plus 1 month"
+ExpiresByType application/x-font-woff "access plus 1 month"
+ExpiresByType image/svg+xml "access plus 1 month"
+ExpiresByType application/vnd.ms-fontobject "access plus 1 month"
+
+</IfModule>
+ ===================================
+Free cookie domain
+<FilesMatch "!\.(gif|jpe?g|png)$">
+    php_value session.cookie_domain example.com
+</FilesMatch>
+
+===============
+Fixed hentry errors for missing author and missing updated
+
+/*-----------------------------------------------------------------------------------*/
+/* Post Meta */
+/*-----------------------------------------------------------------------------------*/
+
+if (!function_exists('woo_post_meta')) {
+	function woo_post_meta( ) {
+?>
+<p class="post-meta">
+    <span class="post-date"><span class="small"><?php _e('Posted on', 'woothemes') ?></span> <span class="date updated"><?php the_time( get_option( 'date_format' ) ); ?></span></span>
+    <span class="post-author"><span class="small"><?php _e('by', 'woothemes') ?></span> <span class="vcard author"><span class="fn"><?php the_author_posts_link(); ?></span></span></span>
+    <span class="post-category"><span class="small"><?php _e('in', 'woothemes') ?></span> <?php the_category(', ') ?></span>
+    <?php edit_post_link( __('{ Edit }', 'woothemes'), '<span class="small">', '</span>' ); ?>
+</p>
+<?php
+	}
+}
+
+
+=============
+Block the IP address used by the spam bot using .htaccess
+RewriteEngine On
+Options +FollowSymlinks
+Order Deny,Allow
+Deny from 234.45.12.33
+===================
+
+//<![CDATA[
+//]]>
+
+================
+Directory Sites:
+http://www.quickdirectory.biz/
+http://directory.v7n.com/
+http://www.prolinkdirectory.com/
+http://www.linkdir.info/
+http://www.a1webdirectory.org/
+http://www.amray.com/
+
+
+
+Local:
+http://www.hotfrog.com.au/AddYourBusinessSingle.aspx
+https://www.manta.com/
+
+
+=================
+Schema for Organization:
+<script type="application/ld+json">
+{ "@context" : "http://schema.org",
+  "@type" : "Organization",
+  "name" : "Coin Loft",
+  "url" : "https://www.coinloft.com.au/",
+  "logo": "https://cdn.coinloft.com.au/i/CoinLoft.png",
+  "sameAs" : [ "https://www.facebook.com/ProAmUSA",
+    "https://twitter.com/ProAmUSA",
+    "http://www.youtube.com/user/ProAmUSA",
+    "https://plus.google.com/b/117224185349186681303",
+    "https://www.instagram.com/ProAmUSA"]
+  "contactPoint" : [
+    { "@type" : "ContactPoint",
+      "telephone" : "+61 3 8592 6901",
+      "contactType" : "customer service"
+    } ] }
+</script>
+
+or 
+<script type="application/ld+json">
+{
+   "@context": "http://schema.org",
+   "name" : "ProAm USA",
+   "@type" : "Organization",
+   "url": "https://www.proamusa.com/",
+   "logo": "https://www.proamusa.com/v/vspfiles/templates/ProAmUSA/images/Newimages/newlogo.png",
+   "sameAs" : [ "https://www.facebook.com/ProAmUSA",
+    "https://twitter.com/ProAmUSA",
+    "http://www.youtube.com/user/ProAmUSA",
+    "https://plus.google.com/b/117224185349186681303",
+    "https://www.instagram.com/ProAmUSA"],
+   "contactPoint" : [
+    { "@type" : "ContactPoint",
+      "telephone" : "+1 864-845-1144",
+      "contactType" : "customer service"
+    } ],
+   "potentialAction": {
+     "@type": "SearchAction",
+     "target": "https://www.proamusa.com/SearchResults.asp?Search={search_term_string}",
+     "query-input": "required name=search_term_string"
+   }
+}
+</script>
+
+==============================
+How to fix IP Canonicalization: write it on your .htaccess
+RewriteCond %{HTTP_HOST} ^XXX\.XXX\.XXX\.XXX
+RewriteRule (.*) http://www.yourdomain.com/$1 [R=301,L]
+
+
+====================
+Installing cookies onsite:
+
+<script type="text/javascript">
+//<![CDATA[
+Mage.Cookies.path     = '/';
+Mage.Cookies.domain   = '.ehairproducts.com';
+//]]>
+</script>
+
+====================
+amp implementation:
+
+<!doctype html>
+<html ⚡ lang="en">
+  <head>
+    <meta charset="utf-8" /> 
+    <title>News Article</title>
+    
+    <link rel="canonical" href="/original-html-page/">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
+    <style amp-custom>
+
+    body {
+      width: auto;
+      margin: 0;
+      padding: 0;
+           }
+
+</style>
+
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    
+    
+  </head>
+  <body>
+    <header>
+      Your Retail Site Category Page
+    </header>
+    <article>
+      <h1>Black Dresses</h1>
+
+      <p>Browse our range of black dresses</p>
+    </article>
+    <amp-img src="dress1.jpg" layout="responsive" width="266" height="150">
+  </body>
+</html>
+
+
+==================================
+Link Building Tips
+
+Prepare your business listing information.
+Directory submissions involve entering the same information repeatedly so it’s best to be prepared to avoid wasting a lot of time. Gather the following information into one document:
+
+2-3 Business listing titles
+Submission email address
+Business contact email address
+Business phone number
+Social media links
+2-3 unique business descriptions (Typically 200 words max)
+Square logo image (300px is best viewed on most websites)
+5 business related images
+Business ABN
+Having this data on hand to copy information will make the process much faster.
+
+Directory submission tools
+Automatically submitting business listings is a nice idea but doesn’t work well in practice. Different directories are built on different platforms and have unique fields and customization. Some even have hidden fields to trick these submission tools. This means the listings either fail or have missing or incorrect information.
+
+A semi-automatic approach is best. Try using a auto complete tool like the JunkFill chrome extension to assist with form completion, and then manually review the fields.
+
+Directory Submission Tips
+Here’s a few bonus tips for getting the most from your Australian directory submissions.
+
+Search each directory for the business name and url to ensure no duplicate listings are created.
+Use consistent login details for easy followup.
+Make listings as complete as possible to maximize value.
+Vary titles and descriptions to create a unique listing.
+Use a dedicated email to separate confirmation & marketing emails from personal email.
+Expect a few phone calls from directories upselling premium listings.
+Check for confirmation emails immediately and after 5 days.
+Lastly don’t forget to ask your clients to give a review of your product or service on the directories to boost your profile, referral traffic and backlink value! If you find more Australian business directories that pass the tests above let me know in the comments.
+ 
+
+=====================================
+Fixing Broken Links:
+1. No Such Host
+    - go the the page and edit the link from relative to absolute url
+2.No Info to Return
+
+
+=====================================
+optimizing tips
+1. fix duplicate content using absolute urls on site template
+    = example  /about-us > http:www.domain.com/about-us
+
+=========================
+how to know website admin
+nslookup -type=SOA lamusic.ca
+Server: dns.isp.net
+Address: 216.126.204.65
+
+Non-authoritative answer:
+example.com
+primary name server = dns1.icann.org
+responsible mail addr = hostmaster.icann.org >> hostmaster@icann.org
+serial = 2009100600
+refresh = 7200 (2 hours)
+retry = 3600 (1 hour)
+expire = 1209600 (14 days)
+default TTL = 86400 (1 day)
+
+example.com nameserver = a.iana-servers.net
+example.com nameserver = b.iana-servers.net
+a.iana-servers.net internet address = 192.0.34.43
+b.iana-servers.net internet address = 193.0.0.236
+
+=========================
+force site to http to https using js code
+<script language="JavaScript"><!-- begin hide
+function goElseWhere()
+{var oldURL=window.location.hostname+window.location.pathname;var newURL="https://"+oldURL;window.location=newURL}
+goElseWhere();</script>
+
+while this script work on volusion sites
+<script type="text/javascript">
+$(document).ready( function() {
+ var siteurl = document.location.href;
+if (siteurl.indexOf('https') < 0){
+ siteurl = siteurl.replace('http','https');
+ $( location ).attr("href", siteurl);
+}
+});
+</script>
+
+=========================
+GA Report
+1. Analysis of Primary Traffic Channels
+  - Acquisition > All Traffic > Channels > Ecommerce Conversion Rate
+2. Mobile Conversion Analysis
+  - Audience > Mobile > Overview > Ecommerce Conversion Rate
+3. Email Marketing Analysis
+  - Acquisition > All Traffic > Channels > Email
+4. Sales Funnel Analysis
+  - Behavior > Site Content > Content Drilldown > cart page
+5. Site Programming Analysis or site speed
+  - Behavior > Site Speed > Overview
+
+=========================
+Link Prospecting 
+site:.gov
+links
+resources
+intitle:links
+intitle:resources
+intitle:sites
+intitle:websites
+inurl:link
+inurl:resources
+inurl:sites
+inurls:websites
+"useful links"
+"useful resources"
+"useful sites"
+"userful websites"
+"recommended links"
+"recommended resources"
+"recommended websites"
+"suggested resources"
+"suggested sites"
+"suggested websites"
+"more links"
+"more resources"
+"more sites"
+"more websites"
+"favorite links"
+"favorite resources"
+"favorite sites"
+"favorite websites"
+"related links"
+"related resources"
+"related sites"
+"related websites"
+intitle:"useful links"
+intitle:"useful resources"
+intitle:"useful sites"
+intitle:"useful websites"
+intitle:"recommended links"
+intitle:"recommended resources"
+intitle:"recommended sites"
+intitle:"recommended websites"
+intitle:"suggested links"
+intitle:"suggested resources"
+intitle:"suggested sites"
+intitle:"suggested websites"
+intitle:"more links"
+intitle:"more resources"
+intitle:"more sites"
+intitle:"more websites"
+intitle:"favorite links"
+intitle:"favorite resources"
+intitle:"favorite sites"
+intitle:"favorite websites"
+intitle:"related links"
+intitle:"related resources"
+intitle:"related sites"
+intitle:"related websites"
+inurl:"useful links"
+inurl:"useful resources"
+inurl:"useful sites"
+inurl:"useful websites"
+inurl:"recommended links"
+inurl:"recommended resources"
+inurl:"recommended sites"
+inurl:"recommended websites"
+inurl:"suggested links"
+inurl:"suggested resources"
+inurl:"suggested sites"
+inurl:"suggested websites"
+inurl:"more links"
+inurl:"more resources"
+inurl:"more sites"
+inurl:"more websites"
+inurl:"favorite links"
+inurl:"favorite resources"
+inurl:"favorite sites"
+inurl:"favorite websites"
+inurl:"related links"
+inurl:"related resources"
+inurl:"related sites"
+inurl:"related websites"
+list of links
+list of resources
+list of sites
+list of websites
+list of blogs
+list of forums
+
+a). site:.edu ​– shows you search results containing educational result sites only
+b). site:.edu “blog”​– returns search results for educational blogs only  
+c). site:.edu “forums” ​– if you want to participate in an educational discussion board
+d). site:.edu “comments”​– for educational blogs with comments sections
+e). site:.edu “log in / create account” –​returns .edu blog extensions that allow you to sign
+up as a user, for the purpose of commenting or other kinds of participation
+
+1. bitcoin site:.edu “blog”​ ============>>>applied on coinloft.com.au
+2. bitcoin site:.edu​
+3. site:.edu “forums” 
+4. bitcoin wallet /blog
+
+
+SEO Services:
+1. In-depth Site Analysis
+2. Content Duplicity Check
+3. Competition Analysis
+4. Keyword Research
+5. On Page Optimization
+6. Title & Meta Tags Optimization
+7. Content Optimization
+8. Website Content Writing
+9. HTML Code Cleanup & Optimization
+10. Internal Link Structuring & Optimization
+11. Pages H tags Optimization
+12. Canonicalization/301 Redirect
+13. Image & Hyperlink Optimization
+14. Robots.txt Creation/Analysis
+15. Sitemap Creation
+16. Google & Bing Webmaster Tools Setup
+17. Google Analytics Setup & Integration
+18. Google+ Authorship Markup
+19. Integration of Google +1 Button
+20. Integration of Facebook feed Button
+21. Integration of Twitter feed Button
+22. Content Marketing and Link Acquisition
+23. Blog Writing
+24. Informational Content Writing & Sharing
+25. Press Release Writing & Distribution
+26. Press Release Social Bookmarking
+27. Guest Blog Posting 20 per month
+28. Guest Blog Social Bookmarking
+29. Google Plus Page Setup and Maintenance
+30. Facebook Page Setup and Maintenance
+31. Local Search Optimization : Google + Local & Bing Local Listing and Maintenance
+32. Consulting with us and developers on page Schema Integration
+33. Monthly Reporting <-Very Important
+34. Search Engine Rank Report  <-Very Important
+35. SEO Reports <-Very Important
+36. Google Analytics Analysis Report <-Very Important
+==================================================
+seo optimization services:
+1. Site Audit ( Quality and Technical)
+2. Identify Fixes
+3. Implement fixex
+4. Verify/Validate Results
+
+
+on-page
+ - Keyword Research
+ - Keyword Targeting and Placement
+
+keyword research avoid:
+Choosing keywords that are too broad
+Targeting keywords with too much competition
+Targeting keywords without enough traffic
+Targeting keywords that don’t convert
+Making assumptions as to what keywords your customers are using
+Trying to rank for one keyword at a time
+Selecting keywords that don’t represent the contents of a page
+Trying to overload your content with keywords (keyword stuffing)
+Hiding keywords on your pages using CSS tricks (like blending them into the background)
+
+Google Webmaster Tools
+Rich Snippets / Structured Data
+- Schema.org
+- Google Data Highlighter
+- Removing Duplicate Meta Description
+- Page load speed
+- XML Site map optimization 
+- Sitelinks
+- International Targeting
+- Crawl Error Resolutions
+- Duplicate page, 404 Error Handling, etc 
+
+===============
+schema for person
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Person",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Lapu Lapu",
+    "addressRegion": "Cebu City",
+    "postalCode": "6015",
+    "streetAddress": "Masulog, Basak Lapu Lapu City"
+  },
+  "sameAs": [ "https://www.facebook.com/johnhenrygaspay/",
+    "http://twitter.com/JohnHenryGaspay",
+    "https://www.linkedin.com/in/johnhenrygaspay/",
+    "http://twitter.com/JohnHenryGaspay/",
+	"https://github.com/JohnHenryGaspay/",
+    "https://plus.google.com/+JohnHenryGaspay/"],
+  colleague": [
+    "https://www.linkedin.com/in/glenn-tabucanon-mba-98166119/",
+    "https://www.linkedin.com/in/shipjayturla/",
+	"https://www.linkedin.com/in/ivanllesol/"
+  ],
+  "email": "mailto:jhgaspay@gmail.com",
+  "image": "https://2.bp.blogspot.com/-I9TsUV7Sgwk/UJGqYE15p6I/AAAAAAAAAEc/XYbuFMM9DqI/s200/myid1.png",
+  "jobTitle": "SEO Expert and Web Developer",
+  "name": "John Henry Gaspay",
+  "telephone": "(032) 2603710",
+  "url": "https://johnhenrygaspay.blogspot.com/"
+}
+</script>
+
+
+Onpage using Screaming Frog
+1. Find Broken Links, Errors & Redirects
+2. Analyse Page Titles & Meta Data
+3. Review Meta Robots & Directives
+4. Audit hreflang Attributes
+5. Discover Duplicate Pages
+=================================
+Problem with schema error is geo
+Correct error for local business
+<script type="application/ld+json">
+	{
+  	"@context": "http://schema.org",
+  	"@type": "LocalBusiness",
+  	"address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Irvine",
+    "addressRegion": "CA",
+    "postalCode":"92618",
+    "streetAddress": "123 Happy Lane"
+  	},
+  	"description": "This is your business description.",
+  	"name": "Gene’s Delicious Donuts",
+  	"telephone": "555-111-2345",
+  	"openingHours": "Mo,Tu,We,Th,Fr 09:00-17:00",
+  	"geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "40.75",
+    "longitude": "73.98"
+ 		}, 			
+  	"sameAs" : [ "http://www.facebook.com/your-profile",
+    "http://www.twitter.com/your-profile",
+    "http://plus.google.com/your-profile"]
+	}
+</script>
+
+Keyword Research:
+1. Forum
+2. Wikipedia
+3. Amazon
+4. 
+ 
+SEO Services
+
+==============
+Schema with Offer as Service
+<script type="application/ld+json">
+	{
+  	"@context": "http://schema.org",
+  	"@type": "LocalBusiness",
+	"url": "https://growmemarketing.ca/",
+	"image": "https://www.growme.ca/wp-content/uploads/2015/11/social-media-thumbnail-home.png",
+	"logo": "https://www.growme.ca/wp-content/uploads/2015/11/growme-marketing-logo.png",
+	"hasMap": "https://goo.gl/maps/YfdN5iR9ir52",
+	"email": "mailto:info@growme.ca",
+  "telephone": "(403) 547-6963"
+  	"address": {
+    	"@type": "PostalAddress",
+    	"addressLocality": "Calgary",
+    	"addressRegion": "AB",
+    	"postalCode":"T2G 0T7",
+    	"streetAddress": "1530 9 Ave SE"
+  	},
+  	"description": "Performance Online Marketing Agency in Calgary",
+  	"name": "GrowME Marketing",
+  	"openingHours": "Mo,Tu,We,Th,Fr,Sa 09:00-17:00",
+  	"geo": {
+    	"@type": "GeoCoordinates",
+   	"latitude": "51.038458",
+    	"longitude": "-114.02703"
+ 		},
+      "areaServed": {
+        "@type": "City",
+        "name": "Calgary"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "GrowME Marketing",
+        "itemListElement": [
+          {
+            "@type": "OfferCatalog",
+            "name": "Online Marketing Agency",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Online Marketing"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Social Media Marketing"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Search Engine Optimization"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Website Design"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Website Development"
+                }
+              }
+            ]
+          }
+        ]
+      },
+	"sameAs":["https://www.facebook.com/growmemarketing/",
+	"https://twitter.com/GrowMEMarketing",
+	"https://plus.google.com/+GrowMe/about"]
+	}
+</script>
+==========================================
+Defer:
+Add the following small code to the bottom of your web page just above the closing </body> tag and replace yourscript.js with your Javascript file:
+
+
+<script type="text/javascript">
+function downloadJSAtOnload() {
+ var element = document.createElement("script");
+ element.src = "yourscript.js";
+ document.body.appendChild(element);
+ }
+ if (window.addEventListener)
+ window.addEventListener("load", downloadJSAtOnload, false);
+ else if (window.attachEvent)
+ window.attachEvent("onload", downloadJSAtOnload);
+ else window.onload = downloadJSAtOnload;
+</script>
+
+
+=====================
+https://medium.com/@stefanledin/im-trying-to-make-a-progressive-web-app-part-4-how-i-implemented-service-workers-44cf634d52c8

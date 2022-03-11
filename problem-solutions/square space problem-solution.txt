@@ -1,0 +1,14 @@
+1. Home Page Title Format
+   a. Go to Settings  >> SEO >> Homepage Title Format
+       bad format: %s  =  Cannot set custom page title
+       good format: %p = Can set custom set title 
+
+2. Adding GWT Code:
+   a. Go to Home Menu >> Settings >> Advanced >>  Code Injection
+   b. Add your google webmaster code and Save
+
+3. Remove Meta Keywords 
+   a. Settings > Advance > Code Injection
+
+4. Add GA Tracking Code
+   a. Settings > Advance > External API Keys

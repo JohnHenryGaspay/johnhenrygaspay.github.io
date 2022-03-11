@@ -1,0 +1,106 @@
+Name Server:
+Bluehost: 
+
+Go Daddy:
+ns01.domaincontrol.com
+ns02.domaincontrol.com
+
+Siteground.com Inc.
+NS1.SITEGROUND121.COM
+NS2.SITEGROUND121.COM
+
+Mad Dog Domains:
+ns15.domaincontrol.com
+ns16.domaincontrol.com
+     
+
+Problem: Transfer domain name to host in Godaddy
+===========================================================
+1. Ask logins for 
+    = Godaddy - hosting company
+    = Dot.ph - registered domain:
+2. Godaddy Status: DNS hosting only no domain purchase
+3. Go to Dot.ph and update your nameserver from Godaddy
+4. Usually it asked for nameserver and ipv4, try open cmd and ping the two nameserver
+5. Changes will take up to 24-48 hours from changes
+6. Try verify your domain in Google Webmaster Tools.
+
+===========================================================
+How Transfer Domain Name
+1. Unlock you domain from current registrar
+2. Disable Privacy
+3. Optain EPP Code
+4. Point DNS to Bluehost
+5. 
+===========================================================
+How to Move a site to New Hosting Using cPanel
+(Work on any platform)
+1. Go to Cpanel File Manager via Home Directory
+2. Select public_html directory and click on compress and download it
+3. Go back to cpanel home and then click backup wizard > backup > Select database and download
+4. Go back to cpanel home and click restore > and select your download mysql database
+5. Go back to cpanel home and check your MYSQL database if it's there
+6. Create user and add that user on that dabase
+7. File manager > home directory > upload your old public_html directory
+8. 
+1. 
+
+===========================================================
+Problem: Transfer domain name to host in Godaddy
+
+1. Ask logins for 
+    = Godaddy - hosting company
+    = Dot.ph - registered domain:
+2. Godaddy Status: DNS hosting only no domain purchase
+3. Go to Dot.ph and update your nameserver from Godaddy
+4. Usually it asked for nameserver and ipv4, try open cmd and ping the two nameserver
+5. Changes will take up to 24-48 hours from changes
+6. Try verify your domain in Google Webmaster Tools.
+7. 
+  
+  
+===========================================================
+Install SSL on Godaddy
+1. Login on cpanel
+2. Click SSL menu
+3. Generate Cert.
+4. Click Manage SSL and fill up all cert and install
+
+
+===========================================================
+Adding a Domain Name in Microsoft IIS 7 on Deskto Computer
+1. Log in to your IIS server using Remote Desktop
+2. Once logged into Remote Desktop click Start, select Administrative Tools, and then click Internet Information Services (IIS) Manager.
+3. Under the Connections menu, right-click the server name, and then click Add Web Site.
+4. Enter the following:
+    Site name: coolexample.com (where coolexample.com is the name of your domain name).
+    Physical path: Click ..., and then enter c:\inetpub\wwwroot\coolexample.com (where coolexample.com is the name of your domain name).
+    Binding: Port 80.
+    Hostname: coolexample.com (where coolexample.com is the name of your domain name).
+5. Click OK.
+
+===========================================================
+Problem: How to Point 123 Reg(Registrar) to 1&1 Hosting Account:
+https://www.youtube.com/watch?v=j2Iya5aEP8Q
+Solutions:
+  1.Go the Manage Nameserver on 123-Rer(Registrar Account)
+  2.Add Name Server from 1 & 1 Hosting Account
+
+===========================================================
+
+Problem: How to setup Google Search Console via Host Gagor Hosting:
+Solution: 
+1. Go to DNS Zone Editor
+2. From the Type drop-down list, select TXT
+3. Paste the code in the Points To field ex: google-site-verification=-V0EbY2nuOM6AZqR-QcqAiqguoAH9WC7TjFbapnA9pE
+4. Host Record field, enter the @ symbol
+reference: https://support.google.com/a/answer/6149857?hl=en&ref_topic=4487771
+
+===========================================================
+Problem: Domain not moved properly on new hosting
+Solution: 1. Add domain on list of hosted sites and setup folder path for that domain
+
+===========================================================
+Problem. Tiglami.com is up, tiglami.it isn't up.
+Solution: Go to your Cpanel Hosting and Find Addon Domain option.
+for e.g. tiglami.it-new domain, tiglami-subdomain, public_html/tiglami.it - root folder
