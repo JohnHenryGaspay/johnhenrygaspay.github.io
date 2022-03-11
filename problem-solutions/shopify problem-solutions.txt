@@ -1,5 +1,10 @@
 
-
+Problem: Href Lang not Working on Inner Pages
+Current Status: 
+  1. .de site have other domains like .fr and .eu
+  2. .com is hosted on another shopify account
+Client: https://www.zeitholzwatches.de/
+Solutions: Install Hreflang Manager by GenovaWebArt
 
 Problem: No Href lang 
 Solution: Working Script: 
