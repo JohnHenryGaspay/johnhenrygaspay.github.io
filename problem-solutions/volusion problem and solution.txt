@@ -1,0 +1,181 @@
+Problem: product url in sitemap.xml is weird like: https://www.rugknots.comComparison-s/161.htm
+Solution: Updated sitemap button on /admin/dashboard.asp > Marketing > SEO > Sitemap XML > Update Sitemap
+
+Problem: Add meta title and description
+Solution: Go to this URL https://www.rugknots.com/Kilims-s/162.htm > Edit > This Category > Advance Info > Search Engine Optimization
+
+========================
+To change the URL to https, please follow the steps below: 
+
+1. In your admin area go to settings>>config variables 
+2. Click "search" 
+3. In the "name" field enter "url" and click search 
+4. You will see that the 2 fields "Full Store URL" and "Home Page URL" do not have https 
+5. In those 2 fields just add an "s" after http 
+6. Check CanonicalLink HomePage FullURL
+6. Click "save" 
+
+
+========================
+Upload your Google Sitemap to "/v/" folder via a FTP client.
+Login to your store administration section
+Navigate to Settings > Maintenance > Manage 301 Redirects.
+Add a 301 Redirect entry:
+	Source:  /mysitemap.xml
+	Target:  /v/sitemap.xml
+
+========================
+Activate SSL Certicate:
+
+Click on the promotion ID (23, 24, 27, 29, or 30) you want to use. article/nav menu promotions-camera show image-ssl seals-click promotion id  
+Deselect the Hidden checkbox.
+In the Body field, if you see the text "www.YourDomainhere.com" replace it with the your actual store domain name. article/nav menu promotions-camera show image-ssl seals-add domain name
+Click Save to activate an SSL verification seal for your storefront.
+
+========================
+Fixing Duplicate content
+Under the Search Engine Friendly URLs section of your Marketing > SEO page, there is a setting Enable full URL for Home Page Canonical Link (include /default.asp). 
+This checkbox will enable the canonical link for your homepage to allow Google to merge the ranks of your otherwise “duplicate” content.
+
+======================
+For Adding Meta Data:
+
+<!-Facebook Open Graph->
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Title Goes Here"> 
+<meta property="og:description" content="description-goes-here">
+<meta property="og:type" content="your-content-type-goes-here"> (e.g., "article")
+<meta property="og:url" content="http://www.your-site.com/">
+<meta property="og:image" content="http://www.your-site.com/image.jpg">
+<meta property="og:site_name" content="your-site-name">
+<meta property="fb:admins" content="your-Facebook-page-user-ID">
+<meta property="article:publisher" content="https://www.facebook.com/your-page" />
+
+<!-Twitter Cards->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:url" content="http://www.example.com/your-url-goes-here/">
+<meta name="twitter:site" content="@yoursite"/> 
+<meta name="twitter:title" content="Title Goes Here">
+<meta name="twitter:description" content="Your description goes here.">
+<meta name="twitter:image" content="http://example.com/image.jpg">
+
+<!-Google Graph->
+<html itemscope itemtype="http://schema.org/Article">
+<head>
+<meta itemprop="name" content="Title Goes Here">
+<meta itemprop="description" content="Description Goes Here">
+<meta itemprop="image" content="http://example.com/image.jpg">
+
+===============
+New Task: 
+Add Meta Data, for twitter card, fb og data, and Google Plus.
+Need to trim all our meta data for Page title 55 character only, for meta description they're good to go, so that there will be lesser error on the next crawl report.
+Add new site and verify for blog.rugknots.com for Google and Bing Webmaster.
+Add new ID or properties for blog.rugknots.com on Google Analytics under the same account. I would suggest to create different ID for your blog from the store or we could have same account but we will just filter blog URL from store URL on view report.
+Need to Exclude Traffic Google Analytics from: wpendine.com, asana.com, analytics.moz.com, my.volusion.com
+Fix Missing Alt Text for Images(91)(report extracted from Screaming SEO Tool)
+
+Competitive Link Analysis
+
+===============
+locate the file: 404.txt within /vspfiles/
+Give your website 2-3 days to collect data. When you login to Analytics, go to: Content > Events > Overview
+<script type="text/javascript"> 
+ _gaq.push(['_trackEvent', 'Error', '404', 'page: ' + document.location.pathname + document.location.search + ' ref: ' + document.referrer ]); 
+</script>
+
+===============
+Helpful Checklist
+http://www.suratmedia.com/2010/11/15/seo-checklist-for-volusion-shopping-cart-software/
+
+robots.ext:
+
+Disallow: /EmailaFriend.asp
+Disallow: /login.asp
+Disallow: /login_sendpass.asp
+Disallow: /GiftCert_sendvia.asp **
+Disallow: /GiftCert_default.asp
+Disallow: /GiftOptions.asp **
+Disallow: /shoppingcart.asp
+Disallow: /FileUpload/TextObject.aspx **
+Disallow: /affiliate_info.asp **
+Disallow: /Affiliate_signup.asp **
+Disallow: /catalog_subscribe.asp **
+Disallow: /donate.asp **
+Disallow: /Email_Me_When_Back_In_Stock.asp
+Disallow: /Affiliate_thankyou.asp **
+Disallow: /help.asp
+Disallow: /Help_EmailBetterPrice.asp **
+Disallow: /Help_FreeShipping.asp
+Disallow: /help_answer.asp
+Disallow: /kb_results.asp **
+Disallow: /mailinglist_subscribe.asp **
+Disallow: /mailinglist_unsubscribe.asp **  
+Disallow: /one-page-checkout.asp **
+Disallow: /PhotoDetails.asp
+Disallow: /returns.asp
+Disallow: /Register.asp
+Disallow: /Terms.asp
+Disallow: /Terms_privacy.asp
+Disallow: /Ticket_New.asp **
+Disallow: /TrackPackage.asp **  
+===============
+
+forcing all pages to https is not safe using web.config file or haven't yet tested this code below
+<rule name="rule 1Y" stopProcessing="true">
+	<match url="^(.*)$"  />
+	<action type="Rewrite" url="/https://www.proamusa.com/{R:1}"  />
+</rule>
+========================
+edit pages
+
+1. Design > Site Content under the Article Group
+
+for customizing urls:
+https://support.volusion.com/hc/en-us/articles/209457447-How-to-Customize-Your-URLs#article
+
+========================
+change uppercase urls  to lowercase
+https://www.proamusa.com/ProAm-USA-100mm-Half-Ball-Leveler-p/100ball.htm 
+1. Advance Info > Search Engine Optimization >  Product URL Text
+2. ProAm USA 100mm Half Ball Leveler > proam usa 100mm half ball leveler
+3. No need to redirect the the modified uppercase urls to lowercase urls
+
+modify category url:
+Advance Info > Search Engine Optimization > Category URL Text
+
+1. View category page on storefront:
+2. Be sure to log as admin
+3. Go to Edit > This Category
+4. Advance Info > Search Engine Optimization > edit Category URL Text
+
+Modify ugly urls to SEO friendly Urls on site template example:
+   - /Articles.asp?ID=255 to /contact-us-a/255.htm 
+=========================
+1. https://www.jmac.com/
+    -good implementation of https even if you open www.jmac.com it would still redirect to https
+2. 
+
+=======================
+script for implementing http to https in js code:
+<script type="text/javascript">		
+$(document).ready( function() {		
+ var siteurl = document.location.href;		
+if (siteurl.indexOf('https') < 0){		
+ siteurl = siteurl.replace('http','https');		
+ $( location ).attr("href", siteurl);		
+}		
+});		
+</script>
+
+=======================
+Fixing broken Links includes all urls in relative and change it to absolute urls
+-error such as not found, no such host, no info return
+
+=======================
+seo tips 2016
+fix duplicate content using absolute urls from relative url
+ - replace all site relative urls with absolute urls
+ - Add title tag for all a href tag
+ - Fetch url in Google and bing

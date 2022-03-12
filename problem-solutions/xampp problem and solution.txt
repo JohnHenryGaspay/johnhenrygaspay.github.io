@@ -1,0 +1,6 @@
+Apache (httpd.conf)"
+
+#Listen 12.34.56.78:80 change to Listen 80
+
+http://stackoverflow.com/questions/18300377/xampp-apache-error-apache-shutdown-unexpectedly
+http://stackoverflow.com/questions/17440727/apache-shutdown-unexpectedly
