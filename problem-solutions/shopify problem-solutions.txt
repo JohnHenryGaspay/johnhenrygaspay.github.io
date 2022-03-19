@@ -1,3 +1,15 @@
+Problem: How to Add New Line in robots.txt in shopidy
+Steps: 
+1. From your Shopify admin, go to Online Store > Themes.
+2. Find the theme you want to edit, and then click Actions > Edit code.
+3. In the left sidebar, under the Templates heading, click Add a new template.
+4. In the Create a new template for drop-down menu, select robots.txt.
+5. Click Create template.
+6. Add this line to block pagenated content
+  {%- if group.user_agent.value == '*' -%}
+  {{ 'Disallow: /*?page=*' }}
+  {%- endif -%}
+
 
 Problem: Href Lang not Working on Inner Pages
 Current Status: 
