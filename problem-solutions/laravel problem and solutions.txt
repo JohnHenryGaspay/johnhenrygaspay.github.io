@@ -1,0 +1,6 @@
+Installing Laravel on Windows 10
+1. composer global require "laravel/installer=~1.1
+2. cd xampp/htdocs
+3. composer create-project laravel/laravel your-project-name 4.2.*
+4. php artisan serve
+5. http://127.0.0.1:8000/

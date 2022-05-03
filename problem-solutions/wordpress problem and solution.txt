@@ -1,4 +1,50 @@
 ==================================================================
+Problem: Stop Woocommerce indexing Pagination pages in Google Console
+Solution: add the ‚Äúno-follow‚Äù link /themes/MYTHEME/shop/elements/shop/pagination.php
+<div class="woocommerce-pagination">
+	<?php
+		$mylinks = paginate_links( apply_filters( 'woocommerce_pagination_args', array(
+			'base'         => $base,
+			'format'       => $format,
+			'add_args'     => false,
+			'current'      => max( 1, $current ),
+			'total'        => $total,
+			'prev_text'    => '&larr;',
+			'next_text'    => '&rarr;',
+			'type'         => 'list',
+			'end_size'     => 3,
+			'mid_size'     => 3,
+		) ) );
+ 
+		$mylinks = str_replace('<a ', '<a rel="nofollow" ', $mylinks);
+		echo $mylinks;
+	?>
+</div>
+
+==================================================================
+Problem: Add Iframe page on WordPress with no site logo or navigation
+Solution: 
+1. Create a folder on root folder for example personalloan
+2. Create an index.html for that page and copy paste the widget
+
+==================================================================
+Problem: Product Tag, Categories Canonical Starts with //www. instead of https://www
+Solutions: 
+1. Deactivate this plugin WooCommerce AJAX Products Filter deactivate By BeRocket
+2. Or Go to Settings >  SEO > Base Canonical URL: Disable
+
+
+==================================================================
+Problem: Disabling Yoast Canonicals
+Solutions: on functions.php 
+            -add_filter( 'wpseo_canonical', '__return_false' );
+==================================================================
+Problem: Found Double Slash on Some Pages:
+Solution: remove permalink format from /%posts%/ to /%posts% then fix those internal links with / at the end
+==================================================================
+Problem: Remove categories here, https://focalpointliving.com/category/business-finance/
+Solutions: In Yoast Plugin: https://prnt.sc/0p96uSaaL-u1
+==================================================================
 Site folder object not found: add this code on functions.php after initial <?php
 update_option( 'siteurl', 'http://localhost/wordpress' );
 update_option( 'home', 'http://localhost/wordpress' );
@@ -276,7 +322,7 @@ ExpiresActive On
 ExpiresDefault "access plus 1 month"
 
 # My favicon
-ExpiresByType image/x-icon "access plus 1 yearî
+ExpiresByType image/x-icon "access plus 1 yearÔøΩ
 
 # Images
 ExpiresByType image/gif "access plus 1 month"
@@ -285,7 +331,7 @@ ExpiresByType image/jpg "access plus 1 month"
 ExpiresByType image/jpeg "access plus 1 month"
 
 # CSS
-ExpiresByType text/css "access 1 monthî
+ExpiresByType text/css "access 1 monthÔøΩ
 
 # Javascript
 ExpiresByType application/javascript "access plus 1 year"
@@ -571,7 +617,7 @@ if (!function_exists('post_meta')) {
 
 ====================================================
 href lang problem:
-1.Use this plugin Language Selector Related By RubÈn Vasallo
+1.Use this plugin Language Selector Related By RubÔøΩn Vasallo
 2. Edit all pages, post for the related pages from other subfolder
 
 ====================================================
@@ -687,8 +733,8 @@ Update Plugins and view it on /sitemap_index.xml
 Problem: Home Page title not showing
 Solutions: edit header.php and replace title line with
 http://woodmarbleandwhite.com.au
- a. bad title: <title><?php bloginfo('name'); ?> ª <?php is_front_page() ? bloginfo('description') : wp_title(''); ?></title>
- b. working title: <title><?php wp_title('ó', true, 'right'); ?></title>
+ a. bad title: <title><?php bloginfo('name'); ?> ÔøΩ <?php is_front_page() ? bloginfo('description') : wp_title(''); ?></title>
+ b. working title: <title><?php wp_title('ÔøΩ', true, 'right'); ?></title>
  c. Kitchen Designs Gold Coast & Brisbane, Luxury Kitchen Renovations
 
 onlinehomeloans.com.au
@@ -848,7 +894,7 @@ function add_meta_on_home() {
 
 <link rel="alternate" href="https://www.exaktglass.com.au/" hreflang="en-au" />
 
-<link rel=îalternateî href="https://www.exaktglass.com/" hreflang="x-default" />
+<link rel=ÔøΩalternateÔøΩ href="https://www.exaktglass.com/" hreflang="x-default" />
 
 <?php
 }
@@ -894,7 +940,7 @@ Add this on your footer.php file before end tag of </body>
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
   
-  ga('create', 'UA-xxxxxxx-x', 'auto'); // Deinen UA-Code hier noch einf¸gen
+  ga('create', 'UA-xxxxxxx-x', 'auto'); // Deinen UA-Code hier noch einfÔøΩgen
   ga('send', 'pageview');
 </script>
 

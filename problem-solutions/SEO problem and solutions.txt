@@ -1,4 +1,74 @@
-﻿Free Proxy IP: 
+﻿Optimize for Pagespeed:
+<link rel="preload" as="script" href="script.js">
+<link rel="preload" as="style" href="style.css">
+<link rel="preload" as="image" href="img.png">
+<link rel="preload" as="video" href="vid.webm" type="video/webm">
+<link rel="preload" href="font.woff2" as="font" type="font/woff2" crossorigin>
+
+<link rel="preload" as="image" href="https://f.hubspotusercontent00.net/hubfs/5825404/Blog%20headers/Blog_%20Webinar_Website%20headers%20%2820%29.png">
+
+
+Initial server response time
+<link rel="dns-prefetch" href="https://fonts.googleapis.com">
+<link rel="dns-prefetch" href="https://fonts.googleapis.com">
+<link rel="dns-prefetch" href="https://fonts.gstatic.com">
+<link rel="dns-prefetch" href="https://stackpath.bootstrapcdn.com">
+
+<link rel="preload" as="video" href="https://drnaomi.com/wp-content/uploads/2022/03/Apocalips.m4v" type="video/m4v">
+
+
+
+<link rel="preload" as="script" href="https://js.intercomcdn.com/vendor-modern.9d0447fa.js">
+<link rel="preload" as="script" href="https://js.intercomcdn.com/frame-modern.56d2e781.js">
+<link rel="preload" as="script" href="https://static.hsappstatic.net/video-embed/ex/loader.js">
+<link rel="preload" as="script" href="https://www.branchingminds.com/_hcms/forms/v2.js">
+<link rel="preload" as="script" href="https://js.hsleadflows.net/leadflows.js">
+<link rel="preload" as="script" href="https://www.branchingminds.com/hs/hsstatic/jquery-libs/static-1.1/jquery/jquery-1.7.1.js">
+<link rel="preload" as="script" href="https://js.hs-banner.com/5825404.js">
+<link rel="preload" as="script" href="https://js.hscollectedforms.net/collectedforms.js">
+<link rel="preload" as="script" href="https://www.branchingminds.com/hs/cta/cta/current.js">
+<link rel="preload" as="script" href="https://cdn2.hubspot.net/hub/5825404/hub_generated/template_assets/35866802946/1650038259070/BranchingMinds_October2020/js/wow.js">
+<link rel="preload" as="script" href="https://www.branchingminds.com/hs-fs/hub/5825404/hub_generated/template_assets/35785589316/1650038256006/BranchingMinds_October2020/js/main.min.js">
+
+
+<link rel="preload" as="script" href="">
+
+
+https://js.intercomcdn.com/vendor-modern.9d0447fa.js
+https://js.intercomcdn.com/frame-modern.56d2e781.js 
+https://static.hsappstatic.net/video-embed/ex/loader.js
+https://www.branchingminds.com/_hcms/forms/v2.js
+https://js.hsleadflows.net/leadflows.js
+https://www.branchingminds.com/hs/hsstatic/jquery-libs/static-1.1/jquery/jquery-1.7.1.js
+https://js.hs-banner.com/5825404.js
+https://js.hscollectedforms.net/collectedforms.js
+https://www.branchingminds.com/hs/cta/cta/current.js
+https://cdn2.hubspot.net/hub/5825404/hub_generated/template_assets/35866802946/1650038259070/BranchingMinds_October2020/js/wow.js
+https://www.branchingminds.com/hs-fs/hub/5825404/hub_generated/template_assets/35785589316/1650038256006/BranchingMinds_October2020/js/main.min.js
+
+
+=============================================
+/* for Mobile Devices */
+@media only screen and (min-width: 414px) {
+	.nav_callus_area.text-right{display:none !important;}	
+	}
+/* For Tablets  */
+	@media only screen and (min-width: 600px) {
+	.nav_callus_area.text-right{display:none !important;}	
+	}
+==========================================
+Problem: Block Duplicate Content
+Solutions: Robots.txt
+Disallow: /*q=
+Disallow: /*trackback
+Disallow: /*feed
+Disallow: /*wp-login
+=============================================
+Problem: block pages in robots.txt file like product/lift-off/comment-page-3/
+Solutions: Disallow: /*/comment-page*$
+Print Screen: https://prnt.sc/7CENTYN5BsIW
+=============================================
+Free Proxy IP: 
 Last Used July 5, 2015: 
 1. Proxy: 64.213.148.50 Port:8080
 2. Proxy: 190.121.232.75 Port: 8080

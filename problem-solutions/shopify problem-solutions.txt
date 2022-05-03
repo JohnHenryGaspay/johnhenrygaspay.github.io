@@ -1,3 +1,12 @@
+Problem: JS not Cache and JavaScript not compressed
+Solution: add ?n=1 at the end of file in src
+Example: <script type="text/javascript" src="https://static.afterpay.com/shopify-afterpay-javascript.js?n=1"></script>
+
+?timestamp=1648024609&shop=bisous-store.myshopify.com
+
+Problem: Speed Up Page Loading: 
+Solution: on Feature Collection- Disable: Show secondary media on hover Desktop only
+
 Problem: How to Add New Line in robots.txt in shopidy
 Steps: 
 1. From your Shopify admin, go to Online Store > Themes.
@@ -10,6 +19,8 @@ Steps:
   {{ 'Disallow: /*?page=*' }}
   {%- endif -%}
 
+7. Disallow: /blogs/*/tagged/ 
+   - will block this page /blogs/joyful-bulletin/tagged/bethesda-magazine 
 
 Problem: Href Lang not Working on Inner Pages
 Current Status: 
