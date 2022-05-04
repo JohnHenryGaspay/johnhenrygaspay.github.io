@@ -193,7 +193,7 @@ ol.carousel-indicators{display:none;}
   background-image: url('/img/seo-webdev.JPG') !important;
 }
 .footerbg-img{
-  height: 100%;
+  width: 100%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
