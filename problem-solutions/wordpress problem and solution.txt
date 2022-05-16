@@ -1,3 +1,5 @@
+How to insert short code in WordPress Core:
+Solution: <?php echo do_shortcode('[mc4wp_form id="8"]');?>
 ==================================================================
 Problem: Stop Woocommerce indexing Pagination pages in Google Console
 Solution: add the “no-follow” link /themes/MYTHEME/shop/elements/shop/pagination.php
