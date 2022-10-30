@@ -1,11 +1,49 @@
-﻿Optimize for Pagespeed:
+﻿Semrush 
+
+Problem: 467 orphaned pages in sitemaps
+Solution: Yoast Media & attachment URLs 
+  - Redirect attachment URLs to the attachment itself? => set to Yes
+
+
+Problem: Improve Pagespeed:
+1. Avoid long main-thread tasks = Apply defer or lazy loading on script or add preconnect dns
+2. 
+
+{% if canonical_url contains '.de' %}
+  <div class="featured-slider">
+            <h5 class="title center">
+            <img src="https://cdn.shopify.com/s/files/1/0541/8175/7127/files/insta-logo-64.png?v=1627287723" style="width: 28px;height:auto;vertical-align:-3px;margin-right:10px;">FOLGE UNS AUF INSTAGRAM</h5>
+            <h6 class="center" style="line-height:2px;margin-bottom: 15px;">@zeitholzwatcheseu</h6>
+          </div>
+{% elsif canonical_url contains '.eu' %}
+          <div class="featured-slider">
+            <h5 class="title center">
+            <img src="https://cdn.shopify.com/s/files/1/0541/8175/7127/files/insta-logo-64.png?v=1627287723" style="width: 28px;height:auto;vertical-align:-3px;margin-right:10px;">FOLLOW US ON INSTAGRAM</h5>
+            <h6 class="center" style="line-height:2px;margin-bottom: 15px;">@zeitholzwatcheseu</h6>
+          </div>
+        {% endif %}
+
+
+=============================================
+Problem: Found External links to 4XX or 403 links:
+Solved: add rel="nofollow noopener"
+
+
+
+=============================================
+
+
+
+Optimize for Pagespeed:
 <link rel="preload" as="script" href="script.js">
 <link rel="preload" as="style" href="style.css">
 <link rel="preload" as="image" href="img.png">
 <link rel="preload" as="video" href="vid.webm" type="video/webm">
-<link rel="preload" href="font.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" crossorigin href="font.woff2" >
 
 <link rel="preload" as="image" href="https://f.hubspotusercontent00.net/hubfs/5825404/Blog%20headers/Blog_%20Webinar_Website%20headers%20%2820%29.png">
+
+<link rel="preload" as="image" href="http://localhost/topperoo-com/wp-content/uploads/2022/06/svg-wave-11-light.svg">
 
 
 Initial server response time

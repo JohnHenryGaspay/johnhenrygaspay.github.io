@@ -1,3 +1,41 @@
+===================================================
+Problem: Add Schema for Blog Post using JSON Files:
+Solution: 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "<?php echo get_permalink(); ?>"
+  },
+  "headline": "<?php the_title(); ?>",
+  "description": "<?php the_excerpt(); ?>",
+  "image": "<?php echo the_post_thumbnail_url(); ?>",  
+  "author": {
+    "@type": "Person",
+    "name": "<?php echo get_the_date(); ?>",
+	"url": "<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>"
+  },
+  "datePublished": "<?php echo get_the_author(); ?>"
+}
+</script>
+=================================================
+Problem: Missing Alt Text on WordPress Avatar:
+Solutions: Add this on current theme functions.php
+/*	Enable ALT for Avatars	*/
+add_filter( 'get_avatar', 'fh_set_avatar_alt' );
+function fh_set_avatar_alt( $avatar ) {
+	if( have_comments() ) {
+		$alt = get_comment_author();
+	}
+	else {
+		$alt = get_the_author_meta( 'display_name' );
+	}
+	$avatar = str_replace( 'alt=\'\'', 'alt=\'Avatar for ' . $alt . '\'', $avatar );
+	return $avatar;
+}
+==========================
 How to insert short code in WordPress Core:
 Solution: <?php echo do_shortcode('[mc4wp_form id="8"]');?>
 ==================================================================
