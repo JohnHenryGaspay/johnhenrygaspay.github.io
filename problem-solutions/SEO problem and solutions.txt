@@ -1,7 +1,8 @@
 ﻿Semrush 
 
 Problem: 467 orphaned pages in sitemaps
-Solution: Yoast Media & attachment URLs 
+Solution 1: Create HTML sitemap and add it to footer links
+Solution 2: Yoast Media & attachment URLs 
   - Redirect attachment URLs to the attachment itself? => set to Yes
 
 

@@ -1,3 +1,11 @@
+Shopify Title Template Liquid:
+Template 1
+<title>
+      {% if template contains "index" %}{{ page_title }}{% else %}{{ page_title }}{% if current_tags %} {{ 'general.meta.tagged_html' | t: tags: meta_tags }}{% endif %}{% if current_page != 1 %} {{ 'general.meta.page' | t: page_number: current_page }}{% endif %}{% unless page_title contains shop.name %} - {{ shop.name }}{% endunless %}{% endif %}
+    </title>
+Template 2
+<title>{{ page_title }}{% if current_tags %} &ndash; tagged "{{ current_tags | join: ', ' }}"{% endif %}{% if current_page != 1 %} &ndash; Page {{ current_page }}{% endif %}</title>
+
 <link rel="preconnect" href="//fonts.shopifycdn.com/" crossorigin>
 <link rel="preconnect" href="//cdn.shopify.com/" crossorigin>
 <link rel="preconnect" href="//v.shopify.com/" crossorigin>

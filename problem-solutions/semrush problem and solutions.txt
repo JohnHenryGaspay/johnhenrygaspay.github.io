@@ -1,0 +1,5 @@
+Problem: links on this page have non-descriptive anchor text
+Solution: Change Read More to Continue Reading on blog posts
+
+Problem: Found Orphan Pages
+Solution: Create sitemap html and add it on footer links
