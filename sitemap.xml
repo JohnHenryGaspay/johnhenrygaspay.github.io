@@ -37,5 +37,8 @@
         <image:loc>https://johnhenrygaspay.github.io/img/map.jpg</image:loc>
         <image:title>contact us</image:title>
       </image:image>
-  </url>
+	  </url>
+	  <url>
+	  <loc>https://johnhenrygaspay.github.io/resume/index.html</loc>
+	  </url>
 </urlset>
