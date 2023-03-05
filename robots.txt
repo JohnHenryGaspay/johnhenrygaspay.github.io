@@ -1,4 +1,4 @@
 User-agent: *
-Disallow: /
 Disallow: /opensezzmelocksmith.net
 Disallow: /resume
+Sitemap: https://johnhenrygaspay.github.io/sitemap.xml
