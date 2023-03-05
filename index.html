@@ -90,42 +90,48 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </div>-->
 
 <!-- Container (Services Section) -->
-<div id="services" class="container-fluid text-center">
-  <h2>SEO SERVICES</h2>
+<div id="services" itemscope itemtype="https://schema.org/Service" class="container-fluid text-center">
+  <meta itemprop="serviceType" content="SEO Services" />
+  <span itemprop="provider" itemscope itemtype="https://schema.org/ProfessionalService">
+  <h2 itemprop="name">SEO SERVICES</h2>
   <h4>What we offer</h4>
   <br>
-  <div class="row slideanim">
+  <div class="row slideanim" itemprop="itemListElement" itemscope itemtype="https://schema.org/OfferCatalog">
     <div class="col-sm-4">
-      <span class="glyphicon glyphicon-off logo-small"></span>
-      <h4>SEO Audit</h4>
+      <span itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer" class="glyphicon glyphicon-off logo-small"></span>
+	  <meta itemprop="serviceType" itemprop="itemOffered" itemscope itemtype="https://schema.org/Service">
+      <h4 itemprop="name">SEO Audit</h4>
       <p>Conduct quick or full audit and lists doown what needs to be done including creating baseline report for tracking improvement from the beginning of the project.</p>
     </div>
     <div class="col-sm-4">
-      <span class="glyphicon glyphicon-heart logo-small"></span>
-      <h4>Ecommerce SEO</h4>
+      <span itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer" class="glyphicon glyphicon-heart logo-small"></span>
+      <meta itemprop="serviceType" itemprop="itemOffered" itemscope itemtype="https://schema.org/Service">
+	  <h4 itemprop="name">Ecommerce SEO</h4>
       <p>I have past project completed and worked with sites running Shopify, Woocomerce and other Ecommerce and have improved overall sites performance to make it more SEO friendly or favorable to Google.</p>
     </div>
     <div class="col-sm-4">
-      <span class="glyphicon glyphicon-lock logo-small"></span>
-      <h4>Keywords Research</h4>
+      <span itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer" class="glyphicon glyphicon-lock logo-small"></span>
+	  <meta itemprop="serviceType" itemprop="itemOffered" itemscope itemtype="https://schema.org/Service">
+      <h4 itemprop="name">Keywords Research</h4>
       <p>One of the cricual things to consider on optimizing webiste, any keywords can rank as long as they are part or related to your main or top keywords for your business or services which mostly long tail keywords.</p>
     </div>
   </div>
   <br><br>
-  <div class="row slideanim">
+  <div class="row slideanim" itemprop="itemListElement" itemscope itemtype="https://schema.org/OfferCatalog">
     <div class="col-sm-4">
-      <span class="glyphicon glyphicon-leaf logo-small"></span>
-      <h4>Technical SEO</h4>
+      <span itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer" class="glyphicon glyphicon-leaf logo-small"></span>
+	  <meta itemprop="serviceType" itemprop="itemOffered" itemscope itemtype="https://schema.org/Service">
+      <h4 itemprop="name">Technical SEO</h4>
       <p>I worked with number of sites that have issues on crawling, and indexing inner pages including fixing issues related to Search Console, Cpanel, </p>
     </div>
     <div class="col-sm-4">
-      <span class="glyphicon glyphicon-certificate logo-small"></span>
-      <h4>Social Media Optimization</h4>
-      <p>Create social profiles on different portal including joining groups or social community for your brand and reach potential customer for your product or service.</p>
+      <span itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer" class="glyphicon glyphicon-wrench logo-small"></span>
+      <h4 itemprop="name">Web Development</h4>
+      <p>Provide other web development services from setting up domains, cloning existing WordPress sites, fixing styling issue, setting up blog template.</p>
     </div>
     <div class="col-sm-4">
-      <span class="glyphicon glyphicon-wrench logo-small"></span>
-      <h4 style="color:#303030;">Local SEO & Off-site Optimization</h4>
+      <span itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer" class="glyphicon glyphicon-wrench logo-small"></span>
+      <h4 itemprop="name" style="color:#303030;">Local SEO & Off-site Optimization</h4>
       <p>I used white-hat link building only no black-hat or grey-hat it means I only considered from high authoritative sites.</p>
     </div>
   </div>
