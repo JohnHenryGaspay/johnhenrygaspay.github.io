@@ -8,7 +8,6 @@
     <loc>https://johnhenrygaspay.github.io/</loc>
     <lastmod>2023-03-05</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
       <image:image>
         <image:loc>https://johnhenrygaspay.github.io/img/perfifit-co.jpg</image:loc>
         <image:title>Kegel Exerciser with App</image:title>
@@ -42,6 +41,5 @@
 	  <loc>https://johnhenrygaspay.github.io/resume/index.html</loc>
 	  <lastmod>2023-03-06</lastmod>
       <changefreq>monthly</changefreq>
-	  <priority>2.0</priority>
 	  </url>
 </urlset>
