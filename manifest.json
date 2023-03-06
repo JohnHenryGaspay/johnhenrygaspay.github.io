@@ -1,0 +1,9 @@
+{
+  "name": "John Henry Gaspay",
+  "short_name": "SEO Web Dev",
+  "lang": "en-US",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "white",
+  "theme_color": "white"
+}
