@@ -3,3 +3,6 @@ Solution: Change Read More to Continue Reading on blog posts
 
 Problem: Found Orphan Pages
 Solution: Create sitemap html and add it on footer links
+
+Problem: external link is broken
+Solution: add rel= nofollow on links
