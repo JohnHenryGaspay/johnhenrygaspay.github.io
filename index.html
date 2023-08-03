@@ -1,4 +1,5 @@
- <!DOCTYPE html>
+<?php include "sendmail.php"; ?>
+<!DOCTYPE html>
 <html lang="en">
 <head> 
   <meta charset="utf-8">
@@ -33,6 +34,7 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css" media="all">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css" media="all">
   <link rel="stylesheet" href="css/styles.css" >
+  <link rel="stylesheet" href="css/style1.css">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
   <link rel="preload" as="script" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js">
   <link rel="preload" as="script" href="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
@@ -46,7 +48,7 @@
   <meta name="theme-color" content="#f4511e"/>
   <!--<link rel="preload" as="font" href="https://fonts.gstatic.com/s/lato/v23/S6uyw4BMUTPHjx4wXiWtFCc.woff2">
   <link rel="preload" as="font" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/fonts/glyphicons-halflings-regular.woff2"> -->
-  
+  <script>document.getElementsByTagName("html")[0].className += " js";</script>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60" class="fullscreen">
 <!-- Google Tag Manager (noscript) -->
@@ -67,9 +69,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#about">About</a></li>
         <li><a href="#services">Services</a></li>
-		<li><a target="_blank" href="resume/index.html">Resume</a></li>
-        <li><a href="#portfolio">Portfolio</a></li> 
+        <li><a href="#portfolio">Portfolios</a></li>
+		<li><a href="#faqs">FAQs</a></li>
+        <li><a href="#testimonial">Testimonials</a></li>		
         <li><a href="#contact">Contact</a></li>
+		<li><a target="_blank" href="resume/index.html">Resume</a></li>
       </ul>
     </div>
   </div>
@@ -78,7 +82,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="jumbotron text-center">
   <h1>Technical SEO Specialist</h1> 
   <p>Professional SEO expert experienced in WordPress, Shopify & Ecommerce</p> 
-          <button class="btn btn-default" type="send"><a href="https://www.upwork.com/workwith/johnhenryg">Work with Me </a></button>
+          <button class="btn-default" type="send"><a href="https://www.upwork.com/workwith/johnhenryg">Work with Me </a></button>
 </div> 
 <!-- Container (About Section) -->
 <div id="about" class="container-fluid">
@@ -249,7 +253,69 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </div>-->
   </div>
-  
+  <div id="faqs" class="container-fluid text-center" itemscope itemtype="https://schema.org/FAQPage">
+     <h2>Frequently Asked Questions(FAQ)</h2>
+	 <section class="cd-faq js-cd-faq container">
+	<div class="cd-faq__items">
+	<ul class="cd-faq__categories">
+	</ul> <!-- cd-faq__categories -->
+		<ul id="basics" class="cd-faq__group">
+			
+			<li class="cd-faq__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+				<a itemprop="name" class="cd-faq__trigger" href="#0"><span >Can you guarantee ranking after getting our website for SEO?</span></a>
+				<div class="cd-faq__content">
+          <div class="text-component text-center" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <p itemprop="text"> Regarding the norms by Google and according to multiple sources, it takes at least <strong>6 months for getting good results in SEO</strong> (depending on the competitiveness of your industry and popularity of your keywords). You will get the same answer when you approach any SEO specialist or company who is practicing white hat SEO. With improvements in Google algorithms, the SEO industry is now totally changed. Old days are gone now, it's becoming more and more uncertain to predict the output of your efforts for any set of keywords. However, with the strategies I will apply on your websites to mention a few: like <em>optimize URL</em>,<em>meta data</em> and <em>alt text</em> for images. <br/>
+			   With these strategies and more, I can increase your site’s organic traffic and more.</p>
+          </div>
+				</div> <!-- cd-faq__content -->
+			</li>
+
+			<li class="cd-faq__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+				<a itemprop="name" class="cd-faq__trigger" href="#0"><span>What makes a website search engine friendly?</span></a>
+				<div class="cd-faq__content">
+          <div class="text-component" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <p itemprop="text">Several factors make a website search engine friendly, keywords, quality content, internal and external or inbound links, titles, metadata, URLs and more. A website needs these factors to be ranked by a search engine especially Google to server for users or visitors.</p>
+          </div>
+				</div> <!-- cd-faq__content -->
+			</li>
+
+			<li class="cd-faq__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+				<a itemprop="name" class="cd-faq__trigger" href="#0"><span>How do you measure SEO success?</span></a>
+				<div class="cd-faq__content">
+          <div class="text-component" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <p itemprop="text">There are many ways to measure success in terms of KPI of key performance indicators like increase in website traffic, grow number of inbound links, drive more particular keyword phrases that are related to your target niche. </p>
+          </div>
+				</div> <!-- cd-faq__content -->
+			</li>
+
+			<li class="cd-faq__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+				<a itemprop="name" class="cd-faq__trigger" href="#0"><span>Which SEO tools do you regularly use?</span></a>
+				<div class="cd-faq__content">
+          <div class="text-component" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <p itemprop="text">Tools I use most of the time are: Semrush, Ahrfes, Screaming Frog, Search Console, Google Analytics</p>
+          </div>
+				</div> <!-- cd-faq__content -->
+			</li>
+			
+			<li class="cd-faq__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+				<a itemprop="name" class="cd-faq__trigger" href="#0"><span>How much is your price for SEO Services?</span></a>
+				<div class="cd-faq__content" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <div class="text-component">
+            <p itemprop="text">Currently, you can <a href="https://www.upwork.com/workwith/johnhenryg">work or hire me</a> on Upwork platform which you can opt with fixed-price or hourly basis depending on your budget.</p>
+          </div>
+				</div> <!-- cd-faq__content -->
+			</li>
+		</ul> <!-- cd-faq__group -->
+         
+	</div> <!-- cd-faq__items -->
+
+	<a href="#0" class="cd-faq__close-panel text-replace">Close</a>
+  <div class="cd-faq__overlay" aria-hidden="true"></div>
+   </section> <!-- cd-faq -->
+	 
+  </div>
+  <div id="testimonial" class="container-fluid text-center ">
   <h2>What My Clients Say</h2>
   <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
     <!-- Indicators -->
@@ -298,7 +364,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </a>
   </div>
 </div>
-
+</div>
 <div id="contact" class="container-fluid bg-grey">
   <h2 class="text-center">CONTACT</h2>
   <div class="row">
@@ -318,10 +384,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
         </div>
       </div>
-      <textarea class="form-control" id="comments" name="comments" placeholder="Message" rows="5"></textarea><br>
+      <textarea class="form-control" id="comments" name="message" placeholder="Message" rows="5"></textarea><br>
       <div class="row">
         <div class="col-sm-12 form-group">
-          <button class="btn btn-default pull-right" type="submit">Send</button>
+          <button class="btn btn-default pull-right" type="submit" name="submit">Send</button>
         </div>
       </div>
     </div>
@@ -478,5 +544,7 @@ dataLayer=[{'tripValue':tripPrice}];
 
   gtag('config', 'G-4FDRK75JK0');
 </script>
+<script src="js/util.js"></script>
+<script src="js/main1.js"></script> 
 </body>
 </html>

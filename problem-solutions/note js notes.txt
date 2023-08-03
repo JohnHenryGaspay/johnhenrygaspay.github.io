@@ -1,0 +1,2 @@
+Test run: node -v
+Updating npm: npm install npm@latest -g

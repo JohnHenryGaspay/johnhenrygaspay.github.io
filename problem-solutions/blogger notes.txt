@@ -1,0 +1,6 @@
+Optimizing pagespeed:
+1.Find this line and move it to the footer just above /body> tag
+ <b:include data='blog' name='google-analytics'/>
+2. Move rendering js files before end of tab of body on the footer section
+3. Compress all css files
+  

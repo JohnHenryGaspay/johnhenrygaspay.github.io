@@ -1,0 +1,4 @@
+1. Problem: Admin Menu not Working
+   Solution: Open up app/etc/di.xml find the path 
+             “Magento\Framework\App\View\Asset\MaterializationStrategy\Symlink” and replace to 
+             “Magento\Framework\App\View\Asset\MaterializationStrategy\Copy”Open up app/etc/di.xml

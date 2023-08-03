@@ -1,0 +1,47 @@
+
+
+1. Block Potential Harmful Link
+
+Fix Bad Link in htaccess: 
+# F I X B AD L I N K S
+<ifModule mod_ rewrite.c>
+ RewriteCond % { QUERY_ STRING } querystring [ N C ]
+ RewriteRule .* http://ex ample.com/$ 1? [ R =301,L ]
+</ifModule>
+
+2. Optimize Images
+   Tools: Screaming Frog
+   Export the lists
+   
+3. Check for Validation Errors: https://validator.w3.org/
+
+4. Secure WordPress Includes Folder
+# Block the include-only files.
+RewriteEngine On
+RewriteB ase /
+RewriteR ule ^wp-admin/includes/-[F,L]
+RewriteR ule !^wp-includes/-[S=3]
+RewriteR ule ^wp-includes/[^/]+\.php$-[F,L]
+RewriteRule ^wp-includes/j s/tinymce/langs/.+\.php-[F ,L]
+RewriteRule ^wp-includes/theme-compat/-[ F ,L ] 
+
+4.  Add No-follow to Commenting
+function add_nofollow_to_reply_link( $link ){
+ return str_replace(' ")\'>' , '")\' rel=\'nofollow\'>', $link ) ;
+}
+add_ filter( 'comment_reply_link', 'add_nofollow_to_reply_link' ) ;
+
+5. Replace Time Function on these files: 
+  archive.php
+   index.php
+   single.php
+   replace: <?php the_time( ' F j S, Y ' ) ?> with  <script type="text/javascript">document.write( "<? php the_time( ' F j S, Y ' )?>");</script>
+   
+6. 
+=ImportX ML ( "http://ubersuggest.org/? query="&A1&
+"&format=html&language=English% 2F USA&source=web&submit=Sugg
+est", "//li/span")  
+
+7. Track Search in GA
+
+8. Lost Link with search: intext:quicksprout.com - site:quicksprout.com 

@@ -1,0 +1,4 @@
+To Add ftp account:
+1. Login to your cpanel account
+2. Go to FTP accounts
+3.       

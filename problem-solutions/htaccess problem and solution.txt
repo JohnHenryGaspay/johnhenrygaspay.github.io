@@ -1,0 +1,36 @@
+1. Problem To redirect 404 error in .htaccess 
+   Solution: RewriteRule ^rekeys/?$ http://www.locksmith-fortlauderdale.com/rekey-locks/ [L,NC,R=301]
+
+2. Improving Page Speed Score: in Gmetrix 
+
+Enable Gzip for Apache Server: add this on .htaccess it score 99 using gmetrix.com
+AddOutputFilterByType DEFLATE text/plain
+AddOutputFilterByType DEFLATE text/html
+AddOutputFilterByType DEFLATE text/xml
+AddOutputFilterByType DEFLATE text/css
+AddOutputFilterByType DEFLATE application/xml
+AddOutputFilterByType DEFLATE application/xhtml+xml
+AddOutputFilterByType DEFLATE application/rss+xml
+AddOutputFilterByType DEFLATE application/javascript
+AddOutputFilterByType DEFLATE application/x-javascript
+
+3. Problem with www and non-www
+<IfModule mod_rewrite.c>
+
+RewriteEngine On
+
+RewriteCond %{HTTP_HOST} ^leadmesh\.com [NC]
+
+RewriteRule (.*) http://leadmesh.com/$1 [R=301,L] 
+
+</IfModule>
+
+
+3. Problem with www and non-www for static html
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^clasensolutions\.com [NC]
+RewriteRule (.*) http://www.clasensolutions.com/$1 [R=301,L] 
+RewriteCond %{THE_REQUEST} ^[A-Z]+\ /([^/]+/)*index(\.[a-z0-9]+)?[^\ ]*\ HTTP/
+RewriteRule ^(([^/]+/)*)index(\.[a-z0-9]+)?$ http://www.clasensolutions.com/$1? [R=301,L]
+</IfModule>

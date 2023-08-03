@@ -1,0 +1,7 @@
+center webpage
+#wrapper{
+ margin-left: auto;
+ margin-right: auto;
+}
+ 
+CSS COLOR: #F0FFF0

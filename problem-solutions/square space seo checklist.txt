@@ -1,0 +1,25 @@
+1.  Design > Logo & Title
+	Using keywords in your site title can help with location-specific SEO
+	ex: Acadiana Garage Doors | Lafayette, Louisiana
+2. Settings > Marketing > SEO
+	Fill out Search Engine Description
+	Note: this doesn’t increase your search rank, but can help encourage people to click on your site, effectively getting you a higher conversion rate.
+3. Settings > Business Information
+	Name
+	Address
+	Phone
+	It’s especially important that your NAP (Name, address, phone) are consistent throughout the website
+	Email
+	Location
+	Hours
+4. Settings > Domains
+	Change Built-in Domain to match business name (i.e. change from "your-name-p7d3.squarespace.com" to "business-name.squarespace.com"
+	Make your custom domain the primary domain.
+5. Settings > Connected Accounts
+	Create & fill out as many social media accounts as you can. This is great "low-hanging fruit," i.e. small things you can do to get a quick boost in your rankings. Social media sites typically rank well on search engines because they're highly trusted and active websites. 
+	Note: put the URL of your website in your social media accounts' profile. These are called backlinks and act as "votes of confidence" for your site, which will help rankings. 
+6. Settings > Blogging
+	Change the default blog permalinks to just contain “TITLE”
+	Remove all of the superfluous date info (day/month/year) from this field, Google doesn’t like it.
+7. Submit sitemap to Google Webmaster Tools
+See Google's support article here

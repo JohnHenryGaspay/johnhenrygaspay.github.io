@@ -1,0 +1,32 @@
+    <!doctype html>
+
+    <html>
+
+    <head>
+
+    <meta charset="utf-8">
+
+    <title>Untitled Document</title>
+
+    <script src="SpryAssets/SpryTooltip.js"></script>
+
+    <link href="SpryAssets/SpryTooltip.css" rel="stylesheet">
+
+    </head>
+
+     
+    <body>
+
+    <span id="sprytrigger1">Tooltip trigger goes here.</span>
+
+    <div class="tooltipContent" id="sprytooltip1">Tooltip content goes here.</div>
+
+    <script>
+
+    var sprytooltip1 = new Spry.Widget.Tooltip("sprytooltip1", "#sprytrigger1");
+
+    </script>
+
+    </body>
+
+    </html>

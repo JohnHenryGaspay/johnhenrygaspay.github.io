@@ -1,0 +1,25 @@
+Resources:
+Changing URL Structure
+https://support.bigcommerce.com/articles/Public/URL-Structure-Settings/?q=url+structures&l=en_US&fs=Search&pn=1
+
+
+SEO for BigCommerce
+
+1. Store Settings > Miscellaneous > Privacy Settings > set to Yes
+
+
+Optimize page:
+Homepage: Settings > Store Settings > Search Engine Optimization section
+Category pages: Products > Product Categories > Edit > Search Engine Optimization section
+Product Pages: Edit any product or add a product > Other Details Tab > Search Engine Optimization
+Web Content Pages: Content > Web Pages > Edit > here you will find that the title of your page will serve as your title tag. The meta description field lives at the bottom of this page.
+Blog Posts: Content > Blog > here you will find that the title of your post will serve as your title tag. The meta description field lives at the bottom of this page.
+
+
+Structured Data Error:
+Problem: The property reviewRating is not recognised by Google for an object of type Product.
+ 	 - <span class="productReview-rating rating--small" itemprop="reviewRating" itemscope="" itemtype="http://schema.org/Rating">
+Solution:- <span class="productReview-rating rating--small" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+
+Problem: Missing Name for Brand:
+Solution: Click Yes for on Store Setup > Store Settings > Display Tab > Product Settings > Yes, show the product's brand in my store

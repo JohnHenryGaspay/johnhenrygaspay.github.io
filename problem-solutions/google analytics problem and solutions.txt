@@ -1,0 +1,15 @@
+In order to understand how different traffic segments convert in Google Analytics, you need to segment the funnels.
+Follow the steps below:
+Step-1: Create filtered views (profiles) for each of the following traffic sources:
+Organic Search Traffic
+Paid Search Traffic
+Referral Traffic
+Direct Traffic
+Social Media
+Mobile traffic
+Tablet Traffic
+Desktop Traffic
+
+Step-2: Set up goals and funnel pages for each filtered view.
+Step-3: Wait for at least a month, so that enough traffic data populates, into the funnel visualization report of each filtered view.
+Once the 30 days of data has populated into the funnel visualization reports, you are ready to interpret goals/sales funnel for each traffic source.

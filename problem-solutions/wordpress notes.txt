@@ -1,0 +1,451 @@
+<?php wp_list_pages(title_li=&include=2.9.11.13)?>
+
+ <?php if (have_posts() ) : while (have_posts() ) : the_post(); ?>
+ <?php endwhile; ?>
+ <?php else; ?>
+   <p>I am not sure what you're looking for</p>
+ <?php endif; ?>
+  <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+  <p class="meta">posted by<?php the_author(); ?>on <?php the_date(); ?></p>
+==============================
+Working with Static HTML to Dynamic
+1. Home - set to template Home Page
+2. 
+
+Customizing WordPress using Child Theme:
+1. Creating Page Templates
+   - ex copy page.php on the child theme
+   - try using <h1>Test</h1> to verify that it's the right page template
+   - page-aboutus.php
+   - Write this text on the top of the template = Template Name: About Us Template
+   - edit the about us page select template on the dashboard front-ent on the drop down
+
+2. Loop Basics
+
+
+To show feature image,menu on on functions.php
+  <?php add_theme_support('post-thumbnails');
+        add_theme_support('menu');?> 
+==============================
+To show right sidebar:
+function twentyfourteen_child_widgets_init(){
+register_sidebar(array(
+ 'name'=> _('Right Hand sidebar'),
+ 'id' => 'right-sidebar',
+  'description' =>_('Widgets in this area will be shown on the right-hand side'),
+  'before_title =>'<h3 class="sidbar_title">',
+  'after_title =>'</h3>',
+  'before_widget =>'<div id="%1$s" class="widget %2s">',
+  'after_widget =>'</div><!--widget end-->')); 
+}
+add_action('widgets_init', 'twentyfourteen_child_widgets_init');
+?>
+==============================
+To write widget on your index.php after a content:
+ 1. <?php if (dynamic_sidebar('level_up_new_widget_area')) : else: endif ;?>
+ 2. if you want to show widget on other page just copy code above on the .php file.
+==============================
+To write css stylessheet on the header.php
+ <link href="<?php bloginfo('stylsheet_url')?> rel="stylsheet" media="screen">
+
+Title: <title><?php bloginfo('title');?></title>
+site name: <h1><a href="<?php bloginfo('name'); ?>"></h1>
+tag description: <p><?php bloginfo('description'); ?></p>
+Menu: <?php wp_nav_menu();?>
+Post title: <h2 class="title"><a href="<?php the_title();?>"></a></h2>
+post meta: <p class="meta">Posted by:<a href="<?php the_author_posts_link();?>"></a>on <?php the_time('F JS, Y');?></p>
+Image on post: <div class="entry"> <a href="#" class="image image-full"><<?php the_post_thumbnail('full');?>></a>
+content: <?php the_content('Read More');?>
+Comment: <a href="<?php comments_link();?> class="comments"><?php comments_number('0 Comments', '1 Comments','% responses');?></a>
+Permalink on the title, image: <a href="<?php the_permalink();"?> class="permalink"> full Article</a>
+
+==============================
+To Add Javascript file to function.php
+<?php 
+function twentfourteen_child_scripts(){
+   wp_enqueue_script('extra.js' , get_stylesheet_directory_uri() . '/js/extra')
+}
+add_action('wp_enqueue_scripts', 'twentyfourteen_child_scripts');
+?>
+==============================
+To add widget below your page, edit index.php below 'content'
+<?php if (dynamic_sidebar('level_up_new_widget_area') ): else : endif;?>
+
+==============================
+To add menu on theme  go to functions.php and add code below:
+function twentyfourteen_child_register_menu(){
+  register_nav_menu('new-menu', __('Our New Menu'));
+}
+add_action('ini','twentyfourteen_child_register_menu' );
+
+now go to your template index.php or page.php
+
+<?php wp_nav_menu( array ('theme_location' => 'new-menu'));?>
+
+==============================
+Optimize for Mobile:
+viewport
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+
+HandheldFriendly
+<meta name="HandheldFriendly" content="true"/> 
+
+MobileOptimized
+<meta name="MobileOptimized" content="320"/> 
+==============================
+RSS for you Feeds:
+https://feedburner.google.com/fb/a/myfeeds
+<link rel="alternate" type="application/rss+xml" title="My Test Feed" href="http://www.mysite.com/rss.xml" />
+
+=============================================
+Creating child theme:
+1. 
+
+Creating child theme make a style.css and add code below:
+/*
+Theme Name:     My Twenty Eleven Child
+Theme URI:
+Description:    My Child theme
+Author:         Abbas Suterwala
+Author URI:
+Template:       twentyeleven
+Version:        1
+*/
+@import url("../minimize/style.css");
+
+or create functions.php and add code below:
+<?php
+
+add_action( 'wp_enqueue_scripts', 'enqueue_parent_theme_style' );
+function enqueue_parent_theme_style() {
+    wp_enqueue_style( 'parent-style', get_template_directory_uri().'/style.css' );
+}
+?>
+=============================================
+Edit function.php
+// Add a rel=nofollow to the comment reply links
+function add_ nofollow_ to_ reply_ link(  $ link )  {
+    return str_ replace(  ' ") \ ' >' , ' ") \ '  rel=\ ' nofollow\ ' >' , $ link ) ;
+}
+add_ filter(  ' comment_ reply_ link' , ' add_ nofollow_ to_ reply_ link'  ) ;
+?>
+=============================================
+Detects Current Author
+<? php
+ $ curauth = ( isset( $ _ G ET [ ' author_ name' ] ) )  ?  get_ user_ by( ' slug' , 
+$ author_ name)  : get_ userdata( intval( $ author) ) ;
+? >
+=============================================
+author.php
+<? php
+get_ header( ) ; ? >
+<? php
+ $ curauth = ( isset( $ _ G ET [ ' author_ name' ] ) )  ?  get_ user_ by( ' slug' , 
+$ author_ name)  : get_ userdata( intval( $ author) ) ;
+? >
+<! --Author B io B ox -->
+<h2>About: <? php echo $ curauth->nickname; ? ></h2>
+   <dl>
+       <dt>Website</dt>
+       <dd><a href="<? php echo $ curauth->user_ url; ? >"><? php echo 
+$ curauth->user_ url; ? ></a></dd>
+       <dt>Profile</dt>
+       <dd><? php echo $ curauth->user_ description; ? ></dd>
+   </dl>
+<h2>Posts by <? php echo $ curauth->nickname; ? >:</h2>
+   <ul>
+<! -- T he L oop -->
+   <? php if (  have_ posts( )  )  : while (  have_ posts( )  )  : the_ post( ) ; ? >
+       <li>
+           <a href="<? php the_ permalink( )  ? >" rel="bookmark" 
+title="Permanent L ink: <? php the_ title( ) ; ? >">
+           <? php the_ title( ) ; ? ></a>,
+           <? php the_ time( ' d M Y ' ) ; ? > in <? php the_ category( ' &' ) ;? >
+       </li>
+   <? php endwhile; else: ? >
+       <p><? php _ e( ' N o posts by this author.' ) ; ? ></p>
+   <? php endif; ? >
+<! -- End L oop -->
+   </ul>
+</div>
+<? php get_ sidebar( ) ; ? >
+<? php get_ footer( ) ; ? >
+
+=============================================
+# Prevent Direct Access to files
+<FilesMatch "\.(tpl|ini|log)">
+ Order deny,allow
+ Deny from all
+</FilesMatch>
+
+=============================================
+Search Engine Optimization 
+https://www.odesk.com/exams/Search-Engine-Optimization-Consultants_6323638
+
+Knowledge of Google Analytics 
+https://www.odesk.com/exams/Google-Analytics-Consultants_7132073
+
+HTML-4.01
+https://www.odesk.com/exams/HTML-4.01-Designers_5453799
+
+CSS
+https://www.odesk.com/exams/CSS-2.0-Designers_5459655
+Social-Media-Marketing
+https://www.odesk.com/exams/Social-Media-Marketing-Consultants_3268382
+=============================================
+define('WP_DEBUG', true);
+define('WP_ALLOW_MULTISITE', true);
+define('MULTISITE', true);
+define('SUBDOMAIN_INSTALL', false);
+define('DOMAIN_CURRENT_SITE', 'localhost');
+define('PATH_CURRENT_SITE', '/');
+define('SITE_ID_CURRENT_SITE', 1);
+define('BLOG_ID_CURRENT_SITE', 1);
+==============================
+Next Prev Code in wordPress
+
+<?php if(etheme_get_option('posts_links')): ?>
+<div class="row-fluid post-next-prev">
+<div class="span6"><?php previous_post_link() ?></div>
+<div class="span6 a-right"><?php next_post_link() ?></div>
+</div>
+<?php endif; ?>
+
+=================
+Nice Theme: 
+Business Pro By vainfotech
+Zerif Lite By codeinwp
+onetone By magictheme = best for Peter
+ProfitMag By wpgaint = best for Peter
+AccessPress Parallax By access-keys
+Graphene By silverks
+
+===================
+wp plugins:
+Akismet-http://akismet.com/?return=true
+AllinoneSEOPack-http://wordpress.org/extend/plugins/all-in-one-seo-pack/
+ArtDirection-http://wordpress.org/extend/plugins/art-direction/
+AskApacheRedirectViewer-http://wordpress.org/extend/plugins/askapaches-rewriterules-viewer/
+Automattic-http://automattic.com/wordpress-plugins/
+BrokenLinkChecker-http://wordpress.org/extend/plugins/broken-link-checker/
+BuddyPress-http://wordpress.org/extend/plugins/buddypress/
+BuddyPressMobile-http://wordpress.org/extend/plugins/buddypress-mobile/
+CDNtools-http://wordpress.org/extend/plugins/cdn-tools/
+CleanOptions-http://www.mittineague.com/dev/co.php
+CMSDashboard-http://wordpress.org/extend/plugins/content-management-system-dashboard/
+CodeAutoEscape-http://priyadi.net/archives/2005/09/27/wordpress-plugin-code-autoescape/
+Commentpress-http://www.futureofthebook.org/commentpress/
+CommunitySubmittedNews-http://wordpress.org/extend/plugins/community-submitted-news/
+CompactArchives-http://rmarsh.com/plugins/compact-archives/
+CustomizablePostListings-http://www.coffee2code.com/wp-plugins/
+DBCacheReloaded-http://wordpress.org/extend/plugins/db-cache-reloaded/
+DiggDigg-http://wordpress.org/extend/plugins/digg-digg/
+Digress.it-http://digress.it/
+DisplayWidgets-http://wordpress.org/extend/plugins/display-widgets/
+DofollowTrackbacks-http://www.turkhitbox.com/seo/dofollow-trackbacks-plugin.html
+Facebooksubscribebuttons-http://developers.facebook.com/docs/reference/plugins/subscribe/
+FeedCount(custom)-http://digwp.com/2009/10/feed-count-plugin/
+FeedburnerRedirectPlugin-http://wordpress.org/extend/plugins/feedburner-plugin/
+FitVidsforWordPress-http://wordpress.org/extend/plugins/fitvids-for-wordpress/
+FollowButton-https://dev.twitter.com/docs/follow-button
+FVCommunityNews-http://www.frank-verhoeven.com/wordpress-plugin-fv-community-news/
+GoogleXMLSitemaps-http://www.arnebrachhold.de/redir/sitemap-home/
+HelloBar-http://wordpress.org/extend/plugins/hellobar/
+hitcounter-http://wordpress.org/extend/plugins/hitcounter/
+HyperCache-http://wordpress.org/extend/plugins/hyper-cache/
+JuizSmartMobileAdmin-http://wordpress.org/extend/plugins/juiz-smart-mobile-admin/
+ListCategoryPosts-http://wordpress.org/extend/plugins/list-category-posts/
+LivefyreRealtimeComments-http://wordpress.org/extend/plugins/livefyre-comments/
+LoginLock-https://wpsecurity.net/wordpress-security-login-lock/
+MakeYourSiteSocial-http://wordpress.org/extend/plugins/gigya-socialize-for-wordpress/
+Mobify-http://wordpress.org/extend/plugins/mobify/
+nrelateRelatedContent-http://wordpress.org/extend/plugins/nrelate-related-content/
+Parallelize-http://wordpress.org/extend/plugins/parrallelize/
+QuickCache-http://wordpress.org/extend/plugins/quick-cache/
+RAWHTMLSnippets-http://wordpress.org/extend/plugins/raw-html-snippets/
+Respond.jsforWP-http://wordpress.org/extend/plugins/respondjs/
+ResponsiveTwentyTen-http://wordpress.org/extend/plugins/responsive-twentyten/
+SearchandReplace-http://wordpress.org/extend/plugins/search-and-replace/
+SexyBookmarks-http://wordpress.org/extend/plugins/sexybookmarks/
+Sharebar-http://wordpress.org/extend/plugins/sharebar/
+Sibling-ChildList-http://wordpress.org/extend/plugins/sb-child-list/
+SimpleBasicContactForm-http://xycss.com/tools/wordpress/
+SimpleLocalAvatars-http://get10up.com/plugins/simple-local-avatars-wordpress/
+Simple:Press–ForumPlugin-http://simple-press.com/
+Simple:Press–ForumPlugin-http://simple-press.com/
+SimplyExclude-http://www.codehooligans.com/projects/wordpress/simply-exclude/
+SocialMediaWidget-http://wordpress.org/extend/plugins/social-media-widget/
+SocialMetrics-http://wordpress.org/extend/plugins/social-metrics/
+StyleMyGallery-http://wordpress.org/extend/plugins/style-my-gallery/
+SubscribeToComments-http://txfx.net/code/wordpress/subscribe-to-comments/
+TDOMiniForms-http://thedeadone.net/download/tdo-mini-forms-wordpress-plugin/
+TheSlide-http://simplereach.com/
+ThemeSwitch-http://www.nkuttler.de/nkthemeswitch/
+TumblrImporter-http://wordpress.org/extend/plugins/tumblr-importer/
+UltimateComingSoonPage-http://wordpress.org/extend/plugins/ultimate-coming-soon-page/
+W3TotalCache-http://wordpress.org/extend/plugins/w3-total-cache/
+W3TotalCache-http://wordpress.org/extend/plugins/w3-total-cache/
+WappleArchitect-http://wordpress.org/extend/plugins/wapple-architect/
+WidgetLogic-http://wordpress.org/extend/plugins/widget-logic/
+WordpressDownloadMonitor-http://wordpress.org/extend/plugins/download-monitor/
+WordPressMobilePack-http://wordpress.org/extend/plugins/wordpress-mobile-pack/
+WordPressPopUp-
+http://wordpress.org/extend/plugins/wordpress-popup/http://wordpress.org/extend/plugins/wordpress-popup/
+WordPressWiki-http://wordpress.org/extend/plugins/wordpress-wiki/
+WPAutosharePost-http://wordpress.org/extend/plugins/wordpress-autosharepost/
+WPDatabaseBackup-http://wordpress.org/extend/plugins/wp-db-backup/
+WPDatabaseManager-http://wordpress.org/extend/plugins/wp-dbmanager/
+WPfileCache-http://wordpress.org/extend/plugins/wp-file-cache/
+WPFluidImages-http://wordpress.org/extend/plugins/wp-fluid-images/
+WPHTTPCompression-http://wordpress.org/extend/plugins/wp-http-compression/
+WPMinify-http://wordpress.org/extend/plugins/wp-minify/
+WPMobileDetector-http://wordpress.org/extend/plugins/wp-mobile-detector/
+WPOrbitSlider-http://wordpress.org/extend/plugins/wp-orbit-slider/
+WPPageNavigation-http://wordpress.org/extend/plugins/wp-pagenavi/
+WPsmush.it-http://wordpress.org/extend/plugins/wp-smushit/
+WPSuperCache-http://wordpress.org/extend/plugins/wp-super-cache/
+WPTouch-http://wordpress.org/extend/plugins/wptouch/
+WP-Cleanup-http://www.jortk.nl/wp-cleanup-optimize-and-cleanup-your-wordpress-database/
+WP-DBManager-http://lesterchan.net/portfolio/programming/php/
+WPBookFacebookApp-http://wordpress.org/extend/plugins/wpbook/
+WYSIWYGBlocksofContent-http://wordpress.org/extend/plugins/smart-wysiwyg-blocks-of-conYetAnotherRelatedPostsPlugin-http://yarpp.org/
+YouTubeShortcode-http://wordpress.org/extend/plugins/youtube-shortcode/
+
+https://wordpress.org/plugins/wordfence/
+WPtouch Mobile Plugin
+
+SEOPressor UNLIMITED
+
+====================
+To Make your site Offline: 
+order deny,allow
+deny from all
+allow from xx.xx.xx.xx // use what is my ip to fill this empty
+ErrorDocument 403 /downtime.htm
+
+<Files downtime.htm>
+allow from all
+</Files>
+
+or:
+
+Options +FollowSymlinks
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_URI} !/offline.html$
+RewriteRule .* /offline.html [R=307,L]
+
+======================
+Manual Update via FTP
+http://codex.wordpress.org/Updating_WordPress
+1. Get the latest WordPress zip (or tar.gz) file.
+2. Unpack the zip file that you downloaded.
+3. Deactivate plugins
+4. Delete the old wp-includes and wp-admin directories on your web host (through your FTP or shell access).
+5. Using FTP or your shell access, upload the new wp-includes and wp-admin directories to your web host, in place of the previously deleted directories.
+6. Upload the individual files from the new wp-content folder to your existing wp-content folder, overwriting existing files. Do NOT delete your existing wp-content folder. Do NOT delete any files or folders in your existing wp-content directory (except for the one being overwritten by new files).
+7. Upload all new loose files from the root directory of the new version to your existing wordpress root directory.
+
+===========================
+tutorial:
+https://ithemes.com/tutorials/getting-started-ithemes-security-part-6-brute-force-protection/
+
+===================
+Code for RSS at functions.php
+
+function embed_rss($content){
+  if(is_feed())
+     $content .= "<p><a href=' ". get_permalink() ."'>'";
+     $content .= get_the_title()  ."</a></p>";
+  return $content;
+  }
+add_filter('the_content' , 'embed_rss');
+?>
+
+==============
+For SEO Friendly 404 Page
+<ul style="margin-bottom:40px;">
+      <?php get_archives('postbypost', 15); ?>
+ </ul>
+
+
+=========
+Create Multi Site on Wordpress:
+1. edit your wp-config.php file and 
+2. add this code: define('WP_ALLOW_MULTISITE', true);
+3. Go to Dashboard > Tools > Network Setup > Click Install
+4. Be sure to add wordpress folder on subfolder
+5. Add this code on this file wp-config.php on your root folder:
+   define('MULTISITE', true);
+   define('SUBDOMAIN_INSTALL', false);
+   define('DOMAIN_CURRENT_SITE', 'localhost');
+   define('PATH_CURRENT_SITE', '/mainsite/');
+   define('SITE_ID_CURRENT_SITE', 1);
+   define('BLOG_ID_CURRENT_SITE', 1);
+
+
+6. Add this code on .htaccess on your root folder
+   RewriteEngine On
+   RewriteBase /mainsite/
+   RewriteRule ^index\.php$ - [L]
+
+   # add a trailing slash to /wp-admin
+   RewriteRule ^([_0-9a-zA-Z-]+/)?wp-admin$ $1wp-admin/ [R=301,L]
+
+   RewriteCond %{REQUEST_FILENAME} -f [OR]
+   RewriteCond %{REQUEST_FILENAME} -d
+   RewriteRule ^ - [L]
+   RewriteRule ^([_0-9a-zA-Z-]+/)?(wp-(content|admin|includes).*) $2 [L]
+   RewriteRule ^([_0-9a-zA-Z-]+/)?(.*\.php)$ $2 [L]
+   RewriteRule . index.php [L]
+
+7. Add New site at Dashboard > Sites > Add Site
+    Type site Address, Title, and Admin Email
+
+8. Install plugins at  MySite > Network Admin > Dashboard
+ 
+
+
+========================================================================
+/* Portrait tablet to landscapt and desktop */
+@media (min-width-:768px) and (max-width:979px){
+padding-bottom: 0px !important;
+}
+
+/*iPad Plus*/
+@media (max-width:1024px){
+
+}
+
+/*iPad Plus*/
+@media screen and (max-width:768px){
+h2 {display: none;}
+}
+
+@media (min-width:520px) and (max-width:768px){
+.wpb_content_element{display:none;}
+}
+
+@media (min-width-:320px) and (max-width:768px){
+.wpb_raw_code{display:none;}
+}
+
+
+W3 Cache
+General
+1. Page Cach = enable
+   = Page Cache Method: Disk Enhanced
+2. Minify = enable
+  = Minify mode: Auto
+3. Opcode Cache: Opcode:Zend Opcache
+   = Validate timestamps: enable
+4. Database Cache:enable
+
+<meta name='robots' content='all' />
+
+/* By JohnG*/
+                     
+@media screen and ( min-width: 320px ) and ( max-width: 768px ){
+  .paper{display:none;}
+  .vc_row.vc_row-flex>.vc_column_container>.vc_column-inner{display:none;} 
+}

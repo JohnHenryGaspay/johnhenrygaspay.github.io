@@ -1,0 +1,131 @@
+To Edit missing categories on Prestashop:
+Catalog > Categories > Select Home > View > 
+
+add additional button to optimize images alt text
+1. locate images.tpl here:
+2. admin\themes\default\template\controllers\products
+3. locate this line: 
+{/if}
+
+{/foreach}
+4. add this code below:  
+<div class="col-lg-2{if $images|count <= 1} hidden{/if}" id="caption_selection">
+				
+<select name="id_caption">
+					
+<option value="0">{l s='All captions'}</option>
+	{foreach from=$images item=image}
+					
+<option value="{$image->id_image|intval}">
+{l s='Position %d' sprintf=$image->position|intval}
+
+</option>
+ {/foreach}
+
+</select>
+
+</div>
+
+<div class="col-lg-2">
+
+<button type="submit" class="btn btn-default" name="submitAddproductAndStay" value="update_legends"><i class="icon-random"></i> {l s='Update'}</button>
+
+</div>
+
+
+===================
+Problem The Employee does not exist, or the password provided is incorrect.
+Option 1. Ask for forgot password
+Option 2. 
+1. Go to your phyMyadmin and locate ps_employee table
+2. Backup your password cell:
+3.  click go to update
+4. Put back your password back and click go
+
+===================
+Problem Implement canonical url in prestashop:
+https://gist.github.com/michaelhjulskov/10a45a77090989ca18b5
+1. locate your header.tpl at \themes\themefolder\header.tpl
+2. then add this on the header part:
+ {if isset($canonical_url) && $canonical_url}<link rel="canonical" href="{$canonical_url}" />{/if}
+3. Next Locate your FrontController.php at \classes\controller\FrontController.php
+4. then add this code on the topmost after the comment
+
+class FrontController extends FrontControllerCore
+{
+	public function init()
+	{
+		parent::init();
+		$this->context->smarty->assign('canonical_url', $this->getCanonicalUrl());
+	}
+	protected function getCanonicalUrl()
+	{
+		if (Tools::getValue('ajax'))
+			return false;
+		
+		$base_dir = $this->context->smarty->getTemplateVars('base_dir');
+		$page_name = $this->context->smarty->getTemplateVars('page_name');
+		
+		if ($page_name == 'index')
+			return $base_dir;
+		if ($page_name == 'search' && Tools::getValue('tag'))
+			return $this->context->link->getPageLink($page_name, true, null, 'tag='.Tools::getValue('tag'));
+		
+		if ($page_name == 'search' && Tools::getValue('search_query'))
+			return $base_dir; // TODO - is this the right thing to do? To just set base url as canonical url - or should it be indexed?
+			//return $this->context->link->getPageLink($page_name, true, null, 'search_query='.Tools::getValue('search_query'));
+		
+		// List Pages - without any id (relevant might be: n,p,orderby,orderway)
+		$non_id_list_pages = array('manufacturers','suppliers','best-sales','new-products','prices-drop','all-products');
+		if (in_array($page_name, $non_id_list_pages)) 
+			return $this->context->link->getPageLink($page_name, true, null);
+			// TODO fix something with the params: n,p,orderby,orderway
+			//return $this->context->link->getPageLink($page_name, true, null, ((Tools::getValue('p'))?'p='.Tools::getValue('p'):''));
+			//return $this->context->link->getPageLink($page_name, true, null, ((Tools::getValue('n'))?'n='.Tools::getValue('n'):''));
+			//return $this->context->link->getPageLink($page_name, true, null, ((Tools::getValue('orderby'))?'orderby='.Tools::getValue('orderby'):''));
+			//return $this->context->link->getPageLink($page_name, true, null, ((Tools::getValue('orderway'))?'orderway='.Tools::getValue('orderway'):''));
+		// List Pages - with id parameter (relevant might be: )
+		$id_detail_pages = array('category','manufacturer','supplier','product','blog','cms');
+		if (in_array($page_name, $id_detail_pages) && Tools::getValue('id_'.$page_name)){
+			if ($page_name == 'product')
+				return $this->context->link->getProductLink(Tools::getValue('id_'.$page_name));
+			if ($page_name == 'manufacturer')
+				return $this->context->link->getManufacturerLink(Tools::getValue('id_'.$page_name));
+			if ($page_name == 'category')
+				return $this->context->link->getCategoryLink(Tools::getValue('id_'.$page_name));
+			if ($page_name == 'cms')
+				return $this->context->link->getCmsLink(Tools::getValue('id_'.$page_name));
+			if ($page_name == 'supplier')
+				return $this->context->link->getSupplierLink(Tools::getValue('id_'.$page_name));
+			return $this->context->link->getPageLink($page_name, true, null, 'id_'.$page_name.'='.Tools::getValue('id_'.$page_name));
+		}
+		// Single information pages - without any id (relevant might be: back)
+		$non_id_single_pages = array(
+			'contactform','contact','authentication','order','cart','discount','my-account','password',
+			'order-detail','order-opc','order-slip','history','address','addresses','identity','remindme',
+			'stores','sitemap'
+		);
+		if (in_array($page_name, $non_id_single_pages))
+			return $this->context->link->getPageLink($page_name, true, null);
+		// AS4 seo pages - quick fix - TODO improve
+		if (Tools::getValue('id_seo')) //Tools::getValue('id_search')
+			return $base_dir . substr(strtok($_SERVER["REQUEST_URI"],'?'), 1);
+		// other pages - quick fix
+		// TODO this is meant as temp solution -should be improved
+		return $base_dir . substr(strtok($_SERVER["REQUEST_URI"],'?'), 1);
+		// return false;
+		
+		/* old stuff i might need later
+		if (strpos($_SERVER['REQUEST_URI'], 'p=') === false){
+		return $base_dir . preg_replace('/\?(.*)/', '', preg_replace('/\/(.*)/', '', substr($_SERVER['REQUEST_URI'], 1)));
+		$url = $server_name . strtok($_SERVER["REQUEST_URI"],'?').'?p='.Tools::getValue('p');
+		*/
+	}
+}
+
+====================
+fix 404 urls:
+
+Redirect 301 /themes/pos_veneno3/css/utmavo.eot https://www.ezdisplaysolutions.com/
+
+              

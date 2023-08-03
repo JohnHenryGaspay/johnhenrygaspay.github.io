@@ -1,0 +1,61 @@
+Speed:
+Page should load quicker
+Reduce page size
+Too many file requests
+
+URL
+Exact Keyword not found in this URL
+
+
+TITLE TAG
+Title tag should begin with exact keyword
+Description tag needs exact keyword
+
+
+IMAGE ANALYSIS
+Every image on this page needs an alt tag
+Remove any underscores in image file names
+
+
+HEADING TAGS
+Add exact keyword to H1, H2, or H3 tag
+
+
+COPY ANALYSIS
+You should have 2,000+ words on this page
+Only use exact keyword 2-4 times
+Bold, italicize, or underline exact keyword
+Add your exact keyword to the first 100 words
+
+
+CODE ANALYSIS
+Remove inline CSS
+Text to HTML ratio is too low (< 25%)
+
+
+SOCIAL ANALYSIS
+Add a link to a blog
+
+
+MOBILE ANALYSIS
+Add a mobile sitemap
+Add an Apple icon
+Add a viewport metatag
+
+
+PAGE LINK ANALYSIS
+5 links from other sites
+Reduce outbound follow links to below 25
+
+
+ROOT DOMAIN LINK ANALYSIS
+Add a link from the DMOZ Directory
+
+DOMAIN ANALYSIS
+This domain expires in 0 years, 96 days
+
+
+
+Source: 
+http://mysiteauditor.com/user/frontpage/ureport/5663063087
+

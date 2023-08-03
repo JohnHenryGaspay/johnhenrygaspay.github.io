@@ -1,0 +1,7 @@
+1. Page Title
+ -> Admin Dashboard > System/Setting > General > Site Title
+
+2. Meta Description
+ -> Admin Dashboard > Content > Pages > index > SEO
+
+3.

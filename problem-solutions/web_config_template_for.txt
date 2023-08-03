@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <system.webServer>
+<rewrite>
+  <rules>
+    <rule name="Redirect to www" stopProcessing="true">
+      <match url="(.*)" />
+      <conditions >
+        <add input="{HTTP_HOST}" pattern="^nirays.com$" />
+      </conditions>
+      <action type="Redirect"
+        url="{MapProtocol:{HTTPS}}://www.nirays.com/{R:1}" redirectType="Permanent"/>
+    </rule>
+  <rule name="Redirect Rule" stopProcessing="true">
+        <match url=".*" />
+        <conditions>
+            <add input="{StaticRedirects:{REQUEST_URI}}" pattern="(.+)" />
+        </conditions>
+        <action type="Redirect" url="http://www.nirays.com/{C:1}" appendQueryString="False" redirectType="Permanent" />
+    </rule>
+  </rules>
+  <rewriteMaps>
+    <rewriteMap name="MapProtocol">
+      <add key="on" value="https" />
+      <add key="off" value="http" />
+    </rewriteMap>
+ <rewriteMap name="StaticRedirects">
+        <add key="/old1.php" value="new1.php" />
+        <add key="/old2.php" value="newfolder/old2.php" />
+    </rewriteMap>
+  </rewriteMaps>
+</rewrite>
+     <!--<asp scriptErrorSentToBrowser="true"/>
+  <httpErrors errorMode="Detailed"/>  -->
+    </system.webServer>
+</configuration>

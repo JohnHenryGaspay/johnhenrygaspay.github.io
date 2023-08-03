@@ -1,0 +1,24 @@
+https://gist.github.com/hootlex/da59b91c628a6688ceb1
+https://laravel.com/docs/4.2
+https://www.techiediaries.com/laravel/php-laravel-7-6-tutorial-crud-example-app-bootstrap-4-mysql-database/
+https://laravel.com/docs/5.2/quickstart
+https://laravel.com/docs/5.8/artisan
+
+Install Laravel on Localhost:
+1. Download https://getcomposer.org/download/
+2. Install on the target directory e.g. at myxampp/htdocs
+3. Check if you can see composer.phar file
+4. sudo apt install php7.0-cli
+5. sudo apt install hhvm
+6. sudo apt-get update - in case for missing
+7. 
+
+
+===================
+
+if (window.location.protocol === 'http:') {
+  const requireHTTPS = document.getElementById('requireHTTPS');
+  const link = requireHTTPS.querySelector('a');
+  link.href = window.location.href.replace('http://', 'https://');
+  requireHTTPS.classList.remove('hidden');
+}

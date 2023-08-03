@@ -1,0 +1,12 @@
+Problem: Transfer domain name to host in Godaddy
+
+1. Ask logins for 
+    = Godaddy - hosting company
+    = Dot.ph - registered domain:
+2. Godaddy Status: DNS hosting only no domain purchase
+3. Go to Dot.ph and update your nameserver from Godaddy
+4. Usually it asked for nameserver and ipv4, try open cmd and ping the two nameserver
+5. Changes will take up to 24-48 hours from changes
+6. Try verify your domain in Google Webmaster Tools.
+7. 
+         

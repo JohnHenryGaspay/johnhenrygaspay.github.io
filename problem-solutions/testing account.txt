@@ -1,0 +1,11 @@
+MySQL Account:
+database name: specialproject1
+user: wpuser
+ps: wpuser
+
+Wordpress Account:
+admin 
+adminx22
+
+
+&leachX22od$

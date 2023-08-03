@@ -1,0 +1,13 @@
+Sitemap Problem:
+Solution: 
+1. Submit only your preferred domain
+2. Add in robots.txt
+3. 
+
+Video Sitemap:
+http://www.gopavers.com/sitemap-video.xml
+
+
+GA Problem:
+http://www.netcel.com/Resources/Insights/White-papers/6-must-have-google-analytics-filters/
+http://www.jeriffcheng.com/exclude-certain-countryregioncity-traffic-google-analytics-reports.html
