@@ -1,3 +1,25 @@
+==================================================================
+Secure Your WordPress site:
+
+1. Disable Directory Browsing and Indexing in for more Secure WordPress site:
+    Add this line: Options -Indexes on htacces file
+	
+2. Disable PHP Execution: https://prnt.sc/xF0QeIws8tmg
+<Files *.php>
+order deny,allow
+deny from all
+</Files>	
+
+3. Disable XML-RPC
+  # Block WordPress xmlrpc.php requests
+<Files xmlrpc.php>
+order deny,allow
+ deny from all
+allow from 121.54.54.62
+</Files>
+
+4. Tightening File Folder Permission
+==================================================================
 Force http to https
 <IfModule mod_rewrite.c>
 RewriteEngine On

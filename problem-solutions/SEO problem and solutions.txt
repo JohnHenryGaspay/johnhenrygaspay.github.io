@@ -1,4 +1,9 @@
-﻿Semrush 
+﻿=============================================
+SEO Ranking Problems and Solutions
+
+
+=============================================
+Semrush 
 
 Problem: 467 orphaned pages in sitemaps
 Solution 1: Create HTML sitemap and add it to footer links
