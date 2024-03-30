@@ -1,3 +1,25 @@
+Improve Web Core Vitals: 
+Apply Preload:
+<!-- Preload Assets -->
+    <link rel="preload" href="{{ 'fancybox.css' | asset_url }}" as="style">
+    <link rel="preload" href="{{ 'jquery.min.js' | asset_url }}" as="script">
+    <link rel="preload" href="{{ 'vendors.js' | asset_url }}" as="script">
+    <link rel="preload" href="{{ 'sections.js' | asset_url }}" as="script">
+    <link rel="preload" href="{{ 'utilities.js' | asset_url }}" as="script">
+    <link rel="preload" href="{{ 'app.js' | asset_url }}" as="script">
+
+  <!-- Preconnect Domains -->
+  <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.shopify.com" crossorigin>
+  <link rel="preconnect" href="https://monorail-edge.shopifysvc.com">
+
+    <!-- fallback for browsers that don't support preconnect -->
+    <link rel="dns-prefetch" href="https://fonts.shopifycdn.com" />
+    <link rel="dns-prefetch" href="https://cdn.shopify.com" />
+    <link rel="dns-prefetch" href="https://v.shopify.com" />
+    <link rel="dns-prefetch" href="https://cdn.shopifycloud.com" />
+    <link rel="dns-prefetch" href="https://monorail-edge.shopifysvc.com">
+
 Shopify Title Template Liquid:
 Template 1
 <title>
