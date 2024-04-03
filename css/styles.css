@@ -209,4 +209,10 @@ ol.carousel-indicators{display:none;}
 	 color:#303030;
 	 font-size: 21px;
 	 margin: 10px;
- }   
+ }  
+
+#portfoliop{
+	text-align: justify;
+	font-size: 16px;
+	padding: 5px;
+   } 
