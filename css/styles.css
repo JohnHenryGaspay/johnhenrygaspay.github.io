@@ -212,8 +212,9 @@ ol.carousel-indicators{display:none;}
  }  
 
 .portfoliop{
+	color:#303030;
 	text-align: justify;
-	font-size: 17px;
+	font-size: 16px;
 	padding: 5px;
 	margin: 5px;
    } 
