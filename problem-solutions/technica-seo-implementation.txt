@@ -1,5 +1,24 @@
-
-
+==================
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://schema.org"
+  },
+  "headline": "BlogPosting",
+  "description": "BlogPosting",
+  "image": "https://schema.org",  
+  "author": {
+    "@type": "Person",
+    "name": "WellShare",
+	"url": "https://schema.org"
+  },
+  "datePublished": "05-05-2024"
+}
+</script>
+==========================
 1. Block Potential Harmful Link
 
 Fix Bad Link in htaccess: 
