@@ -1,5 +1,7 @@
 ﻿=============================================
 SEO Ranking Problems and Solutions
+Problem: JavaScript not cached 
+Solution: create a copy and embeed for that page only using custom html or custom code:
 
 
 =============================================

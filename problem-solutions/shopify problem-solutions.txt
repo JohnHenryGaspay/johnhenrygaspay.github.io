@@ -1,3 +1,50 @@
+Working Product Schema with Review: 
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": {{ product_name | strip_newlines | json }} ,
+    {% if product.description != blank %}
+      "description": {{ product.description | json }},
+    {% endif %}
+    "image": {{ product_image | img_url: '1024x1024' | prepend: 'https:' | json }},
+    {% if product.vendor %}
+    "brand": {
+      "@type": "Brand",
+      "name": {{ product.vendor | json }}
+    },
+      {% endif %} 
+   {% if selected_variant.barcode != blank %}
+      "mpn": {{ selected_variant.barcode | json }},
+    {% endif %}
+   {% if selected_variant.sku != blank %}
+      "sku": {{ selected_variant.sku | json }},
+    {% endif %}
+   {% if product.metafields.reviews.rating.value != blank %}
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "{{ product.metafields.reviews.rating.value }}",
+      "ratingCount": "{{ product.metafields.judgeme.badge | strip_html | split: " " | first | abs }}"
+    },
+      {% endif %}
+    "offers": {
+      "@type": "AggregateOffer",
+      "offerCount": "1",
+      "lowPrice": "{{ WCProduct_VariantPrice | divided_by: 100.0 | json }}",
+      "highPrice": "{{ WCProduct_ComparePriceMin | divided_by: 100.0 | json }}",
+      "url": "{{ shop.url }}{{ selected_variant.url }}",
+      "priceCurrency": {{ cart.currency.iso_code | json }},
+      "availability": "http://schema.org/{% if selected_variant.available %}InStock{% else %}OutOfStock{% endif %}",
+      "seller": {
+        "@type": "Organization",
+        "name": {{ shop.name | json }}
+      },
+     "priceValidUntil": {{ year_from_now | json }}
+    }
+  }
+</script>
+
+
 Improve Web Core Vitals: 
 Apply Preload:
 <!-- Preload Assets -->
@@ -20,6 +67,8 @@ Apply Preload:
     <link rel="dns-prefetch" href="https://cdn.shopifycloud.com" />
     <link rel="dns-prefetch" href="https://monorail-edge.shopifysvc.com">
 
+
+https://fithops.com/cdn/fonts/roboto/roboto_n4.da808834c2315f31dd3910e2ae6b1a895d7f73f5.woff2?h1=Zml0aG9wcy5jb20&h2=Zml0aG9wcy5hY2NvdW50Lm15c2hvcGlmeS5jb20&hmac=9a89398b4f770cf496c5cf61b7af252eb285444e3cd8f21c862b25b6481104f3
 Shopify Title Template Liquid:
 Template 1
 <title>
@@ -113,6 +162,60 @@ Json Schema for Website:
   {% endif %}
 }
 </script>
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org/",
+    "@type": "Product",
+    "name": {{ product_name | strip_newlines | json }},
+    "image": {{ product_image | img_url: '1024x1024' | prepend: 'https:' | json }},
+    {% if product.description != blank %}
+      "description": {{ product.description | json }},
+    {% endif %}
+   "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue":{{ product.metafields.reviews.rating.value }}
+        },
+        "author": {
+          "@type": "Person",
+          "name": "{{ shop.name | append: " verified review " }}"
+        }
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": {{ product.metafields.reviews.rating.value }},
+        "reviewCount": {{ product.metafields.judgeme.badge | strip_html | split: " " | first | abs }}
+      }
+    }
+    {% if product.vendor %}
+      "brand": {
+        "@type": "Thing",
+        "name": {{ product.vendor | json }}
+      },
+    {% endif %}
+    {% if selected_variant.sku != blank %}
+      "sku": {{ selected_variant.sku | json }},
+    {% endif %}
+    {% if selected_variant.barcode != blank %}
+      "mpn": {{ selected_variant.barcode | json }},
+    {% endif %}
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": {{ cart.currency.iso_code | json }},
+      "price": {{ WCProduct_VariantPrice | divided_by: 100.0 | json }},
+      "availability": "http://schema.org/{% if selected_variant.available %}InStock{% else %}OutOfStock{% endif %}",
+      "url": "{{ shop.url }}{{ selected_variant.url }}",
+      "seller": {
+        "@type": "Organization",
+        "name": {{ shop.name | json }}
+      },
+      "priceValidUntil": {{ year_from_now | json }}
+    }
+  }
+</script>
+
 
 {% if handle contains 'en' %}
 <link rel="alternate" hreflang="x-default" href="{{ canonical_url}}" />
