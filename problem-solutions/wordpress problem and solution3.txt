@@ -1,3 +1,10 @@
+Problem: SEO Title is not Rendering
+Solution: 
+Replace this Title snippet here; 
+from: <?php //echo ((is_front_page()) ? bloginfo('name') : get_the_title()); ?>
+to: <?php echo esc_html(wp_get_document_title()); ?>
+
+
 ==================================================================
 Site folder object not found: add this code on functions.php after initial <?php
 update_option( 'siteurl', 'http://localhost/wordpress' );
