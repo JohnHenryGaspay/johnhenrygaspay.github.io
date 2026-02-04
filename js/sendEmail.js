@@ -85,10 +85,55 @@ function validateForm(formData) {
 function showNotification(type, message) {
     // Using toastr (already loaded in your page)
     if (typeof toastr !== 'undefined') {
+        toastr.options = {
+            "closeButton": true,
+            "progressBar": true,
+            "timeOut": type === 'success' ? "5000" : "3000",
+            "positionClass": "toast-top-right"
+        };
         toastr[type](message);
     } else {
         alert(message);
     }
+}
+
+/**
+ * Show thank you modal/message
+ * @param {string} name - User's name
+ */
+function showThankYouMessage(name) {
+    const message = `
+        <div style="text-align: center; padding: 10px;">
+            <h3 style="color: #4CAF50; margin-bottom: 15px;">✓ Thank You, ${name}!</h3>
+            <p style="font-size: 16px; margin-bottom: 10px;">Your message has been sent successfully.</p>
+            <p style="font-size: 14px; color: #666;">I'll get back to you within 24 hours.</p>
+            <p style="font-size: 14px; margin-top: 15px;">
+                <strong>Need immediate assistance?</strong><br>
+                <a href="https://api.whatsapp.com/send?phone=+639706556707&text=Hi%20John,%20I%20just%20sent%20a%20message%20via%20your%20contact%20form" 
+                   target="_blank" 
+                   style="color: #25D366; text-decoration: none; font-weight: bold;">
+                   📱 Message me on WhatsApp
+                </a>
+            </p>
+        </div>
+    `;
+    
+    showNotification('success', message);
+}
+
+/**
+ * Send WhatsApp notification (opens WhatsApp with pre-filled message)
+ * @param {Object} formData
+ */
+function sendWhatsAppNotification(formData) {
+    const whatsappNumber = '+639706556707';
+    const message = `New contact form submission:\n\nName: ${formData.name}\nEmail: ${formData.email}\nMessage: ${formData.message}`;
+    const whatsappUrl = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent(message)}`;
+    
+    // Open in new tab (optional - you can comment this out if you don't want auto-open)
+    // window.open(whatsappUrl, '_blank');
+    
+    console.log('WhatsApp notification URL:', whatsappUrl);
 }
 
 /**
@@ -106,6 +151,7 @@ function resetForm() {
  */
 function handleFormSubmit(e) {
     e.preventDefault();
+    console.log('Form submitted!');
 
     // Get form data
     const formData = {
@@ -114,9 +160,12 @@ function handleFormSubmit(e) {
         message: document.getElementById('comments').value
     };
 
+    console.log('Form data:', formData);
+
     // Validate form
     const validation = validateForm(formData);
     if (!validation.isValid) {
+        console.log('Validation failed:', validation.errors);
         validation.errors.forEach(error => {
             showNotification('error', error);
         });
@@ -124,23 +173,42 @@ function handleFormSubmit(e) {
     }
 
     // Get submit button
-    const submitBtn = document.querySelector('button[type="submit"]');
+    const submitBtn = e.target.querySelector('button[type="submit"]') || document.querySelector('button[type="submit"]');
     const originalBtnText = submitBtn.innerHTML;
     
     // Disable button and show loading state
     submitBtn.disabled = true;
-    submitBtn.innerHTML = 'Sending...';
+    submitBtn.innerHTML = '<span class="glyphicon glyphicon-refresh glyphicon-spin"></span> Sending...';
+
+    console.log('Sending email via EmailJS...');
 
     // Send email
     sendEmail(formData)
         .then(function(response) {
-            console.log('SUCCESS!', response.status, response.text);
-            showNotification('success', 'Message sent successfully! I will get back to you within 24 hours.');
+            console.log('✓ Email sent successfully!', response.status, response.text);
+            
+            // Show thank you message
+            showThankYouMessage(formData.name);
+            
+            // Optional: Send WhatsApp notification to yourself
+            sendWhatsAppNotification(formData);
+            
+            // Reset form
             resetForm();
         })
         .catch(function(error) {
-            console.error('FAILED...', error);
-            showNotification('error', 'Failed to send message. Please try again or contact me via WhatsApp.');
+            console.error('✗ Email failed:', error);
+            
+            let errorMessage = 'Failed to send message. ';
+            
+            // Provide more specific error messages
+            if (error.text) {
+                errorMessage += error.text + ' ';
+            }
+            
+            errorMessage += 'Please try again or contact me via WhatsApp.';
+            
+            showNotification('error', errorMessage);
         })
         .finally(function() {
             // Re-enable button
@@ -151,8 +219,22 @@ function handleFormSubmit(e) {
 
 // Initialize form handler when DOM is ready
 document.addEventListener('DOMContentLoaded', function() {
-    const submitBtn = document.querySelector('button[type="submit"]');
-    if (submitBtn) {
-        submitBtn.addEventListener('click', handleFormSubmit);
+    console.log('Initializing contact form...');
+    
+    // Check if EmailJS is loaded
+    if (typeof emailjs === 'undefined') {
+        console.error('EmailJS library not loaded!');
+        return;
+    }
+    
+    console.log('EmailJS loaded successfully');
+    
+    // Get the form
+    const form = document.getElementById('contact-form');
+    if (form) {
+        console.log('Contact form found, attaching event listener');
+        form.addEventListener('submit', handleFormSubmit);
+    } else {
+        console.error('Contact form not found!');
     }
 });
