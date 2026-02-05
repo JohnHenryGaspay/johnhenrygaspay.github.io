@@ -265,7 +265,7 @@ html:not(.js) .cd-faq__group,
 }
 
 .cd-faq__content {
-  display: block; // show content by default on mobile
+  display: block; // show content by default on all devices
   
   .text-component {
     font-size: 0.95em;
@@ -276,9 +276,7 @@ html:not(.js) .cd-faq__group,
   }
 
   @include breakpoint(md) {
-    display: none;
     padding: 0 var(--space-sm);
-    overflow: hidden;
     
     .text-component {
       font-size: 0.75em;
