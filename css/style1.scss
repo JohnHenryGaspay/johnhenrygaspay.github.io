@@ -270,11 +270,7 @@ html:not(.js) .cd-faq__group,
 }
 
 .cd-faq__content {
-  display: block !important; // force show content on all devices
-  visibility: visible !important;
-  opacity: 1 !important;
-  height: auto !important;
-  max-height: none !important;
+  display: none; // hidden by default, shown on click
   text-align: left;
   
   .text-component {

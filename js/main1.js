@@ -50,9 +50,8 @@
 			closeFaqPanel(faqs);
 		});
 
-		// on desktop -> toggle faq content visibility when clicking on the trigger element
+		// toggle faq content visibility when clicking on the trigger element (works on all devices)
 		faqs.faqContainer.addEventListener('click', function(event){
-			if(getMq(faqs) != 'desktop') return;
 			var trigger = event.target.closest('.cd-faq__trigger');
 			if(!trigger) return;
 			event.preventDefault();
