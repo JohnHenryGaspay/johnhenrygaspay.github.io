@@ -109,16 +109,37 @@ function showNotification(type, message) {
  * @param {string} name - User's name
  */
 function showThankYouMessage(name) {
-    console.log('Showing modal for:', name);
+    console.log('showThankYouMessage called with name:', name);
     
-    // Set the name in the modal
-    const firstName = name.split(' ')[0]; // Get first name only
-    document.getElementById('thankYouName').textContent = 'Thank You, ' + firstName + '!';
-    
-    // Show the Bootstrap modal
-    $('#thankYouModal').modal('show');
-    
-    console.log('Modal should be visible now');
+    try {
+        // Set the name in the modal
+        const firstName = name.split(' ')[0]; // Get first name only
+        const nameElement = document.getElementById('thankYouName');
+        
+        if (!nameElement) {
+            console.error('thankYouName element not found!');
+            alert('Thank you, ' + firstName + '! Your message has been sent successfully. I will get back to you within 24 hours.');
+            return;
+        }
+        
+        nameElement.textContent = 'Thank You, ' + firstName + '!';
+        console.log('Name set in modal');
+        
+        // Check if jQuery is available
+        if (typeof $ !== 'undefined' && $.fn.modal) {
+            console.log('jQuery modal available, showing modal...');
+            $('#thankYouModal').modal('show');
+        } else {
+            console.error('jQuery or Bootstrap modal not available!');
+            // Fallback to alert
+            alert('Thank you, ' + firstName + '! Your message has been sent successfully. I will get back to you within 24 hours.');
+        }
+        
+        console.log('Modal should be visible now');
+    } catch (error) {
+        console.error('Error in showThankYouMessage:', error);
+        alert('Thank you! Your message has been sent successfully.');
+    }
 }
 
 /**
@@ -140,9 +161,30 @@ function sendWhatsAppNotification(formData) {
  * Reset form fields
  */
 function resetForm() {
-    document.getElementById('name').value = '';
-    document.getElementById('email').value = '';
-    document.getElementById('comments').value = '';
+    console.log('resetForm called');
+    
+    try {
+        const nameField = document.getElementById('name');
+        const emailField = document.getElementById('email');
+        const commentsField = document.getElementById('comments');
+        
+        if (nameField) {
+            nameField.value = '';
+            console.log('Name field cleared');
+        }
+        if (emailField) {
+            emailField.value = '';
+            console.log('Email field cleared');
+        }
+        if (commentsField) {
+            commentsField.value = '';
+            console.log('Comments field cleared');
+        }
+        
+        console.log('All form fields cleared');
+    } catch (error) {
+        console.error('Error clearing form:', error);
+    }
 }
 
 /**
