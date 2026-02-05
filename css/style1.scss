@@ -132,19 +132,16 @@
   }
 }
 
-.cd-faq__items { // on mibile, faq contents slides in from the right
-	position: fixed;
-  z-index: 1;
-	height: 100%;
-	width: 90%;
-	top: 0;
-	right: 0;
+.cd-faq__items { // on mobile, faq contents visible by default (no categories to click)
+	position: static;
+	height: auto;
+	width: 100%;
 	background: var(--cd-color-4);
 	padding: 0 var(--component-padding) var(--space-md);
-	overflow: auto;
+	overflow: visible;
 	-webkit-overflow-scrolling: touch;
 	backface-visibility: hidden;
-	transform: translateZ(0) translateX(100%);
+	transform: translateX(0);
 	transition: transform .3s;
 
 	@include breakpoint(md) {
