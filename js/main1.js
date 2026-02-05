@@ -6,7 +6,7 @@
 		this.triggers = this.element.getElementsByClassName('cd-faq__trigger');
 		this.faqContainer = this.element.getElementsByClassName('cd-faq__items')[0];
 		this.faqsCategoriesContainer = this.element.getElementsByClassName('cd-faq__categories')[0];
-		this.faqsCategories = this.faqsCategoriesContainer.getElementsByClassName('cd-faq__category');
+		this.faqsCategories = this.faqsCategoriesContainer ? this.faqsCategoriesContainer.getElementsByClassName('cd-faq__category') : [];
   	this.faqOverlay = this.element.getElementsByClassName('cd-faq__overlay')[0];
   	this.faqClose = this.element.getElementsByClassName('cd-faq__close-panel')[0];
   	this.scrolling = false;
@@ -15,29 +15,31 @@
 
   function initFaqEvents(faqs) {
   	// click on a faq category
-		faqs.faqsCategoriesContainer.addEventListener('click', function(event){
-			var category = event.target.closest('.cd-faq__category');
-			if(!category) return;
-			var mq = getMq(faqs),
-				selectedCategory = category.getAttribute('href').replace('#', '');
-			if(mq == 'mobile') { // on mobile, open faq panel
-				event.preventDefault();
-				faqs.faqContainer.scrollTop = 0;
-				Util.addClass(faqs.faqContainer, 'cd-faq__items--slide-in');
-				Util.addClass(faqs.faqClose, 'cd-faq__close-panel--move-left');
-				Util.addClass(faqs.faqOverlay, 'cd-faq__overlay--is-visible');
-				var selectedSection = faqs.faqContainer.getElementsByClassName('cd-faq__group--selected');
-				if(selectedSection.length > 0) {
-					Util.removeClass(selectedSection[0], 'cd-faq__group--selected');
+		if(faqs.faqsCategoriesContainer) { // Only add event if categories exist
+			faqs.faqsCategoriesContainer.addEventListener('click', function(event){
+				var category = event.target.closest('.cd-faq__category');
+				if(!category) return;
+				var mq = getMq(faqs),
+					selectedCategory = category.getAttribute('href').replace('#', '');
+				if(mq == 'mobile') { // on mobile, open faq panel
+					event.preventDefault();
+					faqs.faqContainer.scrollTop = 0;
+					Util.addClass(faqs.faqContainer, 'cd-faq__items--slide-in');
+					Util.addClass(faqs.faqClose, 'cd-faq__close-panel--move-left');
+					Util.addClass(faqs.faqOverlay, 'cd-faq__overlay--is-visible');
+					var selectedSection = faqs.faqContainer.getElementsByClassName('cd-faq__group--selected');
+					if(selectedSection.length > 0) {
+						Util.removeClass(selectedSection[0], 'cd-faq__group--selected');
+					}
+					Util.addClass(document.getElementById(selectedCategory), 'cd-faq__group--selected');
+				} else { // on desktop, scroll to section
+					if(!window.requestAnimationFrame) return;
+					event.preventDefault();
+					var windowScrollTop = window.scrollY || document.documentElement.scrollTop;
+					Util.scrollTo(document.getElementById(selectedCategory).getBoundingClientRect().top + windowScrollTop + 2, 200);
 				}
-				Util.addClass(document.getElementById(selectedCategory), 'cd-faq__group--selected');
-			} else { // on desktop, scroll to section
-				if(!window.requestAnimationFrame) return;
-				event.preventDefault();
-				var windowScrollTop = window.scrollY || document.documentElement.scrollTop;
-				Util.scrollTo(document.getElementById(selectedCategory).getBoundingClientRect().top + windowScrollTop + 2, 200);
-			}
-		});
+			});
+		}
 
 		// on mobile -> close faq panel
 		faqs.faqOverlay.addEventListener('click', function(event){
@@ -96,6 +98,7 @@
   };
 
   function updateCategory() { // update selected category -> show green rectangle to the left of the category
+  	if(!this.faqsCategories || this.faqsCategories.length === 0) return; // Safety check
   	var selected = false;
 		for(var i = 0; i < this.sections.length; i++) {
 			var top = this.sections[i].getBoundingClientRect().top,
@@ -103,7 +106,7 @@
 			Util.toggleClass(this.faqsCategories[i], 'cd-faq__category-selected', bool);
 			if(bool) selected = true;
 		}
-		if(!selected) Util.addClass(this.faqsCategories[0], 'cd-faq__category-selected');
+		if(!selected && this.faqsCategories[0]) Util.addClass(this.faqsCategories[0], 'cd-faq__category-selected');
 		this.scrolling = false;
   };
 
