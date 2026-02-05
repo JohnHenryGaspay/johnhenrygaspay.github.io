@@ -396,6 +396,40 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 </div>
 
+<!-- Thank You Modal -->
+<div class="modal fade" id="thankYouModal" tabindex="-1" role="dialog" aria-labelledby="thankYouModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header" style="background-color: #4CAF50; color: white;">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: white; opacity: 1;">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="thankYouModalLabel">
+          <span class="glyphicon glyphicon-ok-circle"></span> Thank You!
+        </h4>
+      </div>
+      <div class="modal-body" style="text-align: center; padding: 30px;">
+        <h3 id="thankYouName" style="color: #4CAF50; margin-bottom: 20px;"></h3>
+        <p style="font-size: 16px; margin-bottom: 15px;">Your message has been sent successfully!</p>
+        <p style="font-size: 14px; color: #666; margin-bottom: 25px;">I'll get back to you within 24 hours.</p>
+        <hr>
+        <p style="font-size: 14px; margin-top: 20px;">
+          <strong>Need immediate assistance?</strong>
+        </p>
+        <a href="https://api.whatsapp.com/send?phone=+639706556707&text=Hi%20John,%20I%20just%20sent%20a%20message%20via%20your%20contact%20form" 
+           target="_blank" 
+           class="btn btn-success btn-lg" 
+           style="background-color: #25D366; border-color: #25D366; margin-top: 10px;">
+           <span class="glyphicon glyphicon-phone"></span> Message me on WhatsApp
+        </a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- Image of location/map -->
 <!--<img class="lazyload" src="/img/map.jpg" alt="contact us" >-->
 <!--<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js"></script>-->

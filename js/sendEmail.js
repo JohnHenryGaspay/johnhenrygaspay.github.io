@@ -47,8 +47,9 @@ function sendEmail(formData) {
  * @returns {boolean}
  */
 function isValidEmail(email) {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailRegex.test(email);
+    // More strict email validation
+    const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+    return emailRegex.test(email.trim());
 }
 
 /**
@@ -108,23 +109,16 @@ function showNotification(type, message) {
  * @param {string} name - User's name
  */
 function showThankYouMessage(name) {
-    const message = `
-        <div style="text-align: center; padding: 10px;">
-            <h3 style="color: #4CAF50; margin-bottom: 15px;">✓ Thank You, ${name}!</h3>
-            <p style="font-size: 16px; margin-bottom: 10px;">Your message has been sent successfully.</p>
-            <p style="font-size: 14px; color: #666;">I'll get back to you within 24 hours.</p>
-            <p style="font-size: 14px; margin-top: 15px;">
-                <strong>Need immediate assistance?</strong><br>
-                <a href="https://api.whatsapp.com/send?phone=+639706556707&text=Hi%20John,%20I%20just%20sent%20a%20message%20via%20your%20contact%20form" 
-                   target="_blank" 
-                   style="color: #25D366; text-decoration: none; font-weight: bold;">
-                   📱 Message me on WhatsApp
-                </a>
-            </p>
-        </div>
-    `;
+    console.log('Showing modal for:', name);
     
-    showNotification('success', message);
+    // Set the name in the modal
+    const firstName = name.split(' ')[0]; // Get first name only
+    document.getElementById('thankYouName').textContent = 'Thank You, ' + firstName + '!';
+    
+    // Show the Bootstrap modal
+    $('#thankYouModal').modal('show');
+    
+    console.log('Modal should be visible now');
 }
 
 /**
@@ -191,23 +185,19 @@ function handleFormSubmit(e) {
     // Send email
     sendEmail(formData)
         .then(function(response) {
-            console.log('✓ Email sent successfully!', response.status, response.text);
-            console.log('Showing thank you message...');
+            console.log('✓ SUCCESS! Email sent!', response);
             
-            // Show thank you message
+            // Reset form first
+            resetForm();
+            console.log('Form cleared');
+            
+            // Show thank you modal
             showThankYouMessage(formData.name);
-            
-            // Also show a simple alert as backup
-            setTimeout(function() {
-                console.log('Form should be reset now');
-            }, 500);
             
             // Optional: Send WhatsApp notification to yourself
             sendWhatsAppNotification(formData);
             
-            // Reset form
-            resetForm();
-            console.log('Form reset complete');
+            return response;
         })
         .catch(function(error) {
             console.error('✗ Email failed - Full error object:', error);
