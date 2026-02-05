@@ -210,13 +210,18 @@ function handleFormSubmit(e) {
             console.log('Form reset complete');
         })
         .catch(function(error) {
-            console.error('✗ Email failed:', error);
+            console.error('✗ Email failed - Full error object:', error);
+            console.error('Error status:', error.status);
+            console.error('Error text:', error.text);
+            console.error('Error message:', error.message);
             
             let errorMessage = 'Failed to send message. ';
             
             // Provide more specific error messages
             if (error.text) {
                 errorMessage += error.text + ' ';
+            } else if (error.message) {
+                errorMessage += error.message + ' ';
             }
             
             errorMessage += 'Please try again or contact me via WhatsApp.';
