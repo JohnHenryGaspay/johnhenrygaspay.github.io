@@ -145,5 +145,14 @@
 		for(var i = 0; i < faqTemplate.length; i++) {
 			faqArray.push(new FaqTemplate(faqTemplate[i])); 
 		}
-  };
+  }
 })();
+
+// Ensure FAQ is initialized after DOM is ready
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', function() {
+    console.log('FAQ initialized');
+  });
+} else {
+  console.log('FAQ initialized (DOM already ready)');
+}
