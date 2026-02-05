@@ -41,7 +41,7 @@
   <link rel="preload" as="script" href="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
   <script rel="preload" as="script" src="https://pixboost.com/libs/lozad.min.js"></script>
   <script rel="preload" as="script" src="https://pixboost.com/libs/pixboost.js"></script>
-  <script src="js/main.js"></script>
+  <!-- main.js moved to bottom after jQuery loads -->
   <link rel="manifest" href="manifest.json">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="white">
@@ -572,8 +572,16 @@ $(document).ready(function(){
 </script>
   <script> dataLayer = []; </script>
   <script>
-var tripPrice = document.URL.match(/price=([^&]+)/)[1];
-dataLayer=[{'tripValue':tripPrice}];
+// Safely parse URL parameters
+try {
+  var priceMatch = document.URL.match(/price=([^&]+)/);
+  if (priceMatch && priceMatch[1]) {
+    var tripPrice = priceMatch[1];
+    dataLayer=[{'tripValue':tripPrice}];
+  }
+} catch(e) {
+  console.log('No price parameter in URL');
+}
 </script>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-4FDRK75JK0"></script>
