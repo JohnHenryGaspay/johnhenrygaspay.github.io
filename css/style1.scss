@@ -265,7 +265,11 @@ html:not(.js) .cd-faq__group,
 }
 
 .cd-faq__content {
-  display: block; // show content by default on all devices
+  display: block !important; // force show content on all devices
+  visibility: visible !important;
+  opacity: 1 !important;
+  height: auto !important;
+  max-height: none !important;
   
   .text-component {
     font-size: 0.95em;
