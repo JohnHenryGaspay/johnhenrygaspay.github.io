@@ -5,11 +5,13 @@ function Util () {};
 	class manipulation functions
 */
 Util.hasClass = function(el, className) {
+	if (!el) return false; // Safety check - element doesn't exist
 	if (el.classList) return el.classList.contains(className);
 	else return !!el.className.match(new RegExp('(\\s|^)' + className + '(\\s|$)'));
 };
 
 Util.addClass = function(el, className) {
+	if (!el) return; // Safety check - element doesn't exist
 	var classList = className.split(' ');
  	if (el.classList) el.classList.add(classList[0]);
  	else if (!Util.hasClass(el, classList[0])) el.className += " " + classList[0];
@@ -17,6 +19,7 @@ Util.addClass = function(el, className) {
 };
 
 Util.removeClass = function(el, className) {
+	if (!el) return; // Safety check - element doesn't exist
 	var classList = className.split(' ');
 	if (el.classList) el.classList.remove(classList[0]);	
 	else if(Util.hasClass(el, classList[0])) {
@@ -27,6 +30,7 @@ Util.removeClass = function(el, className) {
 };
 
 Util.toggleClass = function(el, className, bool) {
+	if (!el) return; // Safety check - element doesn't exist
 	if(bool) Util.addClass(el, className);
 	else Util.removeClass(el, className);
 };
