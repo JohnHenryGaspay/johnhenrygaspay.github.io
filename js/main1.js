@@ -98,19 +98,41 @@
   };
 
   function updateCategory() { // update selected category -> show green rectangle to the left of the category
-  	if(!this.faqsCategories || this.faqsCategories.length === 0) return; // Safety check - no categories to update
+  	// Comprehensive safety checks
+  	if(!this || typeof this !== 'object') return;
+  	if(!this.faqsCategories) return;
+  	if(!this.sections) return;
+  	if(this.faqsCategories.length === 0) {
+  		this.scrolling = false;
+  		return; // No categories to update, exit early
+  	}
+  	if(this.sections.length === 0) {
+  		this.scrolling = false;
+  		return; // No sections to process, exit early
+  	}
+  	
   	var selected = false;
-		for(var i = 0; i < this.sections.length; i++) {
-			// Make sure corresponding category exists
-			if(!this.faqsCategories[i]) continue;
-			
-			var top = this.sections[i].getBoundingClientRect().top,
-				bool = (top <= 0) && (-1*top < this.sections[i].offsetHeight);
-			Util.toggleClass(this.faqsCategories[i], 'cd-faq__category-selected', bool);
-			if(bool) selected = true;
-		}
-		if(!selected && this.faqsCategories[0]) Util.addClass(this.faqsCategories[0], 'cd-faq__category-selected');
-		this.scrolling = false;
+	var categoryCount = this.faqsCategories.length;
+	
+	for(var i = 0; i < this.sections.length; i++) {
+		// Only process if we have a corresponding category
+		if(i >= categoryCount) break;
+		
+		var section = this.sections[i];
+		var category = this.faqsCategories[i];
+		
+		if(!section || !category) continue;
+		
+		var top = section.getBoundingClientRect().top;
+		var bool = (top <= 0) && (-1*top < section.offsetHeight);
+		Util.toggleClass(category, 'cd-faq__category-selected', bool);
+		if(bool) selected = true;
+	}
+	
+	if(!selected && this.faqsCategories.length > 0 && this.faqsCategories[0]) {
+		Util.addClass(this.faqsCategories[0], 'cd-faq__category-selected');
+	}
+	this.scrolling = false;
   };
 
   function heighAnimationCb(content, bool) {
