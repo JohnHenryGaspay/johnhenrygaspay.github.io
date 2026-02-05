@@ -12,7 +12,7 @@
 // EmailJS Configuration - REPLACE THESE WITH YOUR ACTUAL VALUES
 const EMAILJS_CONFIG = {
     publicKey: 'SJHwIcrcRELCp4g31',      // Get from EmailJS Dashboard > Account > General
-    serviceId: 'service-4github-io',      // Get from EmailJS Dashboard > Email Services
+    serviceId: 'service_hc4iyvc',      // Get from EmailJS Dashboard > Email Services
     templateId: 'template-git-io'     // Get from EmailJS Dashboard > Email Templates
 };
 
@@ -83,16 +83,22 @@ function validateForm(formData) {
  * @param {string} message
  */
 function showNotification(type, message) {
+    console.log('showNotification called:', type, message);
+    
     // Using toastr (already loaded in your page)
     if (typeof toastr !== 'undefined') {
+        console.log('Toastr is available');
         toastr.options = {
             "closeButton": true,
             "progressBar": true,
             "timeOut": type === 'success' ? "5000" : "3000",
-            "positionClass": "toast-top-right"
+            "positionClass": "toast-top-right",
+            "enableHtml": true
         };
         toastr[type](message);
+        console.log('Toastr notification shown');
     } else {
+        console.log('Toastr not available, using alert');
         alert(message);
     }
 }
@@ -186,15 +192,22 @@ function handleFormSubmit(e) {
     sendEmail(formData)
         .then(function(response) {
             console.log('✓ Email sent successfully!', response.status, response.text);
+            console.log('Showing thank you message...');
             
             // Show thank you message
             showThankYouMessage(formData.name);
+            
+            // Also show a simple alert as backup
+            setTimeout(function() {
+                console.log('Form should be reset now');
+            }, 500);
             
             // Optional: Send WhatsApp notification to yourself
             sendWhatsAppNotification(formData);
             
             // Reset form
             resetForm();
+            console.log('Form reset complete');
         })
         .catch(function(error) {
             console.error('✗ Email failed:', error);
@@ -211,6 +224,7 @@ function handleFormSubmit(e) {
             showNotification('error', errorMessage);
         })
         .finally(function() {
+            console.log('Finally block - re-enabling button');
             // Re-enable button
             submitBtn.disabled = false;
             submitBtn.innerHTML = originalBtnText;
