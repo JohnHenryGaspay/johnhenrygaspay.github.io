@@ -168,7 +168,7 @@ html:not(.js) .cd-faq__items {
 }
 
 .cd-faq__group {
-	display: none; // hide group not selected
+	display: block; // show groups by default since no category navigation
 
 	@include breakpoint(md) { // all groups visible
 		display: block;
