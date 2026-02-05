@@ -16,10 +16,7 @@ const EMAILJS_CONFIG = {
     templateId: 'template-git-io'     // Get from EmailJS Dashboard > Email Templates
 };
 
-// Initialize EmailJS when the page loads
-(function() {
-    emailjs.init(EMAILJS_CONFIG.publicKey);
-})();
+// Don't initialize EmailJS here - wait for DOM to be ready
 
 /**
  * Send email via EmailJS
@@ -270,15 +267,28 @@ function handleFormSubmit(e) {
 
 // Initialize form handler when DOM is ready
 document.addEventListener('DOMContentLoaded', function() {
-    console.log('Initializing contact form...');
+    console.log('DOM Content Loaded - Initializing contact form...');
     
-    // Check if EmailJS is loaded
-    if (typeof emailjs === 'undefined') {
+    // Initialize EmailJS AFTER DOM is ready
+    if (typeof emailjs !== 'undefined') {
+        console.log('EmailJS library found, initializing...');
+        try {
+            emailjs.init(EMAILJS_CONFIG.publicKey);
+            console.log('EmailJS initialized successfully');
+        } catch (error) {
+            console.error('Error initializing EmailJS:', error);
+        }
+    } else {
         console.error('EmailJS library not loaded!');
         return;
     }
     
-    console.log('EmailJS loaded successfully');
+    // Check if jQuery is available
+    if (typeof $ === 'undefined') {
+        console.warn('jQuery not loaded yet');
+    } else {
+        console.log('jQuery is available');
+    }
     
     // Get the form
     const form = document.getElementById('contact-form');
