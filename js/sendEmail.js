@@ -62,7 +62,7 @@ function validateForm(formData) {
     }
 
     if (!formData.email || !isValidEmail(formData.email)) {
-        errors.push('Please enter a valid email address');
+        errors.push('Please enter a valid email address (e.g., name@example.com)');
     }
 
     if (!formData.message || formData.message.trim().length < 10) {
@@ -226,17 +226,12 @@ function handleFormSubmit(e) {
         .then(function(response) {
             console.log('✓ SUCCESS! Email sent!', response);
             
-            // Reset form first
-            resetForm();
-            console.log('Form cleared');
+            // Store name in sessionStorage for thank you page
+            sessionStorage.setItem('senderName', formData.name);
             
-            // Show thank you modal
-            showThankYouMessage(formData.name);
-            
-            // Optional: Send WhatsApp notification to yourself
-            sendWhatsAppNotification(formData);
-            
-            return response;
+            // Redirect to thank you page
+            console.log('Redirecting to thank you page...');
+            window.location.href = 'thank-you.html';
         })
         .catch(function(error) {
             console.error('✗ Email failed - Full error object:', error);

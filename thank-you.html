@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Thank You - John Henry Gaspay</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <style>
+    body {
+      font-family: 'Lato', sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .thank-you-container {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+      padding: 50px;
+      max-width: 600px;
+      text-align: center;
+      animation: fadeInUp 0.6s ease-out;
+    }
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .check-icon {
+      font-size: 80px;
+      color: #4CAF50;
+      margin-bottom: 20px;
+      animation: scaleIn 0.5s ease-out 0.2s both;
+    }
+    @keyframes scaleIn {
+      from {
+        transform: scale(0);
+      }
+      to {
+        transform: scale(1);
+      }
+    }
+    h1 {
+      color: #333;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+    .lead {
+      color: #666;
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+    .btn-custom {
+      background-color: #25D366;
+      border-color: #25D366;
+      color: white;
+      padding: 12px 30px;
+      font-size: 16px;
+      border-radius: 30px;
+      margin: 10px;
+      transition: all 0.3s;
+    }
+    .btn-custom:hover {
+      background-color: #128C7E;
+      border-color: #128C7E;
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+    .btn-secondary {
+      background-color: #f4511e;
+      border-color: #f4511e;
+    }
+    .btn-secondary:hover {
+      background-color: #d43f1a;
+      border-color: #d43f1a;
+    }
+    .divider {
+      height: 2px;
+      background: linear-gradient(to right, transparent, #ddd, transparent);
+      margin: 30px 0;
+    }
+  </style>
+</head>
+<body>
+
+<div class="thank-you-container">
+  <div class="check-icon">
+    <span class="glyphicon glyphicon-ok-circle"></span>
+  </div>
+  
+  <h1>Thank You!</h1>
+  
+  <p class="lead">
+    Your message has been sent successfully.<br>
+    I'll get back to you within 24 hours.
+  </p>
+  
+  <div class="divider"></div>
+  
+  <p style="color: #666; margin-bottom: 20px;">
+    <strong>Need immediate assistance?</strong>
+  </p>
+  
+  <div>
+    <a href="https://api.whatsapp.com/send?phone=+639706556707&text=Hi%20John,%20I%20just%20sent%20a%20message%20via%20your%20contact%20form" 
+       target="_blank" 
+       class="btn btn-lg btn-custom">
+      <span class="glyphicon glyphicon-phone"></span> Message on WhatsApp
+    </a>
+    
+    <a href="index.html" class="btn btn-lg btn-custom btn-secondary">
+      <span class="glyphicon glyphicon-home"></span> Back to Home
+    </a>
+  </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
