@@ -513,9 +513,11 @@ $(document).ready(function(){
 
     window.onload = function () {
         setTimeout(function () {
-            document.querySelector('#mutativeImg1').dataset.src = 'images/thumbs/02.jpg'
-            document.querySelector('#mutativeImg2').dataset.src = 'images/thumbs/02.jpg'
-            toastr["success"]("Once data-src change, the element render again.")
+            var img1 = document.querySelector('#mutativeImg1');
+            var img2 = document.querySelector('#mutativeImg2');
+            if(img1) img1.dataset.src = 'images/thumbs/02.jpg';
+            if(img2) img2.dataset.src = 'images/thumbs/02.jpg';
+            if(toastr) toastr["success"]("Once data-src change, the element render again.");
         }, 3000)
     }
     // Background observer
