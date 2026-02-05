@@ -223,11 +223,16 @@ html:not(.js) .cd-faq__group,
   position: relative;
   margin: var(--space-md) 0 var(--space-xs);
   color: var(--cd-color-2);
+  text-align: left;
+  font-size: 1rem;
+  line-height: 1.5;
 
   @include breakpoint(md) {
     font-weight: 300;
     margin: 0;
     padding: var(--space-sm) var(--space-lg) var(--space-sm) var(--space-sm);
+    font-size: 1.2rem;
+    line-height: 1.6;
 
     span {
       font-size: var(--text-md);
@@ -270,21 +275,32 @@ html:not(.js) .cd-faq__group,
   opacity: 1 !important;
   height: auto !important;
   max-height: none !important;
+  text-align: left;
   
   .text-component {
     font-size: 0.95em;
+    line-height: 1.6;
   }
   
   p {
     color: var(--cd-color-3);
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 1em;
   }
 
   @include breakpoint(md) {
     padding: 0 var(--space-sm);
     
     .text-component {
-      font-size: 0.75em;
+      font-size: 1em;
+      line-height: 1.7;
       padding-bottom: var(--space-md);
+    }
+    
+    p {
+      font-size: 1.05rem;
+      line-height: 1.8;
     }
   }
 }
