@@ -224,8 +224,10 @@ html:not(.js) .cd-faq__group,
   margin: var(--space-md) 0 var(--space-xs);
   color: var(--cd-color-2);
   text-align: left;
+  font-family: var(--font-primary);
   font-size: 1rem;
   line-height: 1.5;
+  font-weight: 600;
 
   @include breakpoint(md) {
     font-weight: 300;
@@ -272,6 +274,7 @@ html:not(.js) .cd-faq__group,
 .cd-faq__content {
   display: none; // hidden by default, shown on click
   text-align: left;
+  font-family: var(--font-primary);
   
   .text-component {
     font-size: 0.95em;
@@ -283,6 +286,7 @@ html:not(.js) .cd-faq__group,
     font-size: 0.95rem;
     line-height: 1.7;
     margin-bottom: 1em;
+    font-weight: 400;
   }
 
   @include breakpoint(md) {
