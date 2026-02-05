@@ -98,9 +98,12 @@
   };
 
   function updateCategory() { // update selected category -> show green rectangle to the left of the category
-  	if(!this.faqsCategories || this.faqsCategories.length === 0) return; // Safety check
+  	if(!this.faqsCategories || this.faqsCategories.length === 0) return; // Safety check - no categories to update
   	var selected = false;
 		for(var i = 0; i < this.sections.length; i++) {
+			// Make sure corresponding category exists
+			if(!this.faqsCategories[i]) continue;
+			
 			var top = this.sections[i].getBoundingClientRect().top,
 				bool = (top <= 0) && (-1*top < this.sections[i].offsetHeight);
 			Util.toggleClass(this.faqsCategories[i], 'cd-faq__category-selected', bool);
