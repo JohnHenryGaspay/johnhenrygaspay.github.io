@@ -1,4 +1,4 @@
-var cacheName = 'SEO-Web-Dev';
+var cacheName = 'SEO-Web-Dev-v1';
 var filesToCache = [
   '/',
   '/index.html',
@@ -15,15 +15,24 @@ var filesToCache = [
 self.addEventListener('install', function(e) {
   e.waitUntil(
     caches.open(cacheName).then(function(cache) {
-      // Use addAll but with error handling for failed requests
-      return cache.addAll(filesToCache).catch(function(error) {
-        console.warn('Service Worker: Some files failed to cache', error);
-        // Continue even if some files fail to cache
-        return Promise.resolve();
+      // Cache files individually instead of using addAll
+      // This way, one failed file won't break the entire cache
+      var cachePromises = filesToCache.map(function(url) {
+        return fetch(url).then(function(response) {
+          if (response.ok) {
+            return cache.put(url, response);
+          }
+        }).catch(function(error) {
+          console.warn('Service Worker: Failed to cache ' + url, error);
+          // Continue even if individual file fails
+        });
+      });
+      
+      return Promise.all(cachePromises).then(function() {
+        console.log('Service Worker: Caching complete');
       });
     }).catch(function(error) {
       console.warn('Service Worker: Failed to open cache', error);
-      return Promise.resolve();
     })
   );
 });
@@ -32,9 +41,14 @@ self.addEventListener('install', function(e) {
 self.addEventListener('fetch', function(e) {
   e.respondWith(
     caches.match(e.request).then(function(response) {
-      return response || fetch(e.request).catch(function() {
+      if (response) {
+        return response;
+      }
+      return fetch(e.request).catch(function() {
         // Return a fallback response if fetch fails
-        return caches.match('/index.html');
+        if (e.request.destination === 'document') {
+          return caches.match('/index.html');
+        }
       });
     })
   );
