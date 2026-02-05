@@ -39,6 +39,33 @@ function sendEmail(formData) {
 }
 
 /**
+ * List of disposable/temporary email domains to block
+ */
+const DISPOSABLE_EMAIL_DOMAINS = [
+    '10minutemail.com', 'guerrillamail.com', 'mailinator.com', 'temp-mail.org',
+    'throwaway.email', 'tempmail.com', 'fakeinbox.com', 'trashmail.com',
+    'yopmail.com', 'dispostable.com', 'getnada.com', 'maildrop.cc',
+    'sharklasers.com', 'guerrillamailblock.com', 'spam4.me', 'grr.la',
+    'tmail.com', 'tmails.net', 'emailondeck.com', 'getairmail.com'
+];
+
+/**
+ * Common email provider typos
+ */
+const EMAIL_TYPO_CORRECTIONS = {
+    'gmail.con': 'gmail.com',
+    'gmail.cmo': 'gmail.com',
+    'gmial.com': 'gmail.com',
+    'gmai.com': 'gmail.com',
+    'yahooo.com': 'yahoo.com',
+    'yaho.com': 'yahoo.com',
+    'hotmial.com': 'hotmail.com',
+    'hotmai.com': 'hotmail.com',
+    'outlook.con': 'outlook.com',
+    'outlok.com': 'outlook.com'
+};
+
+/**
  * Validate email format
  * @param {string} email
  * @returns {boolean}
@@ -47,6 +74,77 @@ function isValidEmail(email) {
     // More strict email validation
     const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
     return emailRegex.test(email.trim());
+}
+
+/**
+ * Check if email domain is disposable/temporary
+ * @param {string} email
+ * @returns {boolean}
+ */
+function isDisposableEmail(email) {
+    const domain = email.toLowerCase().split('@')[1];
+    return DISPOSABLE_EMAIL_DOMAINS.includes(domain);
+}
+
+/**
+ * Check for common typos and suggest corrections
+ * @param {string} email
+ * @returns {Object} { hasTypo: boolean, suggestion: string }
+ */
+function checkEmailTypo(email) {
+    const domain = email.toLowerCase().split('@')[1];
+    
+    if (EMAIL_TYPO_CORRECTIONS[domain]) {
+        return {
+            hasTypo: true,
+            suggestion: email.split('@')[0] + '@' + EMAIL_TYPO_CORRECTIONS[domain]
+        };
+    }
+    
+    return { hasTypo: false, suggestion: null };
+}
+
+/**
+ * Comprehensive email validation
+ * @param {string} email
+ * @returns {Object} { isValid: boolean, error: string }
+ */
+function validateEmailAddress(email) {
+    // Check format
+    if (!isValidEmail(email)) {
+        return {
+            isValid: false,
+            error: 'Please enter a valid email address (e.g., name@example.com)'
+        };
+    }
+    
+    // Check for disposable email
+    if (isDisposableEmail(email)) {
+        return {
+            isValid: false,
+            error: 'Temporary/disposable email addresses are not allowed. Please use a real email address.'
+        };
+    }
+    
+    // Check for typos
+    const typoCheck = checkEmailTypo(email);
+    if (typoCheck.hasTypo) {
+        return {
+            isValid: false,
+            error: `Did you mean "${typoCheck.suggestion}"? Please check your email address.`
+        };
+    }
+    
+    // Check if domain looks suspicious (no dots, too short, etc.)
+    const domain = email.split('@')[1];
+    if (!domain.includes('.') || domain.length < 4) {
+        return {
+            isValid: false,
+            error: 'Please enter a valid email domain (e.g., @gmail.com, @yahoo.com)'
+        };
+    }
+    
+    return { isValid: true, error: null };
 }
 
 /**
@@ -61,8 +159,10 @@ function validateForm(formData) {
         errors.push('Please enter a valid name (at least 2 characters)');
     }
 
-    if (!formData.email || !isValidEmail(formData.email)) {
-        errors.push('Please enter a valid email address (e.g., name@example.com)');
+    // Enhanced email validation
+    const emailValidation = validateEmailAddress(formData.email);
+    if (!emailValidation.isValid) {
+        errors.push(emailValidation.error);
     }
 
     if (!formData.message || formData.message.trim().length < 10) {
