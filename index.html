@@ -1,8 +1,9 @@
+<?php include "sendmail.php"; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head> 
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5.0, minimum-scale=0.5, user-scalable=yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=12.0, minimum-scale=.25, user-scalable=yes">
   <!--<meta name="viewport" content="width=device-width, initial-scale=1"> -->
   <title>John Henry Gaspay - Technical SEO Expert & Web Dev Experience</title>
   <meta name="description" content="Provides technical SEO services to improve overall performance in traffic, ranking, conversion, or sales, for clients globally currently based in Lapu Lapu, Cebu.">
@@ -25,11 +26,12 @@
   <meta name="twitter:image:height" content="103">
   <meta name="google-site-verification" content="-SN-4Wd0IeEUoNDELjK09gMU1t6ZMXp0ta9h9xyOBow" /> 
   <link rel="preload" as="style" href="css/styles.css">
-  <!-- main.js is loaded at the bottom of page, not preloaded here -->
+  <link rel="preload" as="script" href="js/main.js">
   <link rel="preload" as="style" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <!--<link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Montserrat&font-display:swap;">
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Lato&font-display:swap;"> -->
   <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+  <link rel="preload" as="image" src="https://johnhenrygaspay.github.io/img/seo-webdev.JPG"> 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css" media="all">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css" media="all">
@@ -38,11 +40,11 @@
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
   <link rel="preload" as="script" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js">
   <link rel="preload" as="script" href="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
-  <link rel="preload" as="script" href="https://pixboost.com/libs/lozad.min.js">
-  <link rel="preload" as="script" href="https://pixboost.com/libs/pixboost.js">
-  <!-- main.js moved to bottom after jQuery loads -->
+  <script rel="preload" as="script" src="https://pixboost.com/libs/lozad.min.js"></script>
+  <script rel="preload" as="script" src="https://pixboost.com/libs/pixboost.js"></script>
+  <script src="js/main.js"></script>
   <link rel="manifest" href="manifest.json">
-  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="white">
   <meta name="apple-mobile-web-app-title" content="John Henry Gaspay">
   <meta name="theme-color" content="#f4511e"/>
@@ -51,7 +53,10 @@
   <script>document.getElementsByTagName("html")[0].className += " js";</script>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60" class="fullscreen">
-<!-- Google Tag Manager (noscript) - Removed due to CSP frame-ancestors violation -->
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WQTZJBL"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
@@ -78,7 +83,7 @@
 
 <div class="jumbotron text-center">
   <h1>Technical SEO Specialist</h1> 
-  <p>Professional SEO expert experienced in WordPress, Shopify & Ecommerce</p> 
+  <p>I am a Professional SEO Expert dedicated to bridging the gap between technical performance and user-friendly design. With extensive experience optimizing most major platforms like WordPress, Webflow, and Shopify sites, I specialize in driving search engine ranking improvements through comprehensive digital marketing strategy. My approach combines high-quality content optimization by adding relavant keywords, fixing technical audits, including fixing broken links and optimizing URL structure. By leveraging advanced keyword research tools and implementing needed schema markup for more SERPs feature listings, I ensure that every blog post is optimized for keywords, enough content length and add interna and external links.</p> 
           <button class="btn-default" type="send"><a href="https://www.upwork.com/workwith/johnhenryg">Work with Me </a></button>
 </div> 
 <!-- Container (About Section) -->
@@ -125,7 +130,7 @@
       <span itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer" class="glyphicon glyphicon-off logo-small"></span>
 	  <meta itemprop="serviceType" itemprop="itemOffered" itemscope itemtype="https://schema.org/Service">
       <h4 class="service-text" itemprop="name">SEO Audit</h4>
-      <p class="text-justify" itemprop="description">Conduct quick or full SEO audit and lists doown what needs to be done including creating baseline report for tracking improvement from the beginning of the project.
+      <p class="text-justify" itemprop="description">Conduct quick or full SEO audit and lists down what needs to be done including creating baseline report for tracking improvement from the beginning of the project.
 	   Listing down what are these factor that are hurting your site to rank for overall SERPs performance. Tools I use: SEMrush, Ahrefs, Screaming Frog and Search Console.
 	  </p>
     </div>
@@ -141,8 +146,8 @@
       <span itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer" class="glyphicon glyphicon-lock logo-small"></span>
 	  <meta itemprop="serviceType" itemprop="itemOffered" itemscope itemtype="https://schema.org/Service">
       <h4 class="service-text" itemprop="name">Keywords Research</h4>
-      <p class="text-justify" itemprop="description">One of the cricual things to consider on optimizing webiste, any keywords can rank as long as they are part or related to your main or top keywords for your business or services which mostly long tail keywords.
-	  I conduct <strong>keyword research for potential keywords</strong> or key phrases that you are not targeting and map them all over to your site without risking other pages that might targeting same keyword or avoid <strong>keyword stuffing or cannibalisation</strong>.
+      <p class="text-justify" itemprop="description">One of the crucial things to consider on optimizing website, any keywords can rank as long as they are part or related to your main or top keywords for your business or services which mostly long tail keywords.
+	  I conduct <strong>keyword research for potential keywords</strong> or key phrases that you are not targeting and map them all over to your site without risking other pages that might targeting same keyword or avoid <strong>keyword stuffing or cannibalization</strong>.
 	  </p>
     </div>
   </div>
@@ -165,7 +170,7 @@
       <span itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer" class="glyphicon glyphicon-link logo-small"></span>
       <h4 class="service-text" itemprop="name" >Local SEO & Off-site Optimization</h4>
       <p class="text-justify" itemprop="description">I used <strong>white-hat link building</strong> only no black-hat or grey-hat it means I only considered from high authoritative sites.
-	  I also do removing suspicious or low quaity links or sites, use competitors inbound links and local citation for US, AU and UK sites.
+	  I also do removing suspicious or low quality links or sites, use competitors inbound links and local citation for US, AU and UK sites.
 	  </p>
     </div>
   </div>
@@ -231,7 +236,7 @@
 		<h4>Locksmith Service in Fort Lauderdale Provides </h4>
         <p><a href="http://www.locksmithsplus.com/">Locksmith Plus</a></p>
 		<p class="portfoliop">
-		Client ask revamp very old static site to make it more responsive in all devices and improve overall search visiblity.
+		Client ask revamp very old static site to make it more responsive in all devices and improve overall search visibility.
 		</p>
       </div>
     </div>
@@ -248,7 +253,7 @@
     </div>
   </div>
  
-  <div id="faqs" class="container-fluid" itemscope itemtype="https://schema.org/FAQPage">
+  <div id="faqs" class="container-fluid text-center" itemscope itemtype="https://schema.org/FAQPage">
      <h2>Frequently Asked Questions(FAQ)</h2>
 	 <section class="cd-faq js-cd-faq container">
 	<div class="cd-faq__items">
@@ -296,7 +301,7 @@
 				<a class="cd-faq__trigger" href="#0"><span itemprop="name" >How much is your price for SEO Services?</span></a>
 				<div class="cd-faq__content" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
           <div class="text-component">
-            <p itemprop="text">Currently, you can <a href="https://www.upwork.com/workwith/johnhenryg">work or hire me</a> on Upwork platform which you can opt with fixed-price or hourly basis depending on your budget.</p>
+            <p itemprop="text">Currently, you can <a href="https://www.upwork.com/freelancers/johnhenryg">work or hire me</a> on Upwork platform which you can opt with fixed-price or hourly basis depending on your budget.</p>
           </div>
 				</div> <!-- cd-faq__content -->
 			</li>
@@ -371,59 +376,24 @@
 	  <p><span class="glyphicon glyphicon-user"></span> <a href="https://www.upwork.com/freelancers/johnhenryg">Work with Me</a></p>
     </div>
     <div class="col-sm-7 slideanim">
-      <form id="contact-form" name="contact-form">
-        <div class="row">
-          <div class="col-sm-6 form-group">
-            <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
-          </div>
-          <div class="col-sm-6 form-group">
-            <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
-          </div>
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
         </div>
-        <textarea class="form-control" id="comments" name="message" placeholder="Message" rows="5" required></textarea><br>
-        <div class="row">
-          <div class="col-sm-12 form-group">
-            <button class="btn btn-default pull-right" type="submit" name="submit">Send</button>
-          </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
         </div>
-      </form>
+      </div>
+      <textarea class="form-control" id="comments" name="message" placeholder="Message" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit" name="submit">Send</button>
+        </div>
+      </div>
+	 
     </div>
   </div>
   
-</div>
-
-<!-- Thank You Modal -->
-<div class="modal fade" id="thankYouModal" tabindex="-1" role="dialog" aria-labelledby="thankYouModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header" style="background-color: #4CAF50; color: white;">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: white; opacity: 1;">
-          <span aria-hidden="true">&times;</span>
-        </button>
-        <h4 class="modal-title" id="thankYouModalLabel">
-          <span class="glyphicon glyphicon-ok-circle"></span> Thank You!
-        </h4>
-      </div>
-      <div class="modal-body" style="text-align: center; padding: 30px;">
-        <h3 id="thankYouName" style="color: #4CAF50; margin-bottom: 20px;"></h3>
-        <p style="font-size: 16px; margin-bottom: 15px;">Your message has been sent successfully!</p>
-        <p style="font-size: 14px; color: #666; margin-bottom: 25px;">I'll get back to you within 24 hours.</p>
-        <hr>
-        <p style="font-size: 14px; margin-top: 20px;">
-          <strong>Need immediate assistance?</strong>
-        </p>
-        <a href="https://api.whatsapp.com/send?phone=+639706556707&text=Hi%20John,%20I%20just%20sent%20a%20message%20via%20your%20contact%20form" 
-           target="_blank" 
-           class="btn btn-success btn-lg" 
-           style="background-color: #25D366; border-color: #25D366; margin-top: 10px;">
-           <span class="glyphicon glyphicon-phone"></span> Message me on WhatsApp
-        </a>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
 </div>
 
 <!-- Image of location/map -->
@@ -431,7 +401,7 @@
 <!--<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js"></script>-->
 <script type="text/javascript" src="https://pixboost.com/libs/lozad.min.js"></script>
 <script type="text/javascript" src="https://pixboost.com/libs/pixboost.js" id="pb-script" data-autoload data-api-key="MTg4MjMxMzM3MA__"></script>
-<!-- Polyfill removed - modern browsers natively support Object.assign and IntersectionObserver -->
+   <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?flags=gated&features=Object.assign%2CIntersectionObserver"></script>
     <!-- Toastr resources for Notifications -->
  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script> 
  <!--<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script> -->
@@ -441,13 +411,10 @@
   <a href="#myPage" title="To Top">
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a>
-  <p>© 2023-2025 John Henry Gaspay . All Rights Reserved | Bootstrap Theme Made By <a rel="nofollow" href="https://www.w3schools.com" title="Visit w3schools">www.w3schools.com</a> | <a href="https://johnhenrygaspay.github.io/sitemap.xml" title="Sitemap">Sitemap</a></p>
+  <p>© 2023-2026 John Henry Gaspay . All Rights Reserved | Bootstrap Theme Made By <a rel="nofollow" href="https://www.w3schools.com" title="Visit w3schools">www.w3schools.com</a> | <a href="https://johnhenrygaspay.github.io/sitemap.xml" title="Sitemap">Sitemap</a></p>
 </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <!-- EmailJS for contact form -->
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-  <script type="text/javascript" src="js/sendEmail.js"></script>
   
 <script>
 $(document).ready(function(){
@@ -489,8 +456,7 @@ $(document).ready(function(){
     <script type="text/javascript">
     toastr.options = {
         "progressBar": true,
-        "timeOut": "1500",
-        "enableHtml": true
+        "timeOut": "1500"
     }
     // Initialize library to lazy load images
     var observer = lozad('.lozad', {
@@ -510,12 +476,13 @@ $(document).ready(function(){
         threshold: 0.1
     })
 
-    // window.onload handler - unused dynamic image elements
-    // var img1 = document.querySelector('#mutativeImg1');
-    // var img2 = document.querySelector('#mutativeImg2');
-    // if(img1) img1.dataset.src = 'images/thumbs/02.jpg';
-    // if(img2) img2.dataset.src = 'images/thumbs/02.jpg';
-
+    window.onload = function () {
+        setTimeout(function () {
+            document.querySelector('#mutativeImg1').dataset.src = 'images/thumbs/02.jpg'
+            document.querySelector('#mutativeImg2').dataset.src = 'images/thumbs/02.jpg'
+            toastr["success"]("Once data-src change, the element render again.")
+        }, 3000)
+    }
     // Background observer
     // with default `load` method
     var backgroundObserver = lozad('.lozad-background', {
@@ -556,6 +523,7 @@ $(document).ready(function(){
         "telephone" : "032 425 5984"
         },
     "openingHours": [ "Mo-Fr 09:00-22:00", "Sa-Sun Closed" ],
+    "hasmap" : "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11103.705850245073!2d123.95911315474432!3d10.281486834725019!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb096fffc284885c0!2sJohn%20Henry%20Gaspay!5e0!3m2!1sen!2sph!4v1604716837405!5m2!1sen!2sph",
     "sameAs" : [ "https://www.facebook.com/johnhenrygaspay",
         "https://twitter.com/johnhgaspay",
         "https://github.com/JohnHenryGaspay",
@@ -566,16 +534,8 @@ $(document).ready(function(){
 </script>
   <script> dataLayer = []; </script>
   <script>
-// Safely parse URL parameters
-try {
-  var priceMatch = document.URL.match(/price=([^&]+)/);
-  if (priceMatch && priceMatch[1]) {
-    var tripPrice = priceMatch[1];
-    dataLayer=[{'tripValue':tripPrice}];
-  }
-} catch(e) {
-  console.log('No price parameter in URL');
-}
+var tripPrice = document.URL.match(/price=([^&]+)/)[1];
+dataLayer=[{'tripValue':tripPrice}];
 </script>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-4FDRK75JK0"></script>
